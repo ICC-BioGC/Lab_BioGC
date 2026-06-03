@@ -1,6 +1,6 @@
 /* style.css – Laboratório BioGC – identidade Fiocruz */
-/* Cores institucionais: Brick Fiocruz (#cc3121), Verde Fiocruz (#00747a), tons neutros */
-/* Tipografia: Open Sans (manual Fiocruz para web) */
+/* Cores: Brick Fiocruz (#cc3121), Verde Fiocruz (#00747a), Azul escuro (#003f44) */
+/* Tipografia: Open Sans (web) */
 
 * {
     margin: 0;
@@ -24,7 +24,6 @@ body {
 /* Header */
 .header {
     background: linear-gradient(135deg, #00747a 0%, #005b60 100%);
-    background-color: #00747a; /* Verde Fiocruz */
     color: white;
     padding: 1rem 0;
     border-bottom: 4px solid #cc3121;
@@ -57,9 +56,11 @@ body {
     border-radius: 40px;
     font-weight: 700;
 }
+
 .fiocruz-symbol {
     font-size: 1.4rem;
 }
+
 .fiocruz-name {
     font-size: 1rem;
     letter-spacing: 1px;
@@ -69,8 +70,8 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 0.1rem;
-    line-height: 1.2;
 }
+
 .lab-subtitle {
     font-size: 0.8rem;
     opacity: 0.85;
@@ -81,6 +82,7 @@ body {
     list-style: none;
     gap: 1.8rem;
 }
+
 .main-nav a {
     color: white;
     text-decoration: none;
@@ -88,6 +90,7 @@ body {
     font-size: 0.95rem;
     transition: color 0.2s;
 }
+
 .main-nav a:hover {
     color: #ffc107;
     border-bottom: 2px solid #ffc107;
@@ -100,22 +103,26 @@ body {
     padding: 4rem 0;
     border-bottom: 1px solid #dce4e8;
 }
+
 .hero-content {
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
 }
+
 .hero h2 {
     font-size: 2.8rem;
     font-weight: 700;
     color: #00747a;
     margin-bottom: 1rem;
 }
+
 .hero p {
     font-size: 1.2rem;
     color: #2c3e50;
     margin-bottom: 2rem;
 }
+
 .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -127,36 +134,21 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: background 0.2s;
-    border: none;
 }
+
 .btn-primary:hover {
     background-color: #a8281a;
 }
-.btn-secondary {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background-color: transparent;
-    color: #00747a;
-    border: 2px solid #00747a;
-    padding: 0.6rem 1.5rem;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.2s;
-}
-.btn-secondary:hover {
-    background-color: #00747a;
-    color: white;
-}
 
-/* Seções padrão */
+/* Seções */
 .section {
     padding: 4rem 0;
 }
+
 .bg-light {
     background-color: #f8fafc;
 }
+
 .section h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -165,49 +157,45 @@ body {
     border-left: 6px solid #cc3121;
     padding-left: 1rem;
 }
-.text-center {
-    text-align: center;
-    margin-top: 2rem;
-}
 
-/* Grid sobre */
+/* Grids */
 .sobre-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
 .sobre-texto p {
     margin-bottom: 1rem;
     text-align: justify;
 }
-.sobre-infos {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-}
+
 .info-card {
     background: white;
     border-radius: 20px;
     padding: 1.2rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     border-left: 4px solid #cc3121;
+    margin-bottom: 1rem;
 }
+
 .info-card i {
     font-size: 1.8rem;
     color: #00747a;
     margin-bottom: 0.5rem;
 }
+
 .info-card h3 {
     font-size: 1.1rem;
     margin-bottom: 0.3rem;
 }
 
-/* Pesquisa grid */
 .pesquisa-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
+
 .pesquisa-item {
     background: white;
     padding: 1.5rem;
@@ -216,58 +204,105 @@ body {
     text-align: center;
     transition: transform 0.2s;
 }
+
 .pesquisa-item:hover {
     transform: translateY(-5px);
 }
+
 .pesquisa-item i {
     font-size: 2.5rem;
     color: #cc3121;
     margin-bottom: 1rem;
 }
+
 .pesquisa-item h3 {
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
     color: #00747a;
 }
 
-/* Equipe */
-.equipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-}
-.membro {
+/* Equipe (dinâmica) */
+.grupo-pesquisador {
     background: #ffffff;
     border-radius: 24px;
+    margin-bottom: 2rem;
     padding: 1.5rem;
-    text-align: center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: all 0.2s;
+    border-left: 5px solid #cc3121;
 }
-.membro:hover {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+
+.pesquisador-header {
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.8rem;
 }
-.avatar-placeholder i {
-    font-size: 4rem;
-    color: #cc3121;
-    margin-bottom: 0.5rem;
-}
-.membro h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem 0 0.2rem;
-}
-.cargo {
-    font-size: 0.85rem;
-    color: #00747a;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-.social-links a {
+
+.pesquisador-header h3 {
     display: inline-block;
-    margin: 0.3rem 0.5rem;
+    font-size: 1.4rem;
+    color: #003f44;
+    margin-right: 1rem;
+}
+
+.pesq-titulo {
+    font-weight: 600;
+    color: #cc3121;
+    margin-top: 0.3rem;
+}
+
+.membros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.membro-card {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    border-left: 3px solid #cc3121;
+}
+
+.membro-card .nome {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #003f44;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.membro-card .cargo {
     font-size: 0.8rem;
-    text-decoration: none;
     color: #2c6e6b;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.membro-card .vinculo {
+    font-size: 0.75rem;
+    color: #5a6e7c;
+    margin-bottom: 0.5rem;
+    word-break: break-all;
+}
+
+/* Redes sociais */
+.social-links {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #00747a;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #cc3121;
 }
 
 /* Publicações */
@@ -276,6 +311,7 @@ body {
     flex-direction: column;
     gap: 1.5rem;
 }
+
 .publicacao {
     display: flex;
     gap: 1rem;
@@ -283,25 +319,74 @@ body {
     padding: 1.2rem;
     border-radius: 16px;
     border-left: 4px solid #cc3121;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
+
 .pub-year {
     font-weight: 800;
     font-size: 1.2rem;
     color: #cc3121;
     min-width: 60px;
 }
+
 .pub-detalhe h4 {
     font-size: 1rem;
     margin-bottom: 0.2rem;
+    color: #003f44;
 }
-.pub-detalhe p {
+
+.pub-autores {
     font-size: 0.85rem;
-    margin-bottom: 0.3rem;
+    color: #2c6e6b;
+    margin-bottom: 0.2rem;
 }
-.pub-link {
+
+.pub-periodico {
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.pub-resumo {
     font-size: 0.8rem;
+    color: #4a627a;
+    margin: 0.5rem 0;
+}
+
+.pub-actions {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    background: #eef2f7;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
     text-decoration: none;
     color: #00747a;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.pub-link:hover {
+    background: #cc3121;
+    color: white;
+}
+
+.pdf-link {
+    background: #f0f0f0;
+    color: #cc3121;
+}
+
+.pdf-link:hover {
+    background: #cc3121;
+    color: white;
 }
 
 /* Contato */
@@ -310,13 +395,12 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
 .contato-info i, .localizacao i {
     width: 1.8rem;
     color: #cc3121;
 }
-.contato-info p, .localizacao p {
-    margin: 0.8rem 0;
-}
+
 .social-footer a {
     display: inline-block;
     background-color: #e9ecef;
@@ -329,16 +413,17 @@ body {
     border-radius: 50%;
     transition: background 0.2s;
 }
+
 .social-footer a:hover {
     background-color: #cc3121;
     color: white;
 }
+
 .mapa-placeholder {
     background: #e9ecef;
     padding: 2rem;
     text-align: center;
     border-radius: 12px;
-    color: #2c3e50;
 }
 
 /* Footer */
@@ -350,6 +435,7 @@ body {
     font-size: 0.85rem;
     margin-top: 2rem;
 }
+
 .footer-logos {
     display: flex;
     justify-content: center;
@@ -357,20 +443,30 @@ body {
     margin-bottom: 1rem;
     flex-wrap: wrap;
 }
-.footer-logos span {
-    font-weight: 500;
-}
+
 .footer a {
     color: #ffc107;
     text-decoration: none;
 }
+
 .footer a:hover {
     text-decoration: underline;
 }
-.small {
-    font-size: 0.7rem;
-    opacity: 0.7;
-    margin-top: 0.8rem;
+
+/* Loading */
+.loading {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: #00747a;
+}
+
+/* Instrução (mensagem quando não há membros) */
+.instrucao {
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 12px;
+    color: #5a6e7c;
 }
 
 /* Responsividade */
@@ -393,6 +489,7 @@ body {
         font-size: 1.6rem;
     }
 }
+
 @media (max-width: 600px) {
     .publicacao {
         flex-direction: column;
