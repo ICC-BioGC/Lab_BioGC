@@ -1,0 +1,404 @@
+/* style.css – Laboratório BioGC – identidade Fiocruz */
+/* Cores institucionais: Brick Fiocruz (#cc3121), Verde Fiocruz (#00747a), tons neutros */
+/* Tipografia: Open Sans (manual Fiocruz para web) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    color: #1a2c3e;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #00747a 0%, #005b60 100%);
+    background-color: #00747a; /* Verde Fiocruz */
+    color: white;
+    padding: 1rem 0;
+    border-bottom: 4px solid #cc3121;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.fiocruz-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background: rgba(255,255,255,0.12);
+    padding: 0.3rem 0.8rem;
+    border-radius: 40px;
+    font-weight: 700;
+}
+.fiocruz-symbol {
+    font-size: 1.4rem;
+}
+.fiocruz-name {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.lab-name h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+    line-height: 1.2;
+}
+.lab-subtitle {
+    font-size: 0.8rem;
+    opacity: 0.85;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.8rem;
+}
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+.main-nav a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 2px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(105deg, #f0f4f5 0%, #e6ecef 100%);
+    padding: 4rem 0;
+    border-bottom: 1px solid #dce4e8;
+}
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #00747a;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #cc3121;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #a8281a;
+}
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: #00747a;
+    border: 2px solid #00747a;
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.btn-secondary:hover {
+    background-color: #00747a;
+    color: white;
+}
+
+/* Seções padrão */
+.section {
+    padding: 4rem 0;
+}
+.bg-light {
+    background-color: #f8fafc;
+}
+.section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #003f44;
+    margin-bottom: 2rem;
+    border-left: 6px solid #cc3121;
+    padding-left: 1rem;
+}
+.text-center {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Grid sobre */
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.sobre-texto p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+.sobre-infos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+.info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    border-left: 4px solid #cc3121;
+}
+.info-card i {
+    font-size: 1.8rem;
+    color: #00747a;
+    margin-bottom: 0.5rem;
+}
+.info-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Pesquisa grid */
+.pesquisa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+.pesquisa-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s;
+}
+.pesquisa-item:hover {
+    transform: translateY(-5px);
+}
+.pesquisa-item i {
+    font-size: 2.5rem;
+    color: #cc3121;
+    margin-bottom: 1rem;
+}
+.pesquisa-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: #00747a;
+}
+
+/* Equipe */
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+.membro {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+.membro:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.avatar-placeholder i {
+    font-size: 4rem;
+    color: #cc3121;
+    margin-bottom: 0.5rem;
+}
+.membro h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0.2rem;
+}
+.cargo {
+    font-size: 0.85rem;
+    color: #00747a;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.social-links a {
+    display: inline-block;
+    margin: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #2c6e6b;
+}
+
+/* Publicações */
+.publicacoes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.publicacao {
+    display: flex;
+    gap: 1rem;
+    background: white;
+    padding: 1.2rem;
+    border-radius: 16px;
+    border-left: 4px solid #cc3121;
+}
+.pub-year {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #cc3121;
+    min-width: 60px;
+}
+.pub-detalhe h4 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+.pub-detalhe p {
+    font-size: 0.85rem;
+    margin-bottom: 0.3rem;
+}
+.pub-link {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #00747a;
+}
+
+/* Contato */
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.contato-info i, .localizacao i {
+    width: 1.8rem;
+    color: #cc3121;
+}
+.contato-info p, .localizacao p {
+    margin: 0.8rem 0;
+}
+.social-footer a {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #00747a;
+    margin-right: 0.8rem;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+}
+.social-footer a:hover {
+    background-color: #cc3121;
+    color: white;
+}
+.mapa-placeholder {
+    background: #e9ecef;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    color: #2c3e50;
+}
+
+/* Footer */
+.footer {
+    background: #003f44;
+    color: #e9ecef;
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+.footer-logos span {
+    font-weight: 500;
+}
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.small {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 0.8rem;
+}
+
+/* Responsividade */
+@media (max-width: 880px) {
+    .header-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .sobre-grid, .contato-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero h2 {
+        font-size: 2rem;
+    }
+    .section h2 {
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 600px) {
+    .publicacao {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .pub-year {
+        min-width: auto;
+    }
+}
