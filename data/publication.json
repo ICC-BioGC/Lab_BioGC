@@ -1,0 +1,41 @@
+[
+  {
+    "titulo": "Machine learning-based integration of genomics and transcriptomics for early detection of colorectal cancer",
+    "autores": "Faoro, H., Prezia, G., Souza, J., Furini, H.H., Passetti, F.",
+    "periodico": "Bioinformatics Advances",
+    "ano": 2025,
+    "volume": "5",
+    "numero": "1",
+    "paginas": "vbae001",
+    "doi": "10.1093/bioadv/vbae001",
+    "link": "https://academic.oup.com/bioinformaticsadvances/article/5/1/vbae001/",
+    "resumo": "Estudo que combina dados genômicos e transcriptômicos usando aprendizado de máquina para detecção precoce de câncer colorretal.",
+    "pdf": "pdfs/2025_bioinfo_advances.pdf"
+  },
+  {
+    "titulo": "Genomic surveillance of carbapenem-resistant Klebsiella pneumoniae in Southern Brazil",
+    "autores": "Furini, H.H., Souza, J., Campanário, M.A., Faoro, H.",
+    "periodico": "Microbial Genomics",
+    "ano": 2024,
+    "volume": "10",
+    "numero": "2",
+    "paginas": "001200",
+    "doi": "10.1099/mgen.0.001200",
+    "link": "",
+    "resumo": "Vigilância genômica de cepas de Klebsiella pneumoniae resistentes a carbapenêmicos na região Sul do Brasil.",
+    "pdf": "pdfs/2024_microbial_genomics.pdf"
+  },
+  {
+    "titulo": "RNA-Seq reveals novel biomarkers in Chagas disease cardiomyopathy",
+    "autores": "Ribeiro, I.F., Ozório, S.P., D'Espindula, H.R.S., Faoro, H.",
+    "periodico": "PLOS Neglected Tropical Diseases",
+    "ano": 2024,
+    "volume": "18",
+    "numero": "4",
+    "paginas": "e0011500",
+    "doi": "10.1371/journal.pntd.0011500",
+    "link": "",
+    "resumo": "Identificação de novos biomarcadores em cardiomiopatia chagásica através de RNA-Seq.",
+    "pdf": ""
+  }
+]
