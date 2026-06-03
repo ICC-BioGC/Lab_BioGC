@@ -5,21 +5,298 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>BioGC – Laboratório de Bioinformática e Genômica Clínica | Fiocruz</title>
     <meta name="description" content="Laboratório de Bioinformática e Genômica Clínica (BioGC) do Instituto Carlos Chagas – Fiocruz. Pesquisa em genômica, transcriptômica e bioinformática aplicada à saúde.">
-    <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome (ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Favicon (opcional) -->
-    <link rel="icon" type="image/svg+xml" href="img/logo-fiocruz.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background-color: #ffffff;
+            color: #1a2c3e;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #00747a 0%, #005b60 100%);
+            color: white;
+            padding: 1rem 0;
+            border-bottom: 4px solid #cc3121;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        .fiocruz-brand {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: rgba(255,255,255,0.12);
+            padding: 0.3rem 0.8rem;
+            border-radius: 40px;
+            font-weight: 700;
+        }
+
+        .fiocruz-symbol { font-size: 1.4rem; }
+        .fiocruz-name { font-size: 1rem; letter-spacing: 1px; }
+
+        .lab-name h1 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+        }
+        .lab-subtitle { font-size: 0.8rem; opacity: 0.85; }
+
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.8rem;
+        }
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .main-nav a:hover { color: #ffc107; border-bottom: 2px solid #ffc107; padding-bottom: 2px; }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(105deg, #f0f4f5 0%, #e6ecef 100%);
+            padding: 4rem 0;
+            border-bottom: 1px solid #dce4e8;
+        }
+        .hero-content { text-align: center; max-width: 800px; margin: 0 auto; }
+        .hero h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #00747a;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #cc3121;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .btn-primary:hover { background-color: #a8281a; }
+
+        /* Seções */
+        .section { padding: 4rem 0; }
+        .bg-light { background-color: #f8fafc; }
+        .section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #003f44;
+            margin-bottom: 2rem;
+            border-left: 6px solid #cc3121;
+            padding-left: 1rem;
+        }
+
+        /* Grids */
+        .sobre-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .sobre-texto p { margin-bottom: 1rem; text-align: justify; }
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 1.2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            border-left: 4px solid #cc3121;
+            margin-bottom: 1rem;
+        }
+        .info-card i { font-size: 1.8rem; color: #00747a; margin-bottom: 0.5rem; }
+        .info-card h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+
+        .pesquisa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .pesquisa-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .pesquisa-item:hover { transform: translateY(-5px); }
+        .pesquisa-item i { font-size: 2.5rem; color: #cc3121; margin-bottom: 1rem; }
+        .pesquisa-item h3 { font-size: 1.3rem; margin-bottom: 0.8rem; color: #00747a; }
+
+        /* Equipe (dinâmica) */
+        .grupo-pesquisador {
+            background: #ffffff;
+            border-radius: 24px;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-left: 5px solid #cc3121;
+        }
+        .pesquisador-header {
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.8rem;
+        }
+        .pesquisador-header h3 {
+            display: inline-block;
+            font-size: 1.4rem;
+            color: #003f44;
+            margin-right: 1rem;
+        }
+        .pesq-titulo { font-weight: 600; color: #cc3121; margin-top: 0.3rem; }
+        .membros-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+        .membro-card {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border-left: 3px solid #cc3121;
+        }
+        .membro-card .nome { font-weight: 700; font-size: 1rem; color: #003f44; display: block; margin-bottom: 0.25rem; }
+        .membro-card .cargo { font-size: 0.8rem; color: #2c6e6b; font-weight: 600; margin-bottom: 0.25rem; }
+        .membro-card .vinculo { font-size: 0.75rem; color: #5a6e7c; margin-bottom: 0.5rem; word-break: break-all; }
+        .social-links { margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .social-links a { color: #00747a; font-size: 0.9rem; transition: color 0.2s; text-decoration: none; }
+        .social-links a:hover { color: #cc3121; }
+
+        /* Publicações */
+        .publicacoes-lista { display: flex; flex-direction: column; gap: 1.5rem; }
+        .publicacao {
+            display: flex;
+            gap: 1rem;
+            background: white;
+            padding: 1.2rem;
+            border-radius: 16px;
+            border-left: 4px solid #cc3121;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .pub-year { font-weight: 800; font-size: 1.2rem; color: #cc3121; min-width: 60px; }
+        .pub-detalhe h4 { font-size: 1rem; margin-bottom: 0.2rem; color: #003f44; }
+        .pub-autores { font-size: 0.85rem; color: #2c6e6b; margin-bottom: 0.2rem; }
+        .pub-periodico { font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
+        .pub-resumo { font-size: 0.8rem; color: #4a627a; margin: 0.5rem 0; }
+        .pub-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .pub-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.8rem;
+            background: #eef2f7;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #00747a;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .pub-link:hover { background: #cc3121; color: white; }
+        .pdf-link { background: #f0f0f0; color: #cc3121; }
+        .pdf-link:hover { background: #cc3121; color: white; }
+
+        /* Contato */
+        .contato-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .contato-info i, .localizacao i { width: 1.8rem; color: #cc3121; }
+        .social-footer a {
+            display: inline-block;
+            background-color: #e9ecef;
+            color: #00747a;
+            margin-right: 0.8rem;
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            border-radius: 50%;
+            transition: background 0.2s;
+        }
+        .social-footer a:hover { background-color: #cc3121; color: white; }
+        .mapa-placeholder { background: #e9ecef; padding: 2rem; text-align: center; border-radius: 12px; }
+
+        /* Footer */
+        .footer {
+            background: #003f44;
+            color: #e9ecef;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+        .footer-logos { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .footer a { color: #ffc107; text-decoration: none; }
+
+        /* Loading */
+        .loading { text-align: center; padding: 2rem; font-style: italic; color: #00747a; }
+
+        /* Responsividade */
+        @media (max-width: 880px) {
+            .header-flex { flex-direction: column; align-items: flex-start; }
+            .main-nav ul { flex-wrap: wrap; gap: 1rem; }
+            .sobre-grid, .contato-grid { grid-template-columns: 1fr; }
+            .hero h2 { font-size: 2rem; }
+        }
+        @media (max-width: 600px) {
+            .publicacao { flex-direction: column; gap: 0.3rem; }
+            .pub-year { min-width: auto; }
+        }
+    </style>
 </head>
 <body>
 
-<!-- Cabeçalho institucional -->
 <header class="header">
     <div class="container header-flex">
         <div class="logo-area">
-            <!-- Placeholder para a marca Fiocruz – substituir pelo logo oficial -->
             <div class="fiocruz-brand">
-                <span class="fiocruz-symbol">🏛️</span> <!-- ícone temporário -->
+                <span class="fiocruz-symbol">🏛️</span>
                 <span class="fiocruz-name">FIOCRUZ</span>
             </div>
             <div class="lab-name">
@@ -39,7 +316,6 @@
     </div>
 </header>
 
-<!-- Hero / Banner -->
 <section class="hero">
     <div class="container hero-content">
         <h2>Ciência e saúde pela vida</h2>
@@ -49,7 +325,6 @@
 </section>
 
 <main>
-    <!-- Sobre o laboratório -->
     <section id="sobre" class="section">
         <div class="container">
             <h2>Sobre o BioGC</h2>
@@ -80,7 +355,6 @@
         </div>
     </section>
 
-    <!-- Linhas de pesquisa -->
     <section id="pesquisa" class="section bg-light">
         <div class="container">
             <h2>Linhas de pesquisa</h2>
@@ -109,110 +383,49 @@
         </div>
     </section>
 
-    <!-- Equipe -->
+    <!-- Seção Equipe (dinâmica) -->
     <section id="equipe" class="section">
         <div class="container">
             <h2>Equipe</h2>
-            <div class="equipe-grid">
-                <div class="membro">
-                    <div class="avatar-placeholder"><i class="fas fa-user-circle"></i></div>
-                    <h3>Helisson Faoro</h3>
-                    <p class="cargo">Coordenador do BioGC / Pesquisador</p>
-                    <p>Doutor em Bioinformática – Líder da linha de genômica de patógenos.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-lattes"></i> Lattes</a>
-                        <a href="#"><i class="fab fa-orcid"></i> ORCID</a>
-                    </div>
-                </div>
-                <div class="membro">
-                    <div class="avatar-placeholder"><i class="fas fa-user-circle"></i></div>
-                    <h3>Giovanna Prezia</h3>
-                    <p class="cargo">Doutoranda</p>
-                    <p>Análise de RNA-Seq e redes regulatórias em câncer.</p>
-                </div>
-                <div class="membro">
-                    <div class="avatar-placeholder"><i class="fas fa-user-circle"></i></div>
-                    <h3>Hector Hugo Furini</h3>
-                    <p class="cargo">Doutorando</p>
-                    <p>Genômica comparativa e filogenômica de bactérias.</p>
-                </div>
-                <div class="membro">
-                    <div class="avatar-placeholder"><i class="fas fa-user-circle"></i></div>
-                    <h3>Isabel de Farias Ribeiro</h3>
-                    <p class="cargo">Mestranda</p>
-                    <p>Bioinformática estrutural e docking molecular.</p>
-                </div>
-                <!-- Adicione mais membros conforme necessário -->
-            </div>
-            <div class="text-center">
-                <a href="#" class="btn-secondary">Ver equipe completa <i class="fas fa-users"></i></a>
+            <div id="equipe-container" class="loading">
+                <i class="fas fa-spinner fa-pulse"></i> Carregando equipe...
             </div>
         </div>
     </section>
 
-    <!-- Publicações destacadas -->
+    <!-- Seção Publicações (dinâmica) -->
     <section id="publicacoes" class="section bg-light">
         <div class="container">
             <h2>Publicações recentes</h2>
-            <div class="publicacoes-lista">
-                <div class="publicacao">
-                    <div class="pub-year">2025</div>
-                    <div class="pub-detalhe">
-                        <h4>Machine learning-based integration of genomics and transcriptomics for early detection of colorectal cancer</h4>
-                        <p>Faoro, H., Prezia, G., et al. <em>Bioinformatics Advances</em>, 5(1).</p>
-                        <a href="#" class="pub-link">DOI: 10.1093/bioadv/vbae001 <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="publicacao">
-                    <div class="pub-year">2024</div>
-                    <div class="pub-detalhe">
-                        <h4>Genomic surveillance of carbapenem-resistant Klebsiella pneumoniae in Southern Brazil</h4>
-                        <p>Furini, H.H., Souza, J., et al. <em>Microbial Genomics</em>, 10(2).</p>
-                        <a href="#" class="pub-link">DOI: 10.1099/mgen.0.001200 <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="publicacao">
-                    <div class="pub-year">2024</div>
-                    <div class="pub-detalhe">
-                        <h4>RNA-Seq reveals novel biomarkers in Chagas disease cardiomyopathy</h4>
-                        <p>Ribeiro, I.F., Ozório, S.P., et al. <em>PLOS Neglected Tropical Diseases</em>, 18(4).</p>
-                        <a href="#" class="pub-link">DOI: 10.1371/journal.pntd.0011500 <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="#" class="btn-secondary">Ver todas as publicações (PubMed) <i class="fab fa-pubmed"></i></a>
+            <div id="publicacoes-container" class="loading">
+                <i class="fas fa-spinner fa-pulse"></i> Carregando publicações...
             </div>
         </div>
     </section>
 
-    <!-- Contato e localização -->
     <section id="contato" class="section">
         <div class="container contato-grid">
             <div class="contato-info">
                 <h2>Contato</h2>
-                <p><i class="fas fa-map-marker-alt"></i> Instituto Carlos Chagas – Fiocruz Paraná<br>
-                Rua Professor Algacyr Munhoz Mader, 3775 – Curitiba/PR, Brasil – CEP 81350-010</p>
+                <p><i class="fas fa-map-marker-alt"></i> Instituto Carlos Chagas – Fiocruz Paraná<br>Rua Professor Algacyr Munhoz Mader, 3775 – Curitiba/PR, Brasil – CEP 81350-010</p>
                 <p><i class="fas fa-envelope"></i> <a href="mailto:biogc@fiocruz.br">biogc@fiocruz.br</a></p>
                 <p><i class="fas fa-phone-alt"></i> +55 (41) 2105-1000</p>
                 <div class="social-footer">
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="localizacao">
                 <h2>Localização</h2>
                 <div class="mapa-placeholder">
                     <i class="fas fa-map"></i> <span>Mapa interativo – Campus Fiocruz Curitiba</span>
-                    <!-- Aqui pode ser inserido um iframe do Google Maps -->
                 </div>
             </div>
         </div>
     </section>
 </main>
 
-<!-- Rodapé institucional -->
 <footer class="footer">
     <div class="container">
         <div class="footer-logos">
@@ -222,9 +435,54 @@
         </div>
         <p>© 2026 Laboratório de Bioinformática e Genômica Clínica – Todos os direitos reservados.</p>
         <p><a href="https://www.fiocruz.br" target="_blank">www.fiocruz.br</a> | <a href="https://icc.fiocruz.br" target="_blank">icc.fiocruz.br</a></p>
-        <p class="small">Siga as diretrizes da identidade visual Fiocruz – Manual de Uso da Marca (v.1.1 – 2024).</p>
     </div>
 </footer>
 
-</body>
-</html>
+<script>
+    // Função para gerar os ícones de redes sociais
+    function renderSocialLinks(links) {
+        const socials = [
+            { name: 'Lattes', icon: 'fab fa-lattes', url: links.lattes, show: links.lattes && links.lattes.trim() !== '' },
+            { name: 'ResearchGate', icon: 'fab fa-researchgate', url: links.researchgate, show: links.researchgate && links.researchgate.trim() !== '' },
+            { name: 'Google Scholar', icon: 'fas fa-graduation-cap', url: links.google_scholar, show: links.google_scholar && links.google_scholar.trim() !== '' },
+            { name: 'LinkedIn', icon: 'fab fa-linkedin', url: links.linkedin, show: links.linkedin && links.linkedin.trim() !== '' },
+            { name: 'Instagram', icon: 'fab fa-instagram', url: links.instagram, show: links.instagram && links.instagram.trim() !== '' },
+            { name: 'GitHub', icon: 'fab fa-github', url: links.github, show: links.github && links.github.trim() !== '' }
+        ];
+        let html = '<div class="social-links">';
+        for (const s of socials) {
+            if (s.show && s.url) {
+                html += `<a href="${s.url}" target="_blank" title="${s.name}"><i class="${s.icon}"></i></a>`;
+            }
+        }
+        html += '</div>';
+        return html;
+    }
+
+    // Carregar equipe do JSON
+    async function carregarEquipe() {
+        try {
+            const response = await fetch('data/equipe.json');
+            if (!response.ok) throw new Error('Erro ao carregar equipe.json');
+            const data = await response.json();
+
+            const container = document.getElementById('equipe-container');
+            container.innerHTML = '';
+
+            // Grupos por orientador
+            for (const orientador of data.orientadores) {
+                const membrosDoGrupo = data.membros.filter(m => m.orientador_id === orientador.id);
+                const grupoDiv = document.createElement('div');
+                grupoDiv.className = 'grupo-pesquisador';
+                const socialOrientador = renderSocialLinks({
+                    lattes: orientador.lattes,
+                    researchgate: orientador.researchgate,
+                    google_scholar: orientador.google_scholar,
+                    linkedin: orientador.linkedin,
+                    instagram: orientador.instagram,
+                    github: orientador.github
+                });
+                grupoDiv.innerHTML = `
+                    <div class="pesquisador-header">
+                        <h3><i class="fas fa-chalkboard-user"></i> ${orientador.nome}</h3>
+                      
