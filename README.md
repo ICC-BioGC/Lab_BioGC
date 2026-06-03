@@ -4,7 +4,7 @@ Este repositório contém o código-fonte do site oficial do **BioGC** (Laborat�
 
 ## Acesse o site
 
-[https://icc-biogc.github.io/site-biogc/](https://icc-biogc.github.io/site-biogc/)  
+[https://icc-biogc.github.io/Lab_BioGC/](https://icc-biogc.github.io/Lab_BioGC/)  
 *(substitua pelo URL real após o deploy)*
 
 ## Estrutura do projeto
