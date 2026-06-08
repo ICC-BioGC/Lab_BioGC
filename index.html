@@ -4,290 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>BioGC – Laboratório de Bioinformática e Genômica Clínica | Fiocruz</title>
-    <meta name="description" content="Laboratório de Bioinformática e Genômica Clínica (BioGC) do Instituto Carlos Chagas – Fiocruz. Pesquisa em genômica, transcriptômica e bioinformática aplicada à saúde.">
-    <!-- Font Awesome (ícones) -->
+    <meta name="description" content="Laboratório de Bioinformática e Genômica Clínica (BioGC) do Instituto Carlos Chagas – Fiocruz.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Open Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            background-color: #ffffff;
-            color: #1a2c3e;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #00747a 0%, #005b60 100%);
-            color: white;
-            padding: 1rem 0;
-            border-bottom: 4px solid #cc3121;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-        }
-
-        .header-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-        }
-
-        .fiocruz-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-            background: rgba(255,255,255,0.12);
-            padding: 0.3rem 0.8rem;
-            border-radius: 40px;
-            font-weight: 700;
-        }
-
-        .fiocruz-symbol { font-size: 1.4rem; }
-        .fiocruz-name { font-size: 1rem; letter-spacing: 1px; }
-
-        .lab-name h1 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 0.1rem;
-        }
-        .lab-subtitle { font-size: 0.8rem; opacity: 0.85; }
-
-        .main-nav ul {
-            display: flex;
-            list-style: none;
-            gap: 1.8rem;
-        }
-        .main-nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: color 0.2s;
-        }
-        .main-nav a:hover { color: #ffc107; border-bottom: 2px solid #ffc107; padding-bottom: 2px; }
-
-        /* Hero */
-        .hero {
-            background: linear-gradient(105deg, #f0f4f5 0%, #e6ecef 100%);
-            padding: 4rem 0;
-            border-bottom: 1px solid #dce4e8;
-        }
-        .hero-content { text-align: center; max-width: 800px; margin: 0 auto; }
-        .hero h2 {
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: #00747a;
-            margin-bottom: 1rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #2c3e50;
-            margin-bottom: 2rem;
-        }
-        .btn-primary {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: #cc3121;
-            color: white;
-            padding: 0.8rem 2rem;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-        .btn-primary:hover { background-color: #a8281a; }
-
-        /* Seções */
-        .section { padding: 4rem 0; }
-        .bg-light { background-color: #f8fafc; }
-        .section h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #003f44;
-            margin-bottom: 2rem;
-            border-left: 6px solid #cc3121;
-            padding-left: 1rem;
-        }
-
-        /* Grids */
-        .sobre-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        .sobre-texto p { margin-bottom: 1rem; text-align: justify; }
-        .info-card {
-            background: white;
-            border-radius: 20px;
-            padding: 1.2rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-            border-left: 4px solid #cc3121;
-            margin-bottom: 1rem;
-        }
-        .info-card i { font-size: 1.8rem; color: #00747a; margin-bottom: 0.5rem; }
-        .info-card h3 { font-size: 1.1rem; margin-bottom: 0.3rem; }
-
-        .pesquisa-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 2rem;
-        }
-        .pesquisa-item {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            text-align: center;
-            transition: transform 0.2s;
-        }
-        .pesquisa-item:hover { transform: translateY(-5px); }
-        .pesquisa-item i { font-size: 2.5rem; color: #cc3121; margin-bottom: 1rem; }
-        .pesquisa-item h3 { font-size: 1.3rem; margin-bottom: 0.8rem; color: #00747a; }
-
-        /* Equipe (dinâmica) */
-        .grupo-pesquisador {
-            background: #ffffff;
-            border-radius: 24px;
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            border-left: 5px solid #cc3121;
-        }
-        .pesquisador-header {
-            margin-bottom: 1.2rem;
-            border-bottom: 2px solid #e9ecef;
-            padding-bottom: 0.8rem;
-        }
-        .pesquisador-header h3 {
-            display: inline-block;
-            font-size: 1.4rem;
-            color: #003f44;
-            margin-right: 1rem;
-        }
-        .pesq-titulo { font-weight: 600; color: #cc3121; margin-top: 0.3rem; }
-        .membros-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1rem;
-        }
-        .membro-card {
-            background: #f8fafc;
-            border-radius: 16px;
-            padding: 1rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-            border-left: 3px solid #cc3121;
-        }
-        .membro-card .nome { font-weight: 700; font-size: 1rem; color: #003f44; display: block; margin-bottom: 0.25rem; }
-        .membro-card .cargo { font-size: 0.8rem; color: #2c6e6b; font-weight: 600; margin-bottom: 0.25rem; }
-        .membro-card .vinculo { font-size: 0.75rem; color: #5a6e7c; margin-bottom: 0.5rem; word-break: break-all; }
-        .social-links { margin-top: 0.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
-        .social-links a { color: #00747a; font-size: 0.9rem; transition: color 0.2s; text-decoration: none; }
-        .social-links a:hover { color: #cc3121; }
-
-        /* Publicações */
-        .publicacoes-lista { display: flex; flex-direction: column; gap: 1.5rem; }
-        .publicacao {
-            display: flex;
-            gap: 1rem;
-            background: white;
-            padding: 1.2rem;
-            border-radius: 16px;
-            border-left: 4px solid #cc3121;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        .pub-year { font-weight: 800; font-size: 1.2rem; color: #cc3121; min-width: 60px; }
-        .pub-detalhe h4 { font-size: 1rem; margin-bottom: 0.2rem; color: #003f44; }
-        .pub-autores { font-size: 0.85rem; color: #2c6e6b; margin-bottom: 0.2rem; }
-        .pub-periodico { font-size: 0.85rem; font-style: italic; margin-bottom: 0.5rem; }
-        .pub-resumo { font-size: 0.8rem; color: #4a627a; margin: 0.5rem 0; }
-        .pub-actions { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 0.5rem; }
-        .pub-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            font-size: 0.8rem;
-            background: #eef2f7;
-            padding: 0.2rem 0.8rem;
-            border-radius: 20px;
-            text-decoration: none;
-            color: #00747a;
-            font-weight: 600;
-            transition: background 0.2s;
-        }
-        .pub-link:hover { background: #cc3121; color: white; }
-        .pdf-link { background: #f0f0f0; color: #cc3121; }
-        .pdf-link:hover { background: #cc3121; color: white; }
-
-        /* Contato */
-        .contato-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-        }
-        .contato-info i, .localizacao i { width: 1.8rem; color: #cc3121; }
-        .social-footer a {
-            display: inline-block;
-            background-color: #e9ecef;
-            color: #00747a;
-            margin-right: 0.8rem;
-            width: 38px;
-            height: 38px;
-            line-height: 38px;
-            text-align: center;
-            border-radius: 50%;
-            transition: background 0.2s;
-        }
-        .social-footer a:hover { background-color: #cc3121; color: white; }
-        .mapa-placeholder { background: #e9ecef; padding: 2rem; text-align: center; border-radius: 12px; }
-
-        /* Footer */
-        .footer {
-            background: #003f44;
-            color: #e9ecef;
-            padding: 2rem 0;
-            text-align: center;
-            font-size: 0.85rem;
-            margin-top: 2rem;
-        }
-        .footer-logos { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1rem; flex-wrap: wrap; }
-        .footer a { color: #ffc107; text-decoration: none; }
-
-        /* Loading */
-        .loading { text-align: center; padding: 2rem; font-style: italic; color: #00747a; }
-
-        /* Responsividade */
-        @media (max-width: 880px) {
-            .header-flex { flex-direction: column; align-items: flex-start; }
-            .main-nav ul { flex-wrap: wrap; gap: 1rem; }
-            .sobre-grid, .contato-grid { grid-template-columns: 1fr; }
-            .hero h2 { font-size: 2rem; }
-        }
-        @media (max-width: 600px) {
-            .publicacao { flex-direction: column; gap: 0.3rem; }
-            .pub-year { min-width: auto; }
-        }
+        /* ===== ESTILOS EMBUTIDOS (para garantir funcionamento mesmo sem CSS externo) ===== */
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: 'Open Sans', 'Segoe UI', Roboto, sans-serif; background: #fff; color: #1a2c3e; line-height:1.6; }
+        .container { max-width:1280px; margin:0 auto; padding:0 24px; }
+        .header { background: linear-gradient(135deg,#00747a 0%,#005b60 100%); color:white; padding:1rem 0; border-bottom:4px solid #cc3121; position:sticky; top:0; z-index:100; }
+        .header-flex { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; }
+        .logo-area { display:flex; align-items:center; gap:1.2rem; }
+        .fiocruz-brand { background:rgba(255,255,255,0.12); padding:0.3rem 0.8rem; border-radius:40px; font-weight:700; }
+        .lab-name h1 { font-size:1.3rem; font-weight:600; }
+        .lab-subtitle { font-size:0.8rem; opacity:0.85; }
+        .main-nav ul { display:flex; list-style:none; gap:1.8rem; }
+        .main-nav a { color:white; text-decoration:none; font-weight:600; }
+        .main-nav a:hover { color:#ffc107; border-bottom:2px solid #ffc107; }
+        .hero { background: linear-gradient(105deg,#f0f4f5 0%,#e6ecef 100%); padding:4rem 0; text-align:center; }
+        .hero h2 { font-size:2.8rem; color:#00747a; margin-bottom:1rem; }
+        .btn-primary { display:inline-flex; align-items:center; gap:0.5rem; background:#cc3121; color:white; padding:0.8rem 2rem; border-radius:40px; text-decoration:none; font-weight:600; }
+        .btn-primary:hover { background:#a8281a; }
+        .section { padding:4rem 0; }
+        .bg-light { background:#f8fafc; }
+        .section h2 { font-size:2rem; color:#003f44; margin-bottom:2rem; border-left:6px solid #cc3121; padding-left:1rem; }
+        .sobre-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+        .info-card { background:white; border-radius:20px; padding:1.2rem; box-shadow:0 4px 12px rgba(0,0,0,0.04); border-left:4px solid #cc3121; margin-bottom:1rem; }
+        .pesquisa-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:2rem; }
+        .pesquisa-item { background:white; padding:1.5rem; border-radius:20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+        .pesquisa-item i { font-size:2.5rem; color:#cc3121; margin-bottom:1rem; }
+        .grupo-pesquisador { background:#fff; border-radius:24px; margin-bottom:2rem; padding:1.5rem; box-shadow:0 4px 12px rgba(0,0,0,0.05); border-left:5px solid #cc3121; }
+        .pesquisador-header { border-bottom:2px solid #e9ecef; margin-bottom:1.2rem; padding-bottom:0.8rem; }
+        .pesquisador-header h3 { font-size:1.4rem; color:#003f44; }
+        .pesq-titulo { font-weight:600; color:#cc3121; }
+        .membros-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1rem; }
+        .membro-card { background:#f8fafc; border-radius:16px; padding:1rem; border-left:3px solid #cc3121; }
+        .membro-card .nome { font-weight:700; color:#003f44; display:block; }
+        .social-links { margin-top:0.5rem; display:flex; gap:0.5rem; flex-wrap:wrap; }
+        .social-links a { color:#00747a; font-size:0.9rem; text-decoration:none; }
+        .publicacao { display:flex; gap:1rem; background:white; padding:1.2rem; border-radius:16px; border-left:4px solid #cc3121; margin-bottom:1rem; }
+        .pub-year { font-weight:800; font-size:1.2rem; color:#cc3121; min-width:60px; }
+        .pub-actions { display:flex; gap:0.8rem; margin-top:0.5rem; }
+        .pub-link { background:#eef2f7; padding:0.2rem 0.8rem; border-radius:20px; text-decoration:none; color:#00747a; font-size:0.8rem; }
+        .contato-grid { display:grid; grid-template-columns:1fr 1fr; gap:2rem; }
+        .footer { background:#003f44; color:#e9ecef; padding:2rem 0; text-align:center; margin-top:2rem; }
+        .loading { text-align:center; padding:2rem; color:#00747a; }
+        @media (max-width:880px) { .sobre-grid, .contato-grid { grid-template-columns:1fr; } .hero h2 { font-size:2rem; } }
+        @media (max-width:600px) { .publicacao { flex-direction:column; } .pub-year { min-width:auto; } }
     </style>
 </head>
 <body>
@@ -295,194 +57,198 @@
 <header class="header">
     <div class="container header-flex">
         <div class="logo-area">
-            <div class="fiocruz-brand">
-                <span class="fiocruz-symbol">🏛️</span>
-                <span class="fiocruz-name">FIOCRUZ</span>
-            </div>
+            <div class="fiocruz-brand">🏛️ FIOCRUZ</div>
             <div class="lab-name">
                 <h1>Laboratório de Bioinformática e Genômica Clínica</h1>
                 <p class="lab-subtitle">BioGC – Instituto Carlos Chagas</p>
             </div>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#pesquisa">Pesquisa</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#publicacoes">Publicações</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <nav class="main-nav"><ul><li><a href="#sobre">Sobre</a></li><li><a href="#pesquisa">Pesquisa</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#publicacoes">Publicações</a></li><li><a href="#contato">Contato</a></li></ul></nav>
     </div>
 </header>
 
-<section class="hero">
-    <div class="container hero-content">
-        <h2>Ciência e saúde pela vida</h2>
-        <p>Integrando genômica, bioinformática e inteligência computacional para avançar o conhecimento em doenças infecciosas e câncer.</p>
-        <a href="#pesquisa" class="btn-primary">Conheça nossas linhas de pesquisa <i class="fas fa-arrow-right"></i></a>
-    </div>
-</section>
+<section class="hero"><div class="container hero-content"><h2>Ciência e saúde pela vida</h2><p>Integrando genômica, bioinformática e inteligência computacional.</p><a href="#pesquisa" class="btn-primary">Conheça nossas linhas de pesquisa</a></div></section>
 
 <main>
-    <section id="sobre" class="section">
-        <div class="container">
-            <h2>Sobre o BioGC</h2>
-            <div class="sobre-grid">
-                <div class="sobre-texto">
-                    <p>O <strong>Laboratório de Bioinformática e Genômica Clínica (BioGC)</strong> é um centro de excelência do Instituto Carlos Chagas (ICC) – Fiocruz Paraná, dedicado ao desenvolvimento e aplicação de métodos computacionais e genômicos para a compreensão de mecanismos moleculares de doenças e para a identificação de biomarcadores e alvos terapêuticos.</p>
-                    <p>Nossa equipe multidisciplinar combina biologia molecular, sequenciamento de nova geração (NGS), aprendizado de máquina e análise de grandes volumes de dados genômicos. Atuamos em estreita colaboração com hospitais e centros de pesquisa para traduzir descobertas em melhorias no diagnóstico, prognóstico e tratamento personalizado.</p>
-                    <p><strong>Missão:</strong> Gerar conhecimento e inovação em bioinformática e genômica clínica, contribuindo para o avanço da ciência e da saúde pública, em sintonia com os princípios do SUS.</p>
-                </div>
-                <div class="sobre-infos">
-                    <div class="info-card">
-                        <i class="fas fa-microscope"></i>
-                        <h3>Pesquisa translacional</h3>
-                        <p>Da bancada ao leito – integrando dados ômicos à prática clínica.</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Big Data em genômica</h3>
-                        <p>Análise de WGS, RNA-Seq, metagenômica e epigenômica.</p>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Software livre</h3>
-                        <p>Desenvolvemos pipelines e ferramentas abertas para a comunidade científica.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="sobre" class="section"><div class="container"><h2>Sobre o BioGC</h2><div class="sobre-grid"><div class="sobre-texto"><p>O Laboratório de Bioinformática e Genômica Clínica (BioGC) é um centro de excelência do Instituto Carlos Chagas – Fiocruz Paraná.</p><p>Atuamos em genômica de patógenos, transcriptômica, aprendizado de máquina e desenvolvimento de software livre.</p></div><div class="sobre-infos"><div class="info-card"><i class="fas fa-microscope"></i><h3>Pesquisa translacional</h3><p>Integrando dados ômicos à prática clínica.</p></div></div></div></div></section>
 
-    <section id="pesquisa" class="section bg-light">
-        <div class="container">
-            <h2>Linhas de pesquisa</h2>
-            <div class="pesquisa-grid">
-                <div class="pesquisa-item">
-                    <i class="fas fa-dna"></i>
-                    <h3>Genômica de patógenos</h3>
-                    <p>Evolução, resistência antimicrobiana e vigilância genômica de bactérias, vírus e fungos de importância clínica.</p>
-                </div>
-                <div class="pesquisa-item">
-                    <i class="fas fa-brain"></i>
-                    <h3>Transcriptômica e redes regulatórias</h3>
-                    <p>Análise de expressão diferencial, co-expressão gênica e identificação de vias em câncer e doenças crônicas.</p>
-                </div>
-                <div class="pesquisa-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Bioinformática estrutural e funcional</h3>
-                    <p>Modelagem de proteínas, docking molecular, predição de interações patógeno-hospedeiro.</p>
-                </div>
-                <div class="pesquisa-item">
-                    <i class="fas fa-robot"></i>
-                    <h3>Aprendizado de máquina em genômica</h3>
-                    <p>Desenvolvimento de algoritmos para classificação de variantes, diagnósticos preditivos e integração multi-ômica.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="pesquisa" class="section bg-light"><div class="container"><h2>Linhas de pesquisa</h2><div class="pesquisa-grid"><div class="pesquisa-item"><i class="fas fa-dna"></i><h3>Genômica de patógenos</h3><p>Vigilância genômica e resistência antimicrobiana.</p></div><div class="pesquisa-item"><i class="fas fa-brain"></i><h3>Transcriptômica</h3><p>Expressão diferencial e redes regulatórias.</p></div><div class="pesquisa-item"><i class="fas fa-laptop-code"></i><h3>Bioinformática estrutural</h3><p>Modelagem de proteínas e docking.</p></div><div class="pesquisa-item"><i class="fas fa-robot"></i><h3>Aprendizado de máquina</h3><p>Classificação de variantes e multi-ômica.</p></div></div></div></section>
 
-    <!-- Seção Equipe (dinâmica) -->
-    <section id="equipe" class="section">
-        <div class="container">
-            <h2>Equipe</h2>
-            <div id="equipe-container" class="loading">
-                <i class="fas fa-spinner fa-pulse"></i> Carregando equipe...
-            </div>
-        </div>
-    </section>
+    <!-- Equipe -->
+    <section id="equipe" class="section"><div class="container"><h2>Equipe</h2><div id="equipe-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Carregando...</div></div></section>
 
-    <!-- Seção Publicações (dinâmica) -->
-    <section id="publicacoes" class="section bg-light">
-        <div class="container">
-            <h2>Publicações recentes</h2>
-            <div id="publicacoes-container" class="loading">
-                <i class="fas fa-spinner fa-pulse"></i> Carregando publicações...
-            </div>
-        </div>
-    </section>
+    <!-- Publicações -->
+    <section id="publicacoes" class="section bg-light"><div class="container"><h2>Publicações recentes</h2><div id="publicacoes-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Carregando...</div></div></section>
 
-    <section id="contato" class="section">
-        <div class="container contato-grid">
-            <div class="contato-info">
-                <h2>Contato</h2>
-                <p><i class="fas fa-map-marker-alt"></i> Instituto Carlos Chagas – Fiocruz Paraná<br>Rua Professor Algacyr Munhoz Mader, 3775 – Curitiba/PR, Brasil – CEP 81350-010</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:biogc@fiocruz.br">biogc@fiocruz.br</a></p>
-                <p><i class="fas fa-phone-alt"></i> +55 (41) 2105-1000</p>
-                <div class="social-footer">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="localizacao">
-                <h2>Localização</h2>
-                <div class="mapa-placeholder">
-                    <i class="fas fa-map"></i> <span>Mapa interativo – Campus Fiocruz Curitiba</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="contato" class="section"><div class="container contato-grid"><div class="contato-info"><h2>Contato</h2><p><i class="fas fa-map-marker-alt"></i> Instituto Carlos Chagas – Fiocruz Paraná, Curitiba/PR</p><p><i class="fas fa-envelope"></i> <a href="mailto:biogc@fiocruz.br">biogc@fiocruz.br</a></p></div><div class="localizacao"><h2>Localização</h2><div class="mapa-placeholder">Campus Fiocruz Curitiba</div></div></div></section>
 </main>
 
-<footer class="footer">
-    <div class="container">
-        <div class="footer-logos">
-            <span>Fundação Oswaldo Cruz – Fiocruz</span>
-            <span>Instituto Carlos Chagas (ICC)</span>
-            <span>Laboratório BioGC</span>
-        </div>
-        <p>© 2026 Laboratório de Bioinformática e Genômica Clínica – Todos os direitos reservados.</p>
-        <p><a href="https://www.fiocruz.br" target="_blank">www.fiocruz.br</a> | <a href="https://icc.fiocruz.br" target="_blank">icc.fiocruz.br</a></p>
-    </div>
-</footer>
+<footer class="footer"><div class="container"><p>© 2026 Laboratório de Bioinformática e Genômica Clínica – ICC/Fiocruz</p></div></footer>
 
 <script>
-    // Função para gerar os ícones de redes sociais
+    // ========== DADOS INLINE (FALLBACK) ==========
+    const fallbackEquipe = {
+        orientadores: [
+            { id:"hellen", nome:"Hellen Geremias Gatica Santos", titulo:"Pesquisadora em Saúde Pública", email:"hellen.santos@fiocruz.br", lattes:"http://lattes.cnpq.br/4319629810006649", researchgate:"", google_scholar:"", linkedin:"", instagram:"", github:"" },
+            { id:"fabio", nome:"Fabio Passetti", titulo:"Pesquisador em Saúde Pública", email:"fabio.passetti@fiocruz.br", lattes:"http://lattes.cnpq.br/4216542239143600", researchgate:"", google_scholar:"", linkedin:"", instagram:"", github:"" },
+            { id:"helisson", nome:"Helisson Faoro", titulo:"Pesquisador em Saúde Pública", email:"helisson.faoro@fiocruz.br", lattes:"http://lattes.cnpq.br/1864025543667883", researchgate:"", google_scholar:"", linkedin:"", instagram:"", github:"" }
+        ],
+        membros: [
+            { nome:"Joyce de Souza", titulacao:"Mestrado", categoria:"Aluno de pós-graduação", email:"joycedesouzaa@fiocruzbr.onmicrosoft.com", lattes:"http://lattes.cnpq.br/8157340101266671", orientador_id:"helisson" },
+            { nome:"Beatriz Rosa de Azevedo", titulacao:"Graduação", categoria:"Aluno de pós-graduação", email:"brosa@aluno.fiocruz.br", lattes:"http://lattes.cnpq.br/3306490910008197", orientador_id:null },
+            { nome:"Helena Regina Salomé D'Espindula", titulacao:"Doutorado", categoria:"Pós-doutoranda", email:"helena.despindula@gmail.com", lattes:"http://lattes.cnpq.br/3260753347712464", orientador_id:null },
+            { nome:"Juliana Leal Rocha", titulacao:"Doutorado", categoria:"Pós-doutoranda", email:"Juliana.leal@fiocruz.br", lattes:"http://lattes.cnpq.br/2187023155295185", orientador_id:null }
+        ]
+    };
+
+    const fallbackPublicacoes = [
+        { ano:2025, titulo:"Machine learning-based integration...", autores:"Faoro, H. et al.", periodico:"Bioinformatics Advances", doi:"10.1093/bioadv/vbae001", pdf:"", resumo:"Estudo combinando genômica e transcriptômica." },
+        { ano:2024, titulo:"Genomic surveillance of carbapenem-resistant Klebsiella pneumoniae", autores:"Furini, H.H. et al.", periodico:"Microbial Genomics", doi:"10.1099/mgen.0.001200", pdf:"", resumo:"Vigilância genômica no Sul do Brasil." }
+    ];
+
+    // Função para renderizar links sociais
     function renderSocialLinks(links) {
-        const socials = [
-            { name: 'Lattes', icon: 'fab fa-lattes', url: links.lattes, show: links.lattes && links.lattes.trim() !== '' },
-            { name: 'ResearchGate', icon: 'fab fa-researchgate', url: links.researchgate, show: links.researchgate && links.researchgate.trim() !== '' },
-            { name: 'Google Scholar', icon: 'fas fa-graduation-cap', url: links.google_scholar, show: links.google_scholar && links.google_scholar.trim() !== '' },
-            { name: 'LinkedIn', icon: 'fab fa-linkedin', url: links.linkedin, show: links.linkedin && links.linkedin.trim() !== '' },
-            { name: 'Instagram', icon: 'fab fa-instagram', url: links.instagram, show: links.instagram && links.instagram.trim() !== '' },
-            { name: 'GitHub', icon: 'fab fa-github', url: links.github, show: links.github && links.github.trim() !== '' }
-        ];
         let html = '<div class="social-links">';
-        for (const s of socials) {
-            if (s.show && s.url) {
-                html += `<a href="${s.url}" target="_blank" title="${s.name}"><i class="${s.icon}"></i></a>`;
-            }
-        }
+        if (links.lattes) html += `<a href="${links.lattes}" target="_blank" title="Lattes"><i class="fab fa-lattes"></i></a>`;
+        if (links.researchgate) html += `<a href="${links.researchgate}" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>`;
+        if (links.google_scholar) html += `<a href="${links.google_scholar}" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>`;
+        if (links.linkedin) html += `<a href="${links.linkedin}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>`;
+        if (links.instagram) html += `<a href="${links.instagram}" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>`;
+        if (links.github) html += `<a href="${links.github}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>`;
         html += '</div>';
         return html;
     }
 
-    // Carregar equipe do JSON
-    async function carregarEquipe() {
-        try {
-            const response = await fetch('data/equipe.json');
-            if (!response.ok) throw new Error('Erro ao carregar equipe.json');
-            const data = await response.json();
-
-            const container = document.getElementById('equipe-container');
-            container.innerHTML = '';
-
-            // Grupos por orientador
-            for (const orientador of data.orientadores) {
-                const membrosDoGrupo = data.membros.filter(m => m.orientador_id === orientador.id);
-                const grupoDiv = document.createElement('div');
-                grupoDiv.className = 'grupo-pesquisador';
-                const socialOrientador = renderSocialLinks({
-                    lattes: orientador.lattes,
-                    researchgate: orientador.researchgate,
-                    google_scholar: orientador.google_scholar,
-                    linkedin: orientador.linkedin,
-                    instagram: orientador.instagram,
-                    github: orientador.github
+    // Renderiza a equipe a partir de dados (objeto)
+    function renderEquipe(data) {
+        const container = document.getElementById('equipe-container');
+        if (!container) return;
+        container.innerHTML = '';
+        // Agrupa por orientador
+        for (const orientador of data.orientadores) {
+            const membrosDoGrupo = data.membros.filter(m => m.orientador_id === orientador.id);
+            const grupoDiv = document.createElement('div');
+            grupoDiv.className = 'grupo-pesquisador';
+            const socialOri = renderSocialLinks(orientador);
+            grupoDiv.innerHTML = `
+                <div class="pesquisador-header">
+                    <h3><i class="fas fa-chalkboard-user"></i> ${orientador.nome}</h3>
+                    <p class="pesq-titulo">${orientador.titulo}</p>
+                    <p><i class="fas fa-envelope"></i> ${orientador.email}</p>
+                    ${socialOri}
+                </div>
+                <div class="membros-grid"></div>
+            `;
+            const grid = grupoDiv.querySelector('.membros-grid');
+            if (membrosDoGrupo.length === 0) {
+                grid.innerHTML = '<p class="instrucao">Nenhum aluno vinculado.</p>';
+            } else {
+                membrosDoGrupo.forEach(m => {
+                    const socialMembro = renderSocialLinks(m);
+                    const card = document.createElement('div');
+                    card.className = 'membro-card';
+                    card.innerHTML = `
+                        <i class="fas fa-user-graduate"></i>
+                        <span class="nome">${m.nome}</span>
+                        <div class="cargo">${m.titulacao} – ${m.categoria}</div>
+                        <div class="vinculo"><i class="fas fa-envelope"></i> ${m.email}</div>
+                        ${socialMembro}
+                    `;
+                    grid.appendChild(card);
                 });
-                grupoDiv.innerHTML = `
-                    <div class="pesquisador-header">
-                        <h3><i class="fas fa-chalkboard-user"></i> ${orientador.nome}</h3>
-                      
+            }
+            container.appendChild(grupoDiv);
+        }
+        // Membros sem orientador
+        const outros = data.membros.filter(m => !m.orientador_id);
+        if (outros.length) {
+            const title = document.createElement('h3');
+            title.innerText = 'Pós-doutorandos e demais colaboradores';
+            title.style.margin = '2rem 0 1rem';
+            title.style.color = '#003f44';
+            container.appendChild(title);
+            const gridOutros = document.createElement('div');
+            gridOutros.className = 'membros-grid';
+            outros.forEach(m => {
+                const socialMembro = renderSocialLinks(m);
+                const card = document.createElement('div');
+                card.className = 'membro-card';
+                card.innerHTML = `<i class="fas fa-user-graduate"></i><span class="nome">${m.nome}</span><div class="cargo">${m.titulacao} – ${m.categoria}</div><div class="vinculo"><i class="fas fa-envelope"></i> ${m.email}</div>${socialMembro}`;
+                gridOutros.appendChild(card);
+            });
+            container.appendChild(gridOutros);
+        }
+    }
+
+    function renderPublicacoes(pubs) {
+        const container = document.getElementById('publicacoes-container');
+        if (!container) return;
+        container.innerHTML = '';
+        if (!pubs.length) { container.innerHTML = '<p>Nenhuma publicação listada.</p>'; return; }
+        pubs.sort((a,b) => b.ano - a.ano);
+        const lista = document.createElement('div');
+        lista.className = 'publicacoes-lista';
+        pubs.forEach(pub => {
+            let linkUrl = pub.link || (pub.doi ? `https://doi.org/${pub.doi}` : '');
+            const pubDiv = document.createElement('div');
+            pubDiv.className = 'publicacao';
+            pubDiv.innerHTML = `
+                <div class="pub-year">${pub.ano}</div>
+                <div class="pub-detalhe">
+                    <h4>${pub.titulo}</h4>
+                    <p class="pub-autores">${pub.autores}</p>
+                    <p class="pub-periodico"><em>${pub.periodico}</em> ${pub.volume ? `, ${pub.volume}` : ''}</p>
+                    ${pub.resumo ? `<p class="pub-resumo">${pub.resumo}</p>` : ''}
+                    <div class="pub-actions">
+                        ${linkUrl ? `<a href="${linkUrl}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Acessar</a>` : ''}
+                        ${pub.pdf ? `<a href="${pub.pdf}" target="_blank" class="pub-link pdf-link"><i class="fas fa-file-pdf"></i> PDF</a>` : ''}
+                    </div>
+                </div>
+            `;
+            lista.appendChild(pubDiv);
+        });
+        container.appendChild(lista);
+    }
+
+    // Carrega dados externos e mescla com fallback (ou substitui)
+    async function carregarDadosExternos() {
+        let equipeData = fallbackEquipe;
+        let pubsData = fallbackPublicacoes;
+
+        // Tenta carregar equipe.json
+        try {
+            const resEq = await fetch('data/equipe.json');
+            if (resEq.ok) {
+                const jsonEq = await resEq.json();
+                if (jsonEq && jsonEq.orientadores) equipeData = jsonEq;
+                console.log('✅ equipe.json carregado');
+            } else {
+                console.warn('⚠️ equipe.json não encontrado, usando fallback');
+            }
+        } catch(e) { console.warn('Erro ao buscar equipe.json:', e); }
+
+        // Tenta carregar publicacoes.json
+        try {
+            const resPub = await fetch('data/publicacoes.json');
+            if (resPub.ok) {
+                const jsonPub = await resPub.json();
+                if (Array.isArray(jsonPub)) pubsData = jsonPub;
+                console.log('✅ publicacoes.json carregado');
+            } else {
+                console.warn('⚠️ publicacoes.json não encontrado, usando fallback');
+            }
+        } catch(e) { console.warn('Erro ao buscar publicacoes.json:', e); }
+
+        renderEquipe(equipeData);
+        renderPublicacoes(pubsData);
+    }
+
+    // Iniciar quando o DOM estiver pronto
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', carregarDadosExternos);
+    } else {
+        carregarDadosExternos();
+    }
+</script>
+</body>
+</html>
