@@ -1,0 +1,38 @@
+[
+  {
+    "id": "hellen",
+    "nome": "Hellen Geremias Gatica Santos",
+    "titulo": "Pesquisadora em Saúde Pública",
+    "email": "hellen.santos@fiocruz.br",
+    "lattes": "http://lattes.cnpq.br/4319629810006649",
+    "researchgate": "",
+    "google_scholar": "",
+    "linkedin": "",
+    "instagram": "",
+    "github": ""
+  },
+  {
+    "id": "fabio",
+    "nome": "Fabio Passetti",
+    "titulo": "Pesquisador em Saúde Pública",
+    "email": "fabio.passetti@fiocruz.br",
+    "lattes": "http://lattes.cnpq.br/4216542239143600",
+    "researchgate": "",
+    "google_scholar": "",
+    "linkedin": "",
+    "instagram": "",
+    "github": ""
+  },
+  {
+    "id": "helisson",
+    "nome": "Helisson Faoro",
+    "titulo": "Pesquisador em Saúde Pública",
+    "email": "helisson.faoro@fiocruz.br",
+    "lattes": "http://lattes.cnpq.br/1864025543667883",
+    "researchgate": "",
+    "google_scholar": "",
+    "linkedin": "",
+    "instagram": "",
+    "github": ""
+  }
+]
