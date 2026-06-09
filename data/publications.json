@@ -1,65 +1,101 @@
 [
   {
-    "titulo": "Carbapenem Resistance in Acinetobacter baumannii: Mechanisms, Therapeutics, and Innovations",
-    "autores": "DE SOUZA, JOYCE; D'ESPINDULA, HELENA REGINA SALOMÉ; RIBEIRO, ISABEL DE FARIAS; GONÇALVES, GEIZIANE APARECIDA; PILLONETTO, MARCELO; FAORO, HELISSON",
-    "periodico": "Microorganisms",
-    "ano": 2025,
+    "title": "Carbapenem Resistance in Acinetobacter baumannii: Mechanisms, Therapeutics, and Innovations",
+    "authors": "DE SOUZA, JOYCE; D'ESPINDULA, HELENA REGINA SALOMÉ; RIBEIRO, ISABEL DE FARIAS; GONÇALVES, GEIZIANE APARECIDA; PILLONETTO, MARCELO; FAORO, HELISSON",
+    "journal": "Microorganisms",
+    "year": 2025,
     "volume": "13",
-    "paginas": "1501",
+    "pages": "1501",
     "doi": "10.3390/microorganisms13071501",
     "link": "",
-    "resumo": "Revisão sobre mecanismos de resistência a carbapenêmicos em A. baumannii.",
+    "abstract": "Review on carbapenem resistance mechanisms in A. baumannii.",
     "pdf": "",
-    "autores_detalhes": [
-      { "nome": "DE SOUZA, JOYCE", "tipo": "membro", "id": "joyce" },
-      { "nome": "D'ESPINDULA, HELENA REGINA SALOMÉ", "tipo": "membro", "id": "helena" },
-      { "nome": "RIBEIRO, ISABEL DE FARIAS", "tipo": "membro", "id": "isabel" },
-      { "nome": "GONÇALVES, GEIZIANE APARECIDA", "tipo": "membro", "id": "geiziane" },
-      { "nome": "FAORO, HELISSON", "tipo": "orientador", "id": "helisson" }
+    "author_details": [
+      { "name": "DE SOUZA, JOYCE", "type": "member", "id": "joyce" },
+      { "name": "D'ESPINDULA, HELENA REGINA SALOMÉ", "type": "member", "id": "helena" },
+      { "name": "RIBEIRO, ISABEL DE FARIAS", "type": "member", "id": "isabel" },
+      { "name": "GONÇALVES, GEIZIANE APARECIDA", "type": "member", "id": "geiziane" },
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
     ]
   },
   {
-    "titulo": "Potential involvement of beta-lactamase homologous proteins in resistance to beta-lactam antibiotics in gram-negative bacteria of the ESKAPEE group",
-    "autores": "DE SOUZA, JOYCE; VIEIRA, ALEXANDRE ZANATTA; DOS SANTOS, HELLEN GEREMIAS; FAORO, HELISSON",
-    "periodico": "BMC Genomics",
-    "ano": 2024,
+    "title": "Potential involvement of beta-lactamase homologous proteins in resistance to beta-lactam antibiotics in gram-negative bacteria of the ESKAPEE group",
+    "authors": "DE SOUZA, JOYCE; VIEIRA, ALEXANDRE ZANATTA; DOS SANTOS, HELLEN GEREMIAS; FAORO, HELISSON",
+    "journal": "BMC Genomics",
+    "year": 2024,
     "volume": "25",
-    "paginas": "508",
+    "pages": "508",
     "doi": "10.1186/s12864-024-10345-6",
     "link": "",
-    "resumo": "Prospecção genômica de beta-lactamases homólogas em bactérias do grupo ESKAPEE.",
+    "abstract": "Genomic prospection of homologous beta-lactamases in bacteria of the ESKAPEE group.",
     "pdf": "",
-    "autores_detalhes": [
-      { "nome": "DE SOUZA, JOYCE", "tipo": "membro", "id": "joyce" },
-      { "nome": "DOS SANTOS, HELLEN GEREMIAS", "tipo": "orientador", "id": "hellen" },
-      { "nome": "FAORO, HELISSON", "tipo": "orientador", "id": "helisson" }
+    "author_details": [
+      { "name": "DE SOUZA, JOYCE", "type": "member", "id": "joyce" },
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" },
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
     ]
   },
   {
-    "titulo": "Genetic Variants Affect Distinct Metabolic Pathways in Pediatric Multisystem Inflammatory Syndrome and Severe COVID-19",
-    "autores": "URBANSKI, A. H.; FREITAS, F. C. P.; GOMES, T. M. F. F.; SCHEMBERGER, M. O.; REIS, B. C. S.; CARVALHO, F. A. A.; FACCION, R. S.; MACHADO, L. A.; SANTOS, D. A.; CUNHA, D. P.; SALÚ, M. S.; MOORE, D. C. B. C.; PRESIBELLA, M. M.; NOGUCHI, J. F.; BORGES, H. L.; TOMIURA, L. K.; CASTRO, L. S.; SANTOS, L. G. C.; SILVA, E. M. G.; SANTOS, H. G.; et al.",
-    "periodico": "Journal of Medical Virology",
-    "ano": 2025,
+    "title": "Genetic Variants Affect Distinct Metabolic Pathways in Pediatric Multisystem Inflammatory Syndrome and Severe COVID-19",
+    "authors": "URBANSKI, A. H.; FREITAS, F. C. P.; GOMES, T. M. F. F.; SCHEMBERGER, M. O.; REIS, B. C. S.; CARVALHO, F. A. A.; FACCION, R. S.; MACHADO, L. A.; SANTOS, D. A.; CUNHA, D. P.; SALÚ, M. S.; MOORE, D. C. B. C.; PRESIBELLA, M. M.; NOGUCHI, J. F.; BORGES, H. L.; TOMIURA, L. K.; CASTRO, L. S.; SANTOS, L. G. C.; SILVA, E. M. G.; SANTOS, H. G.; et al.",
+    "journal": "Journal of Medical Virology",
+    "year": 2025,
     "volume": "97",
-    "paginas": "e70556",
+    "pages": "e70556",
     "doi": "10.1002/jmv.70556",
     "link": "",
-    "resumo": "Estudo genético de MIS-C e COVID-19 grave em crianças.",
+    "abstract": "Genetic study of MIS-C and severe COVID-19 in children.",
     "pdf": "",
-    "autores_detalhes": [
-      { "nome": "SANTOS, H. G.", "tipo": "orientador", "id": "hellen" }
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
     ]
   },
   {
-    "titulo": "Machine learning to predict 30-day quality-adjusted survival in critically ill patients with cancer",
-    "autores": "SANTOS, H. G.; ZAMPIERI, F. G.; NORMILIO-SILVA, K.; SILVA, G. T.; LIMA, A. C. P.; CAVALCANTI, A. B.; CHIAVEGATTO FILHO, A. D. P.",
-    "periodico": "Journal of Critical Care",
-    "ano": 2020,
+    "title": "Machine learning to predict 30-day quality-adjusted survival in critically ill patients with cancer",
+    "authors": "SANTOS, H. G.; ZAMPIERI, F. G.; NORMILIO-SILVA, K.; SILVA, G. T.; LIMA, A. C. P.; CAVALCANTI, A. B.; CHIAVEGATTO FILHO, A. D. P.",
+    "journal": "Journal of Critical Care",
+    "year": 2020,
     "volume": "55",
-    "paginas": "73-78",
+    "pages": "73-78",
     "doi": "10.1016/j.jcrc.2019.10.001",
     "link": "",
-    "resumo": "Predição de sobrevida ajustada por qualidade em pacientes críticos com câncer.",
+    "abstract": "Prediction of quality-adjusted survival in critically ill cancer patients.",
     "pdf": "",
-    "autores_detalhes": [
-      { "nome": "SANTOS, H. G.", "tipo
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Proteogenomics Reveals Orthologous Alternatively Spliced Proteoforms in the Same Human and Mouse Brain Regions with Differential Abundance in an Alzheimer's Disease Mouse Model",
+    "authors": "SILVA, E. M. G.; SANTOS, L. G. C.; OLIVEIRA, F. S.; FREITAS, F. C. P.; PARREIRA, V. S. C.; SANTOS, H. G.; TAVARES, R.; CARVALHO, P. C.; NEVES-FERREIRA, A. G. C.; HAIBARA, A. S.; DE ARAUJO-SOUZA, P. S.; DIAS, A. A. M.; PASSETTI, F.",
+    "journal": "Cells",
+    "year": 2021,
+    "volume": "10",
+    "pages": "1583",
+    "doi": "10.3390/cells10071583",
+    "link": "",
+    "abstract": "Identification of orthologous proteoforms in human and murine brains in an Alzheimer's model.",
+    "pdf": "",
+    "author_details": [
+      { "name": "PARREIRA, V. S. C.", "type": "member", "id": "vinicius" },
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" },
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Selecting Genetic Variants and Interactions Associated with Amyotrophic Lateral Sclerosis: A Group LASSO Approach",
+    "authors": "FERONATO, S. G.; SILVA, M. L. M.; IZBICKI, R.; FARIAS, T. D. J.; SHIGUNOV, P.; DALLAGIOVANNA, B.; PASSETTI, F.; DOS SANTOS, H. G.",
+    "journal": "Journal of Personalized Medicine",
+    "year": 2022,
+    "volume": "12",
+    "pages": "1330",
+    "doi": "10.3390/jpm12081330",
+    "link": "",
+    "abstract": "Selection of genetic variants and interactions associated with ALS using Group LASSO.",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" },
+      { "name": "DOS SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  }
+]
