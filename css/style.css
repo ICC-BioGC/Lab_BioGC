@@ -23,7 +23,7 @@ body {
     background-color: #ffffff;
     color: #003f44;
     padding: 1rem 0;
-    border-bottom: 2px solid #cc3121;
+    border-bottom: 2px solid #003f44;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -63,7 +63,7 @@ body {
 .fiocruz-name {
     font-size: 0.7rem;
     letter-spacing: 0;
-    color: #cc3121;
+    color: #003f44;
 }
 
 .lab-name h1 {
@@ -93,7 +93,8 @@ body {
 }
 
 .main-nav a:hover {
-    color: #cc3121;
+    color: #003f44;
+    text-decoration: underline;
 }
 
 /* ===== Hero ===== */
@@ -117,7 +118,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #cc3121;
+    background-color: #003f44;
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 0;
@@ -125,10 +126,13 @@ body {
     font-weight: 600;
     transition: background 0.2s;
     border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn-primary:hover {
-    background-color: #9e2519;
+    background-color: #00252e;
 }
 
 /* ===== Seções e Tipografia ===== */
@@ -147,7 +151,7 @@ body {
     font-weight: 700;
     color: #003f44;
     margin-bottom: 2rem;
-    border-left: 5px solid #cc3121;
+    border-left: 5px solid #003f44;
     padding-left: 1rem;
 }
 
@@ -156,7 +160,7 @@ body {
     background: #ffffff;
     border-radius: 0;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    border-left: 4px solid #cc3121;
+    border-left: 4px solid #003f44;
 }
 
 .info-card {
@@ -166,7 +170,7 @@ body {
 
 .info-card i {
     font-size: 1.8rem;
-    color: #00747a;
+    color: #003f44;
     margin-bottom: 0.5rem;
 }
 
@@ -182,40 +186,197 @@ body {
 
 .pesquisa-item i {
     font-size: 2.5rem;
-    color: #cc3121;
+    color: #003f44;
     margin-bottom: 1rem;
 }
 
 /* ===== Equipe e Membros ===== */
+.grupo-pesquisador {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-left: 4px solid #003f44;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.pesquisador-header {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisador-header h3 {
+    font-size: 1.4rem;
+    color: #003f44;
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pesq-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.pesq-titulo {
+    font-weight: 600;
+    color: #003f44;
+    background: #e9ecef;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.pesq-email {
+    font-size: 0.8rem;
+    color: #5a6e7c;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.toggle-details {
+    background: none;
+    border: 1px solid #003f44;
+    color: #003f44;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.toggle-details:hover {
+    background: #003f44;
+    color: white;
+}
+
+.extra-details {
+    display: none;
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #e0e0e0;
+}
+
+.extra-details.show {
+    display: block;
+}
+
+.pesq-apresentacao {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #2c3e50;
+}
+
+.projetos-list {
+    background: #f8fafc;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    border-left: 3px solid #003f44;
+}
+
+.projeto-item {
+    margin-bottom: 0.5rem;
+}
+
+.projeto-titulo {
+    font-weight: 700;
+    color: #003f44;
+}
+
+.membros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
 .membro-card {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1.2rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-left: 3px solid #003f44;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .membro-foto {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid #cc3121;
+    margin-bottom: 0.8rem;
+    border: 2px solid #003f44;
 }
 
 .membro-card .nome {
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #003f44;
     display: block;
     margin-bottom: 0.25rem;
 }
 
 .membro-card .cargo {
-    font-size: 0.85rem;
-    color: #00747a;
+    font-size: 0.8rem;
+    color: #5a6e7c;
     font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.coorientador {
+    font-size: 0.7rem;
+    color: #003f44;
+    margin-top: 0.2rem;
+    font-style: italic;
+    background: #f0f4f5;
+    display: inline-block;
+    padding: 0.1rem 0.4rem;
+    border-radius: 12px;
+}
+
+.social-links {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #5a6e7c;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #003f44;
+}
+
+/* ===== Egressos ===== */
+.egresso-card {
+    background: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid #003f44;
+}
+
+.egresso-card .nome {
+    font-weight: 700;
+    color: #003f44;
 }
 
 /* ===== Parceiros ===== */
@@ -269,7 +430,7 @@ body {
 .oportunidade-card {
     background: #f8fafc;
     padding: 1rem;
-    border-left: 4px solid #cc3121;
+    border-left: 4px solid #003f44;
 }
 
 .oportunidade-titulo {
@@ -285,12 +446,41 @@ body {
 
 .oportunidade-link {
     font-size: 0.8rem;
-    color: #cc3121;
+    color: #003f44;
     text-decoration: none;
     font-weight: 600;
 }
 
-/* ===== Rodapé ===== */
+/* ===== Contato e Rodapé ===== */
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contato-info i, .localizacao i {
+    width: 1.8rem;
+    color: #003f44;
+}
+
+.social-footer a {
+    background: #e9ecef;
+    color: #003f44;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.social-footer a:hover {
+    background: #003f44;
+    color: white;
+}
+
 .footer {
     background: #003f44;
     color: #e9ecef;
@@ -299,12 +489,16 @@ body {
     font-size: 0.85rem;
 }
 
+.footer a {
+    color: #ffc107;
+}
+
 /* ===== Utilidades ===== */
 .loading {
     text-align: center;
     padding: 2rem;
     font-style: italic;
-    color: #00747a;
+    color: #5a6e7c;
 }
 
 .language-selector {
@@ -328,6 +522,7 @@ body {
     color: white;
 }
 
+/* ===== Responsividade ===== */
 @media (max-width: 880px) {
     .header-flex {
         flex-direction: column;
@@ -344,6 +539,10 @@ body {
     }
     .galeria-grid {
         grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+    .pesquisador-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
