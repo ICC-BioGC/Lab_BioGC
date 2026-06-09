@@ -62,40 +62,4 @@
     "resumo": "Predição de sobrevida ajustada por qualidade em pacientes críticos com câncer.",
     "pdf": "",
     "autores_detalhes": [
-      { "nome": "SANTOS, H. G.", "tipo": "orientador", "id": "hellen" }
-    ]
-  },
-  {
-    "titulo": "Proteogenomics Reveals Orthologous Alternatively Spliced Proteoforms in the Same Human and Mouse Brain Regions with Differential Abundance in an Alzheimer's Disease Mouse Model",
-    "autores": "SILVA, E. M. G.; SANTOS, L. G. C.; OLIVEIRA, F. S.; FREITAS, F. C. P.; PARREIRA, V. S. C.; SANTOS, H. G.; TAVARES, R.; CARVALHO, P. C.; NEVES-FERREIRA, A. G. C.; HAIBARA, A. S.; DE ARAUJO-SOUZA, P. S.; DIAS, A. A. M.; PASSETTI, F.",
-    "periodico": "Cells",
-    "ano": 2021,
-    "volume": "10",
-    "paginas": "1583",
-    "doi": "10.3390/cells10071583",
-    "link": "",
-    "resumo": "Identificação de proteoformas ortólogas no cérebro humano e murino em modelo de Alzheimer.",
-    "pdf": "",
-    "autores_detalhes": [
-      { "nome": "PARREIRA, V. S. C.", "tipo": "membro", "id": "vinicius" },
-      { "nome": "SANTOS, H. G.", "tipo": "orientador", "id": "hellen" },
-      { "nome": "PASSETTI, F.", "tipo": "orientador", "id": "fabio" }
-    ]
-  },
-  {
-    "titulo": "Selecting Genetic Variants and Interactions Associated with Amyotrophic Lateral Sclerosis: A Group LASSO Approach",
-    "autores": "FERONATO, S. G.; SILVA, M. L. M.; IZBICKI, R.; FARIAS, T. D. J.; SHIGUNOV, P.; DALLAGIOVANNA, B.; PASSETTI, F.; DOS SANTOS, H. G.",
-    "periodico": "Journal of Personalized Medicine",
-    "ano": 2022,
-    "volume": "12",
-    "paginas": "1330",
-    "doi": "10.3390/jpm12081330",
-    "link": "",
-    "resumo": "Seleção de variantes genéticas e interações associadas à ELA usando Group LASSO.",
-    "pdf": "",
-    "autores_detalhes": [
-      { "nome": "PASSETTI, F.", "tipo": "orientador", "id": "fabio" },
-      { "nome": "DOS SANTOS, H. G.", "tipo": "orientador", "id": "hellen" }
-    ]
-  }
-]
+      { "nome": "SANTOS, H. G.", "tipo
