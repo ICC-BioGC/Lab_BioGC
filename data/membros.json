@@ -96,7 +96,7 @@
     "email": "helena.despindula@gmail.com",
     "lattes": "http://lattes.cnpq.br/3260753347712464",
     "foto": "",
-    "orientador_id": null,
+    "orientador_id": "helisson",
     "coorientador": ""
   },
   {
@@ -107,7 +107,7 @@
     "lattes": "http://lattes.cnpq.br/4005957511686168",
     "foto": "",
     "orientador_id": "helisson",
-    "coorientador": ""
+    "coorientador": "Helena Regina Salomé D'Espindula"
   },
   {
     "id": "laissa",
@@ -117,7 +117,7 @@
     "lattes": "http://lattes.cnpq.br/1840635397777234",
     "foto": "",
     "orientador_id": "helisson",
-    "coorientador": ""
+    "coorientador": "Geiziane Aparecida Gonçalves"
   },
   {
     "id": "felipe",
