@@ -8,24 +8,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Placeholders para os componentes -->
     <div id="component-header"></div>
     <div id="component-hero"></div>
     <main>
         <div id="component-about"></div>
         <div id="component-research"></div>
-        <div id="component-team"></div>      <!-- será substituído pelo container gerado via JSON? Melhor manter container fixo -->
+        <div id="component-team"></div>
         <div id="component-alumni"></div>
+        <div id="component-gallery"></div>
+        <div id="component-opportunities"></div>
         <div id="component-partners"></div>
         <div id="component-publications"></div>
         <div id="component-contact"></div>
     </main>
     <div id="component-footer"></div>
 
-    <!-- Container para dados dinâmicos (Team) -->
-    <div id="equipe-container" style="display:none;"></div> <!-- escondido, mas usado pelo JS -->
-
     <script>
-        // Função para carregar componentes estáticos
+        // ==================== CARREGAMENTO DE COMPONENTES ====================
         async function loadComponent(elementId, url) {
             try {
                 const res = await fetch(url);
@@ -34,203 +34,34 @@
                 document.getElementById(elementId).innerHTML = html;
             } catch (err) {
                 console.warn(`Error loading ${url}:`, err);
-                document.getElementById(elementId).innerHTML = `<p style="color:red;">Failed to load ${url}</p>`;
+                document.getElementById(elementId).innerHTML = `<p style="color:red;">Failed to load component.</p>`;
             }
         }
 
-        // Carregar todos os componentes
         async function loadAllComponents() {
-            await loadComponent('component-header', 'components/header.html');
-            await loadComponent('component-hero', 'components/hero.html');
-            await loadComponent('component-about', 'components/about.html');
-            await loadComponent('component-research', 'components/research.html');
-            await loadComponent('component-alumni', 'components/alumni.html');
-            await loadComponent('component-partners', 'components/partners.html');
-            await loadComponent('component-publications', 'components/publications.html');
-            await loadComponent('component-contact', 'components/contact.html');
-            await loadComponent('component-footer', 'components/footer.html');
+            await Promise.all([
+                loadComponent('component-header', 'components/header.html'),
+                loadComponent('component-hero', 'components/hero.html'),
+                loadComponent('component-about', 'components/about.html'),
+                loadComponent('component-research', 'components/research.html'),
+                loadComponent('component-team', 'components/team.html'),
+                loadComponent('component-alumni', 'components/alumni.html'),
+                loadComponent('component-gallery', 'components/gallery.html'),
+                loadComponent('component-opportunities', 'components/opportunities.html'),
+                loadComponent('component-partners', 'components/partners.html'),
+                loadComponent('component-publications', 'components/publications.html'),
+                loadComponent('component-contact', 'components/contact.html'),
+                loadComponent('component-footer', 'components/footer.html')
+            ]);
         }
 
-        loadAllComponents();
-
-        // (Aqui viria todo o JavaScript existente do seu index.html: traduções, renderEquipe, etc.)
-        // Para não perder espaço, mantenha exatamente o mesmo script que já estava funcionando,
-        // apenas removendo a parte que injetava as seções estáticas (About, Research, etc.) 
-        // e garantindo que os containers dinâmicos (equipe-container, egressos-container, etc.) existam.
-    </script>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioGC – Laboratory of Bioinformatics and Clinical Genomics | Fiocruz</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container header-flex">
-            <div class="logo-area">
-                <div class="fiocruz-brand">
-                    <span class="fiocruz-symbol">🏛️</span>
-                    <span class="fiocruz-name">FIOCRUZ</span>
-                </div>
-                <div class="lab-name">
-                    <h1 id="header-title">Laboratory of Bioinformatics and Clinical Genomics</h1>
-                    <p class="lab-subtitle" id="header-subtitle">BioGC – Carlos Chagas Institute</p>
-                </div>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#about" id="nav-about">About</a></li>
-                    <li><a href="#research" id="nav-research">Research</a></li>
-                    <li><a href="#team" id="nav-team">Team</a></li>
-                    <li><a href="#alumni" id="nav-alumni">Alumni</a></li>
-                    <li><a href="#partners" id="nav-partners">Partners</a></li>
-                    <li><a href="#publications" id="nav-publications">Publications</a></li>
-                    <li><a href="#contact" id="nav-contact">Contact</a></li>
-                    <li><div class="language-selector"><button class="lang-btn active" data-lang="en">EN</button><button class="lang-btn" data-lang="pt">PT</button></div></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container hero-content">
-            <h2 id="hero-title">Science and health for life</h2>
-            <p id="hero-text">Integrating genomics, bioinformatics, and computational intelligence.</p>
-            <a href="#research" class="btn-primary" id="hero-button">Explore our research lines</a>
-        </div>
-    </section>
-
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2 id="section-about-title">About BioGC</h2>
-                <div class="sobre-grid">
-                    <div class="sobre-texto">
-                        <p id="about-text1">The Laboratory of Bioinformatics and Clinical Genomics (BioGC) is a center of excellence at the Carlos Chagas Institute – Fiocruz Paraná.</p>
-                        <p><strong id="about-mission">Mission:</strong> <span id="about-mission-text">Generate knowledge and innovation in bioinformatics and clinical genomics, contributing to the advancement of science and public health, in line with SUS principles.</span></p>
-                    </div>
-                    <div class="sobre-infos">
-                        <div class="info-card">
-                            <i class="fas fa-microscope"></i>
-                            <h3>Translational research</h3>
-                            <p>Integrating omics data into clinical practice.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="research" class="section bg-light">
-            <div class="container">
-                <h2 id="research-title">Research lines</h2>
-                <div class="pesquisa-grid">
-                    <div class="pesquisa-item">
-                        <i class="fas fa-dna"></i>
-                        <h3>Pathogen genomics</h3>
-                        <p>Genomic surveillance and antimicrobial resistance.</p>
-                    </div>
-                    <div class="pesquisa-item">
-                        <i class="fas fa-brain"></i>
-                        <h3>Transcriptomics</h3>
-                        <p>Differential expression and regulatory networks.</p>
-                    </div>
-                    <div class="pesquisa-item">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Structural bioinformatics</h3>
-                        <p>Protein modeling and molecular docking.</p>
-                    </div>
-                    <div class="pesquisa-item">
-                        <i class="fas fa-robot"></i>
-                        <h3>Machine learning in genomics</h3>
-                        <p>Variant classification and multi-omics integration.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="team" class="section">
-            <div class="container">
-                <h2>Team</h2>
-                <div id="equipe-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading...</div>
-            </div>
-        </section>
-
-        <section id="alumni" class="section bg-light">
-            <div class="container">
-                <h2>Alumni</h2>
-                <div id="egressos-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading...</div>
-            </div>
-        </section>
-
-        <section id="gallery" class="section">
-            <div class="container">
-                <h2>Gallery</h2>
-                <div id="galeria-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading...</div>
-            </div>
-        </section>
-
-        <section id="opportunities" class="section bg-light">
-            <div class="container">
-                <h2>Opportunities</h2>
-                <div id="oportunidades-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading...</div>
-            </div>
-        </section>
-
-        <section id="partners" class="section">
-            <div class="container">
-                <h2>Partner institutions</h2>
-                <div id="parceiros-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading...</div>
-            </div>
-        </section>
-
-        <section id="publications" class="section bg-light">
-            <div class="container">
-                <h2>Recent publications</h2>
-                <div id="publicacoes-container" class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading...</div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container contato-grid">
-                <div class="contato-info">
-                    <h2>Contact</h2>
-                    <p><i class="fas fa-map-marker-alt"></i> Carlos Chagas Institute – Fiocruz Paraná, Curitiba/PR</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:biogc@fiocruz.br">biogc@fiocruz.br</a></p>
-                    <div class="ppgb-logo">
-                        <a href="https://posgraduacao.icc.fiocruz.br" target="_blank"><img src="img/logo-ppgb.png" alt="PPGBB Logo" style="height: 60px;"></a>
-                    </div>
-                </div>
-                <div class="localizacao">
-                    <h2>Location</h2>
-                    <div class="mapa-placeholder">Fiocruz Curitiba Campus</div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-logos">
-                <span>Fiocruz</span>
-                <span>Carlos Chagas Institute (ICC)</span>
-                <span>BioGC Lab</span>
-            </div>
-            <p>© 2026 Laboratory of Bioinformatics and Clinical Genomics – ICC/Fiocruz</p>
-        </div>
-    </footer>
-
-    <script>
-        // Translations
+        // ==================== TRADUÇÕES ====================
         let currentLang = 'en';
         let translations = {};
 
         async function loadTranslations() {
-            const response = await fetch('data/translations.json');
-            translations = await response.json();
+            const res = await fetch('data/translations.json');
+            translations = await res.json();
             applyTranslations();
         }
 
@@ -239,24 +70,26 @@
             if (!t) return;
             document.title = t.title;
             document.querySelector('meta[name="description"]').setAttribute('content', t.description);
-            document.getElementById('header-title').innerText = t.header_title;
-            document.getElementById('header-subtitle').innerText = t.header_subtitle;
-            document.getElementById('nav-about').innerText = t.nav_home;
-            document.getElementById('nav-research').innerText = t.nav_research;
-            document.getElementById('nav-team').innerText = t.nav_team;
-            document.getElementById('nav-alumni').innerText = t.nav_alumni;
-            document.getElementById('nav-partners').innerText = t.nav_partners;
-            document.getElementById('nav-publications').innerText = t.nav_publications;
-            document.getElementById('nav-contact').innerText = t.nav_contact;
-            document.getElementById('hero-title').innerText = t.hero_title;
-            document.getElementById('hero-text').innerText = t.hero_text;
-            document.getElementById('hero-button').innerText = t.hero_button;
-            document.getElementById('section-about-title').innerText = t.section_about_title;
-            document.getElementById('about-text1').innerText = t.section_about_text;
-            const missionParts = t.section_about_mission.split(':');
-            document.getElementById('about-mission').innerText = missionParts[0] + ':';
-            document.getElementById('about-mission-text').innerText = missionParts[1] || t.section_about_mission;
-            document.getElementById('research-title').innerText = t.section_research_title;
+            if (document.getElementById('header-title')) document.getElementById('header-title').innerText = t.header_title;
+            if (document.getElementById('header-subtitle')) document.getElementById('header-subtitle').innerText = t.header_subtitle;
+            if (document.getElementById('nav-about')) document.getElementById('nav-about').innerText = t.nav_home;
+            if (document.getElementById('nav-research')) document.getElementById('nav-research').innerText = t.nav_research;
+            if (document.getElementById('nav-team')) document.getElementById('nav-team').innerText = t.nav_team;
+            if (document.getElementById('nav-alumni')) document.getElementById('nav-alumni').innerText = t.nav_alumni;
+            if (document.getElementById('nav-partners')) document.getElementById('nav-partners').innerText = t.nav_partners;
+            if (document.getElementById('nav-publications')) document.getElementById('nav-publications').innerText = t.nav_publications;
+            if (document.getElementById('nav-contact')) document.getElementById('nav-contact').innerText = t.nav_contact;
+            if (document.getElementById('hero-title')) document.getElementById('hero-title').innerText = t.hero_title;
+            if (document.getElementById('hero-text')) document.getElementById('hero-text').innerText = t.hero_text;
+            if (document.getElementById('hero-button')) document.getElementById('hero-button').innerText = t.hero_button;
+            if (document.getElementById('section-about-title')) document.getElementById('section-about-title').innerText = t.section_about_title;
+            if (document.getElementById('about-text1')) document.getElementById('about-text1').innerText = t.section_about_text;
+            if (document.getElementById('about-mission')) {
+                const parts = t.section_about_mission.split(':');
+                document.getElementById('about-mission').innerText = parts[0] + ':';
+                if (document.getElementById('about-mission-text')) document.getElementById('about-mission-text').innerText = parts[1] || t.section_about_mission;
+            }
+            if (document.getElementById('research-title')) document.getElementById('research-title').innerText = t.section_research_title;
         }
 
         function setLanguage(lang) {
@@ -264,19 +97,11 @@
             localStorage.setItem('preferredLanguage', lang);
             applyTranslations();
             document.querySelectorAll('.lang-btn').forEach(btn => {
-                if (btn.dataset.lang === lang) btn.classList.add('active');
-                else btn.classList.remove('active');
+                btn.classList.toggle('active', btn.dataset.lang === lang);
             });
         }
 
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-        });
-        const savedLang = localStorage.getItem('preferredLanguage');
-        if (savedLang) setLanguage(savedLang);
-        loadTranslations();
-
-        // Dynamic content (team, alumni, partners, gallery, opportunities, publications)
+        // ==================== CONTEÚDO DINÂMICO (JSON) ====================
         let orientadoresMap = {};
         let allMembersForLinks = [];
 
@@ -578,7 +403,18 @@
             container.appendChild(lista);
         }
 
+        // ==================== INICIALIZAÇÃO ====================
         async function init() {
+            await loadAllComponents();
+            // Agora que os componentes estão carregados, podemos aplicar traduções (os elementos existem)
+            await loadTranslations();
+            // Configurar os botões de idioma (eles estão em header.html)
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+            });
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang) setLanguage(savedLang);
+            // Carregar dados dinâmicos
             await renderEquipe();
             await renderEgressos();
             await renderParceiros();
