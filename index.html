@@ -6,6 +6,53 @@
     <title>BioGC – Laboratory of Bioinformatics and Clinical Genomics | Fiocruz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos adicionais para os botões colapsáveis */
+        .toggle-details {
+            background: none;
+            border: none;
+            color: #cc3121;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        .toggle-details:hover {
+            text-decoration: underline;
+        }
+        .extra-details {
+            display: none;
+            margin-top: 0.75rem;
+            padding-top: 0.5rem;
+            border-top: 1px dashed #e0e0e0;
+        }
+        .extra-details.show {
+            display: block;
+        }
+        .pesq-apresentacao {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: #2c6e6b;
+        }
+        .projetos-list {
+            background: #f8fafc;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            border-left: 3px solid #00747a;
+        }
+        .projeto-item {
+            margin-bottom: 0.5rem;
+        }
+        .projeto-titulo {
+            font-weight: 700;
+            color: #003f44;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -117,7 +164,7 @@
         if (savedLang) setLanguage(savedLang);
         loadTranslations();
 
-        // Dynamic content (unchanged from previous version)
+        // Dynamic content
         let orientadoresMap = {};
         let allMembersForLinks = [];
 
@@ -158,19 +205,30 @@
             orientadores.forEach(o => { orientadoresMap[o.id] = o; });
             allMembersForLinks = membros;
             container.innerHTML = '';
+
             for (const orientador of orientadores) {
                 const membrosDoGrupo = membros.filter(m => m.orientador_id === orientador.id);
                 const socialOri = renderSocialLinks(orientador);
-                let projetosHtml = '';
-                if (orientador.projetos && orientador.projetos.length) {
-                    projetosHtml = '<div class="projetos-list"><strong>Featured projects:</strong>';
-                    orientador.projetos.forEach(p => {
-                        projetosHtml += `<div class="projeto-item"><span class="projeto-titulo">${p.titulo}</span><br><span style="font-size:0.75rem;">${p.descricao.substring(0,150)}${p.descricao.length>150?'…':''}</span></div>`;
-                    });
-                    projetosHtml += '</div>';
-                }
-                const apresentacaoHtml = orientador.apresentacao ? `<div class="pesq-apresentacao">${orientador.apresentacao}</div>` : '';
                 const fotoHtml = orientador.foto ? `<img src="${orientador.foto}" alt="${orientador.nome}" class="membro-foto">` : '';
+
+                // Botão e conteúdo extra (apresentação + projetos)
+                const extraHtml = `
+                    <div class="extra-details" id="extra-${orientador.id}">
+                        ${orientador.apresentacao ? `<div class="pesq-apresentacao">${orientador.apresentacao}</div>` : ''}
+                        ${orientador.projetos && orientador.projetos.length ? `
+                            <div class="projetos-list">
+                                <strong>Featured projects:</strong>
+                                ${orientador.projetos.map(p => `
+                                    <div class="projeto-item">
+                                        <span class="projeto-titulo">${p.titulo}</span><br>
+                                        <span style="font-size:0.75rem;">${p.descricao.substring(0,150)}${p.descricao.length > 150 ? '…' : ''}</span>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+
                 const grupoDiv = document.createElement('div');
                 grupoDiv.className = 'grupo-pesquisador';
                 grupoDiv.innerHTML = `
@@ -180,11 +238,23 @@
                         <p class="pesq-titulo">${orientador.titulo}</p>
                         <p><i class="fas fa-envelope"></i> ${orientador.email}</p>
                         ${socialOri}
-                        ${apresentacaoHtml}
-                        ${projetosHtml}
+                        <button class="toggle-details" data-target="extra-${orientador.id}">
+                            <i class="fas fa-plus-circle"></i> <span class="toggle-text">Show more</span>
+                        </button>
+                        ${extraHtml}
                     </div>
                     <div class="membros-grid" id="grid-${orientador.id}"></div>
                 `;
+
+                // Adiciona evento de toggle
+                const btn = grupoDiv.querySelector('.toggle-details');
+                const extraDiv = grupoDiv.querySelector(`#extra-${orientador.id}`);
+                btn.addEventListener('click', () => {
+                    const isVisible = extraDiv.classList.toggle('show');
+                    btn.querySelector('.toggle-text').innerText = isVisible ? 'Show less' : 'Show more';
+                    btn.querySelector('i').className = isVisible ? 'fas fa-minus-circle' : 'fas fa-plus-circle';
+                });
+
                 const grid = grupoDiv.querySelector(`#grid-${orientador.id}`);
                 if (membrosDoGrupo.length === 0) {
                     grid.innerHTML = '<p class="instrucao">No students directly linked.</p>';
@@ -208,6 +278,7 @@
                 }
                 container.appendChild(grupoDiv);
             }
+
             const semOrientador = membros.filter(m => !m.orientador_id);
             if (semOrientador.length) {
                 const title = document.createElement('h3');
