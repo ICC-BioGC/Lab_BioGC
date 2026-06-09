@@ -102,13 +102,11 @@ function renderSocialLinks(links) {
     return html;
 }
 
-// Team (Principal Investigators + Members)
-async function renderEquipe() {
+// Team (Principal Investigators + Members) - agora recebe os dados como parâmetro
+async function renderEquipeWithData(investigators, members) {
     const container = document.getElementById('equipe-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading team...</div>';
-    const investigators = await loadJSON('data/principal-investigators.json');
-    const members = await loadJSON('data/members.json');
     if (!investigators || !members) {
         container.innerHTML = '<p>Error loading team data.</p>';
         return;
@@ -219,12 +217,11 @@ async function renderEquipe() {
     }
 }
 
-// Alumni
-async function renderEgressos() {
+// Alumni - com dados
+async function renderEgressosWithData(alumni) {
     const container = document.getElementById('egressos-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading alumni...</div>';
-    const alumni = await loadJSON('data/alumni.json');
     if (!alumni || alumni.length === 0) {
         container.innerHTML = '<p>No alumni registered.</p>';
         return;
@@ -246,12 +243,11 @@ async function renderEgressos() {
     container.appendChild(grid);
 }
 
-// Partners
-async function renderParceiros() {
+// Partners - com dados
+async function renderParceirosWithData(partners) {
     const container = document.getElementById('parceiros-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading partners...</div>';
-    const partners = await loadJSON('data/partners.json');
     if (!partners || partners.length === 0) {
         container.innerHTML = '<p>No partners registered.</p>';
         return;
@@ -275,12 +271,11 @@ async function renderParceiros() {
     container.appendChild(grid);
 }
 
-// Gallery
-async function renderGaleria() {
+// Gallery - com dados
+async function renderGaleriaWithData(gallery) {
     const container = document.getElementById('galeria-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading gallery...</div>';
-    const gallery = await loadJSON('data/gallery.json');
     if (!gallery || gallery.length === 0) {
         container.innerHTML = '<p>No images in gallery.</p>';
         return;
@@ -297,12 +292,11 @@ async function renderGaleria() {
     container.appendChild(grid);
 }
 
-// Opportunities
-async function renderOportunidades() {
+// Opportunities - com dados
+async function renderOportunidadesWithData(opportunities) {
     const container = document.getElementById('oportunidades-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading opportunities...</div>';
-    const opportunities = await loadJSON('data/opportunities.json');
     if (!opportunities || opportunities.length === 0) {
         container.innerHTML = '<p>No opportunities at the moment.</p>';
         return;
@@ -323,12 +317,11 @@ async function renderOportunidades() {
     container.appendChild(grid);
 }
 
-// Publications
-async function renderPublicacoes() {
+// Publications - com dados
+async function renderPublicacoesWithData(pubs) {
     const container = document.getElementById('publicacoes-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading publications...</div>';
-    const pubs = await loadJSON('data/publications.json');
     if (!pubs || pubs.length === 0) {
         container.innerHTML = '<p>No publications registered.</p>';
         return;
@@ -382,23 +375,54 @@ async function renderPublicacoes() {
     container.appendChild(lista);
 }
 
-// ==================== INICIALIZAÇÃO ====================
+// ==================== INICIALIZAÇÃO OTIMIZADA ====================
+let cachedData = {};
+
+async function loadAllData() {
+    // Carrega todos os JSONs em paralelo
+    const [investigators, members, alumni, partners, gallery, opportunities, publications] = await Promise.all([
+        loadJSON('data/principal-investigators.json'),
+        loadJSON('data/members.json'),
+        loadJSON('data/alumni.json'),
+        loadJSON('data/partners.json'),
+        loadJSON('data/gallery.json'),
+        loadJSON('data/opportunities.json'),
+        loadJSON('data/publications.json')
+    ]);
+    cachedData = { investigators, members, alumni, partners, gallery, opportunities, publications };
+}
+
+async function renderAllDynamicContent() {
+    // Renderiza todas as seções em paralelo usando os dados cacheados
+    await Promise.all([
+        renderEquipeWithData(cachedData.investigators, cachedData.members),
+        renderEgressosWithData(cachedData.alumni),
+        renderParceirosWithData(cachedData.partners),
+        renderGaleriaWithData(cachedData.gallery),
+        renderOportunidadesWithData(cachedData.opportunities),
+        renderPublicacoesWithData(cachedData.publications)
+    ]);
+}
+
 async function init() {
-    await loadAllComponents();
+    // Carrega componentes e dados dinâmicos em paralelo
+    await Promise.all([
+        loadAllComponents(),
+        loadAllData()
+    ]);
+    
+    // Aplica traduções (precisa do DOM dos componentes já carregados)
     await loadTranslations();
-    // Configurar os botões de idioma (eles estão em header.html)
+    
+    // Configura os botões de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
     const savedLang = localStorage.getItem('preferredLanguage');
     if (savedLang) setLanguage(savedLang);
-    // Carregar dados dinâmicos
-    await renderEquipe();
-    await renderEgressos();
-    await renderParceiros();
-    await renderGaleria();
-    await renderOportunidades();
-    await renderPublicacoes();
+    
+    // Renderiza todo o conteúdo dinâmico (dados já estão em cache)
+    await renderAllDynamicContent();
 }
 
 // Iniciar quando o DOM estiver pronto
