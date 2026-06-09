@@ -1,16 +1,114 @@
 [
   {
-    "nome": "Exemplo Egresso 1",
-    "vinculo_atual": "Pesquisador na Universidade X",
+    "nome": "Joyce de Souza",
+    "vinculo_atual": "Doutoranda no BioGC",
     "ano_saida": 2024,
-    "lattes": "http://lattes.cnpq.br/0000000000000000",
-    "orientador_id": "helisson"
+    "lattes": "http://lattes.cnpq.br/8157340101266671",
+    "orientador_id": "helisson",
+    "tipo": "Mestrado"
   },
   {
-    "nome": "Exemplo Egresso 2",
-    "vinculo_atual": "Pós-doutorando no exterior",
+    "nome": "Aline Castro Rodrigues Lucena",
+    "vinculo_atual": "Pós-doutoranda?",
+    "ano_saida": 2024,
+    "lattes": "",
+    "orientador_id": "helisson",
+    "tipo": "Doutorado"
+  },
+  {
+    "nome": "Hugo Leonardo de Ávila",
+    "vinculo_atual": "",
     "ano_saida": 2023,
-    "lattes": "http://lattes.cnpq.br/1111111111111111",
-    "orientador_id": "fabio"
+    "lattes": "",
+    "orientador_id": "helisson",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Haniel Siqueira Mortagua Walflor",
+    "vinculo_atual": "",
+    "ano_saida": 2022,
+    "lattes": "",
+    "orientador_id": "helisson",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Alexandre Zanatta",
+    "vinculo_atual": "",
+    "ano_saida": 2019,
+    "lattes": "",
+    "orientador_id": "helisson",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "William Klassen de Oliveira",
+    "vinculo_atual": "",
+    "ano_saida": 2018,
+    "lattes": "",
+    "orientador_id": "helisson",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Janynne Stephanie de Oliveira Palheta",
+    "vinculo_atual": "",
+    "ano_saida": 2015,
+    "lattes": "",
+    "orientador_id": "helisson",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Sofia Galvão Feronato",
+    "vinculo_atual": "",
+    "ano_saida": 2022,
+    "lattes": "http://lattes.cnpq.br/???",
+    "orientador_id": "hellen",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Isadora Celine Rodrigues Carneiro",
+    "vinculo_atual": "",
+    "ano_saida": 2020,
+    "lattes": "",
+    "orientador_id": "hellen",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Anna Christine Feldhaus Lenzi Costeira",
+    "vinculo_atual": "",
+    "ano_saida": 2023,
+    "lattes": "",
+    "orientador_id": "hellen",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Esdras Matheus Gomes da Silva",
+    "vinculo_atual": "",
+    "ano_saida": 2018,
+    "lattes": "",
+    "orientador_id": "fabio",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Gabriel Wajnberg",
+    "vinculo_atual": "",
+    "ano_saida": 2013,
+    "lattes": "",
+    "orientador_id": "fabio",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Natasha Andressa Nogueira Jorge",
+    "vinculo_atual": "",
+    "ano_saida": 2013,
+    "lattes": "",
+    "orientador_id": "fabio",
+    "tipo": "Mestrado"
+  },
+  {
+    "nome": "Raphael Tavares da Silva",
+    "vinculo_atual": "",
+    "ano_saida": 2012,
+    "lattes": "",
+    "orientador_id": "fabio",
+    "tipo": "Mestrado"
   }
 ]
