@@ -1,41 +1,101 @@
 [
   {
-    "titulo": "Machine learning-based integration of genomics and transcriptomics for early detection of colorectal cancer",
-    "autores": "Faoro, H., Prezia, G., Souza, J., Furini, H.H., Passetti, F.",
-    "periodico": "Bioinformatics Advances",
+    "titulo": "Carbapenem Resistance in Acinetobacter baumannii: Mechanisms, Therapeutics, and Innovations",
+    "autores": "DE SOUZA, JOYCE; D'ESPINDULA, HELENA REGINA SALOMÉ; RIBEIRO, ISABEL DE FARIAS; GONÇALVES, GEIZIANE APARECIDA; PILLONETTO, MARCELO; FAORO, HELISSON",
+    "periodico": "Microorganisms",
     "ano": 2025,
-    "volume": "5",
-    "numero": "1",
-    "paginas": "vbae001",
-    "doi": "10.1093/bioadv/vbae001",
-    "link": "https://academic.oup.com/bioinformaticsadvances/article/5/1/vbae001/",
-    "resumo": "Estudo que combina dados genômicos e transcriptômicos usando aprendizado de máquina para detecção precoce de câncer colorretal.",
-    "pdf": "pdfs/2025_bioinfo_advances.pdf"
+    "volume": "13",
+    "paginas": "1501",
+    "doi": "10.3390/microorganisms13071501",
+    "link": "",
+    "resumo": "Revisão sobre mecanismos de resistência a carbapenêmicos em A. baumannii.",
+    "pdf": "",
+    "autores_detalhes": [
+      { "nome": "DE SOUZA, JOYCE", "tipo": "membro", "id": "joyce" },
+      { "nome": "D'ESPINDULA, HELENA REGINA SALOMÉ", "tipo": "membro", "id": "helena" },
+      { "nome": "RIBEIRO, ISABEL DE FARIAS", "tipo": "membro", "id": "isabel" },
+      { "nome": "GONÇALVES, GEIZIANE APARECIDA", "tipo": "membro", "id": "geiziane" },
+      { "nome": "FAORO, HELISSON", "tipo": "orientador", "id": "helisson" }
+    ]
   },
   {
-    "titulo": "Genomic surveillance of carbapenem-resistant Klebsiella pneumoniae in Southern Brazil",
-    "autores": "Furini, H.H., Souza, J., Campanário, M.A., Faoro, H.",
-    "periodico": "Microbial Genomics",
+    "titulo": "Potential involvement of beta-lactamase homologous proteins in resistance to beta-lactam antibiotics in gram-negative bacteria of the ESKAPEE group",
+    "autores": "DE SOUZA, JOYCE; VIEIRA, ALEXANDRE ZANATTA; DOS SANTOS, HELLEN GEREMIAS; FAORO, HELISSON",
+    "periodico": "BMC Genomics",
     "ano": 2024,
+    "volume": "25",
+    "paginas": "508",
+    "doi": "10.1186/s12864-024-10345-6",
+    "link": "",
+    "resumo": "Prospecção genômica de beta-lactamases homólogas em bactérias do grupo ESKAPEE.",
+    "pdf": "",
+    "autores_detalhes": [
+      { "nome": "DE SOUZA, JOYCE", "tipo": "membro", "id": "joyce" },
+      { "nome": "DOS SANTOS, HELLEN GEREMIAS", "tipo": "orientador", "id": "hellen" },
+      { "nome": "FAORO, HELISSON", "tipo": "orientador", "id": "helisson" }
+    ]
+  },
+  {
+    "titulo": "Genetic Variants Affect Distinct Metabolic Pathways in Pediatric Multisystem Inflammatory Syndrome and Severe COVID-19",
+    "autores": "URBANSKI, A. H.; FREITAS, F. C. P.; GOMES, T. M. F. F.; SCHEMBERGER, M. O.; REIS, B. C. S.; CARVALHO, F. A. A.; FACCION, R. S.; MACHADO, L. A.; SANTOS, D. A.; CUNHA, D. P.; SALÚ, M. S.; MOORE, D. C. B. C.; PRESIBELLA, M. M.; NOGUCHI, J. F.; BORGES, H. L.; TOMIURA, L. K.; CASTRO, L. S.; SANTOS, L. G. C.; SILVA, E. M. G.; SANTOS, H. G.; et al.",
+    "periodico": "Journal of Medical Virology",
+    "ano": 2025,
+    "volume": "97",
+    "paginas": "e70556",
+    "doi": "10.1002/jmv.70556",
+    "link": "",
+    "resumo": "Estudo genético de MIS-C e COVID-19 grave em crianças.",
+    "pdf": "",
+    "autores_detalhes": [
+      { "nome": "SANTOS, H. G.", "tipo": "orientador", "id": "hellen" }
+    ]
+  },
+  {
+    "titulo": "Machine learning to predict 30-day quality-adjusted survival in critically ill patients with cancer",
+    "autores": "SANTOS, H. G.; ZAMPIERI, F. G.; NORMILIO-SILVA, K.; SILVA, G. T.; LIMA, A. C. P.; CAVALCANTI, A. B.; CHIAVEGATTO FILHO, A. D. P.",
+    "periodico": "Journal of Critical Care",
+    "ano": 2020,
+    "volume": "55",
+    "paginas": "73-78",
+    "doi": "10.1016/j.jcrc.2019.10.001",
+    "link": "",
+    "resumo": "Predição de sobrevida ajustada por qualidade em pacientes críticos com câncer.",
+    "pdf": "",
+    "autores_detalhes": [
+      { "nome": "SANTOS, H. G.", "tipo": "orientador", "id": "hellen" }
+    ]
+  },
+  {
+    "titulo": "Proteogenomics Reveals Orthologous Alternatively Spliced Proteoforms in the Same Human and Mouse Brain Regions with Differential Abundance in an Alzheimer's Disease Mouse Model",
+    "autores": "SILVA, E. M. G.; SANTOS, L. G. C.; OLIVEIRA, F. S.; FREITAS, F. C. P.; PARREIRA, V. S. C.; SANTOS, H. G.; TAVARES, R.; CARVALHO, P. C.; NEVES-FERREIRA, A. G. C.; HAIBARA, A. S.; DE ARAUJO-SOUZA, P. S.; DIAS, A. A. M.; PASSETTI, F.",
+    "periodico": "Cells",
+    "ano": 2021,
     "volume": "10",
-    "numero": "2",
-    "paginas": "001200",
-    "doi": "10.1099/mgen.0.001200",
+    "paginas": "1583",
+    "doi": "10.3390/cells10071583",
     "link": "",
-    "resumo": "Vigilância genômica de cepas de Klebsiella pneumoniae resistentes a carbapenêmicos na região Sul do Brasil.",
-    "pdf": "pdfs/2024_microbial_genomics.pdf"
+    "resumo": "Identificação de proteoformas ortólogas no cérebro humano e murino em modelo de Alzheimer.",
+    "pdf": "",
+    "autores_detalhes": [
+      { "nome": "PARREIRA, V. S. C.", "tipo": "membro", "id": "vinicius" },
+      { "nome": "SANTOS, H. G.", "tipo": "orientador", "id": "hellen" },
+      { "nome": "PASSETTI, F.", "tipo": "orientador", "id": "fabio" }
+    ]
   },
   {
-    "titulo": "RNA-Seq reveals novel biomarkers in Chagas disease cardiomyopathy",
-    "autores": "Ribeiro, I.F., Ozório, S.P., D'Espindula, H.R.S., Faoro, H.",
-    "periodico": "PLOS Neglected Tropical Diseases",
-    "ano": 2024,
-    "volume": "18",
-    "numero": "4",
-    "paginas": "e0011500",
-    "doi": "10.1371/journal.pntd.0011500",
+    "titulo": "Selecting Genetic Variants and Interactions Associated with Amyotrophic Lateral Sclerosis: A Group LASSO Approach",
+    "autores": "FERONATO, S. G.; SILVA, M. L. M.; IZBICKI, R.; FARIAS, T. D. J.; SHIGUNOV, P.; DALLAGIOVANNA, B.; PASSETTI, F.; DOS SANTOS, H. G.",
+    "periodico": "Journal of Personalized Medicine",
+    "ano": 2022,
+    "volume": "12",
+    "paginas": "1330",
+    "doi": "10.3390/jpm12081330",
     "link": "",
-    "resumo": "Identificação de novos biomarcadores em cardiomiopatia chagásica através de RNA-Seq.",
-    "pdf": ""
+    "resumo": "Seleção de variantes genéticas e interações associadas à ELA usando Group LASSO.",
+    "pdf": "",
+    "autores_detalhes": [
+      { "nome": "PASSETTI, F.", "tipo": "orientador", "id": "fabio" },
+      { "nome": "DOS SANTOS, H. G.", "tipo": "orientador", "id": "hellen" }
+    ]
   }
 ]
