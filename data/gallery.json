@@ -1,14 +1,5 @@
 [
-  {
-    "url": "img/galeria/evento1.jpg",
-    "title": "Curso de Inverno 2024"
-  },
-  {
-    "url": "img/galeria/evento2.jpg",
-    "title": "Apresentação de pôster"
-  },
-  {
-    "url": "img/galeria/laboratorio.jpg",
-    "title": "Laboratório BioGC"
-  }
+  { "url": "img/gallery/event1.jpg", "title": "Winter Course 2024" },
+  { "url": "img/gallery/event2.jpg", "title": "Poster Presentation" },
+  { "url": "img/gallery/laboratory.jpg", "title": "BioGC Laboratory" }
 ]
