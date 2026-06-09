@@ -1,42 +1,23 @@
 [
   {
-    "nome": "Universidade Federal do Paraná (UFPR)",
-    "tipo": "Universidade",
+    "name": "Universidade Federal do Paraná (UFPR)",
+    "type": "University",
     "link": "https://www.ufpr.br",
-    "descricao": "Colaboração em projetos de genômica e bioinformática.",
+    "description": "Collaboration on genomics and bioinformatics projects.",
     "logo": ""
   },
   {
-    "nome": "Hospital de Clínicas (HC-UFPR)",
-    "tipo": "Hospital",
+    "name": "Hospital de Clínicas (HC-UFPR)",
+    "type": "Hospital",
     "link": "https://www.hc.ufpr.br",
-    "descricao": "Parceria em estudos de genômica clínica.",
+    "description": "Partnership in clinical genomics studies.",
     "logo": ""
   },
   {
-    "nome": "Instituto de Biologia Molecular do Paraná (IBMP)",
-    "tipo": "Instituto de pesquisa",
+    "name": "Instituto de Biologia Molecular do Paraná (IBMP)",
+    "type": "Research Institute",
     "link": "https://www.ibmp.org.br",
-    "descricao": "Projetos conjuntos em diagnóstico molecular.",
+    "description": "Joint projects in molecular diagnostics.",
     "logo": ""
-  }
-][
-  {
-    "nome": "Universidade Federal do Paraná (UFPR)",
-    "tipo": "Universidade",
-    "link": "https://www.ufpr.br",
-    "descricao": "Colaboração em projetos de genômica e bioinformática."
-  },
-  {
-    "nome": "Hospital de Clínicas (HC-UFPR)",
-    "tipo": "Hospital",
-    "link": "https://www.hc.ufpr.br",
-    "descricao": "Parceria em estudos de genômica clínica."
-  },
-  {
-    "nome": "Instituto de Biologia Molecular do Paraná (IBMP)",
-    "tipo": "Instituto de pesquisa",
-    "link": "https://www.ibmp.org.br",
-    "descricao": "Projetos conjuntos em diagnóstico molecular."
   }
 ]
