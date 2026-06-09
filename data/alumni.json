@@ -1,114 +1,114 @@
 [
   {
-    "nome": "Joyce de Souza",
-    "vinculo_atual": "Doutoranda no BioGC",
-    "ano_saida": 2024,
+    "name": "Joyce de Souza",
+    "current_affiliation": "PhD Student at BioGC",
+    "graduation_year": 2024,
     "lattes": "http://lattes.cnpq.br/8157340101266671",
-    "orientador_id": "helisson",
-    "tipo": "Mestrado"
+    "supervisor_id": "helisson",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Aline Castro Rodrigues Lucena",
-    "vinculo_atual": "Pós-doutoranda?",
-    "ano_saida": 2024,
+    "name": "Aline Castro Rodrigues Lucena",
+    "current_affiliation": "Postdoctoral Researcher?",
+    "graduation_year": 2024,
     "lattes": "",
-    "orientador_id": "helisson",
-    "tipo": "Doutorado"
+    "supervisor_id": "helisson",
+    "degree_type": "PhD"
   },
   {
-    "nome": "Hugo Leonardo de Ávila",
-    "vinculo_atual": "",
-    "ano_saida": 2023,
+    "name": "Hugo Leonardo de Ávila",
+    "current_affiliation": "",
+    "graduation_year": 2023,
     "lattes": "",
-    "orientador_id": "helisson",
-    "tipo": "Mestrado"
+    "supervisor_id": "helisson",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Haniel Siqueira Mortagua Walflor",
-    "vinculo_atual": "",
-    "ano_saida": 2022,
+    "name": "Haniel Siqueira Mortagua Walflor",
+    "current_affiliation": "",
+    "graduation_year": 2022,
     "lattes": "",
-    "orientador_id": "helisson",
-    "tipo": "Mestrado"
+    "supervisor_id": "helisson",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Alexandre Zanatta",
-    "vinculo_atual": "",
-    "ano_saida": 2019,
+    "name": "Alexandre Zanatta",
+    "current_affiliation": "",
+    "graduation_year": 2019,
     "lattes": "",
-    "orientador_id": "helisson",
-    "tipo": "Mestrado"
+    "supervisor_id": "helisson",
+    "degree_type": "Master's"
   },
   {
-    "nome": "William Klassen de Oliveira",
-    "vinculo_atual": "",
-    "ano_saida": 2018,
+    "name": "William Klassen de Oliveira",
+    "current_affiliation": "",
+    "graduation_year": 2018,
     "lattes": "",
-    "orientador_id": "helisson",
-    "tipo": "Mestrado"
+    "supervisor_id": "helisson",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Janynne Stephanie de Oliveira Palheta",
-    "vinculo_atual": "",
-    "ano_saida": 2015,
+    "name": "Janynne Stephanie de Oliveira Palheta",
+    "current_affiliation": "",
+    "graduation_year": 2015,
     "lattes": "",
-    "orientador_id": "helisson",
-    "tipo": "Mestrado"
+    "supervisor_id": "helisson",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Sofia Galvão Feronato",
-    "vinculo_atual": "",
-    "ano_saida": 2022,
+    "name": "Sofia Galvão Feronato",
+    "current_affiliation": "",
+    "graduation_year": 2022,
     "lattes": "http://lattes.cnpq.br/3091245183662857",
-    "orientador_id": "hellen",
-    "tipo": "Mestrado"
+    "supervisor_id": "hellen",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Isadora Celine Rodrigues Carneiro",
-    "vinculo_atual": "",
-    "ano_saida": 2020,
+    "name": "Isadora Celine Rodrigues Carneiro",
+    "current_affiliation": "",
+    "graduation_year": 2020,
     "lattes": "",
-    "orientador_id": "hellen",
-    "tipo": "Mestrado"
+    "supervisor_id": "hellen",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Anna Christine Feldhaus Lenzi Costeira",
-    "vinculo_atual": "",
-    "ano_saida": 2023,
+    "name": "Anna Christine Feldhaus Lenzi Costeira",
+    "current_affiliation": "",
+    "graduation_year": 2023,
     "lattes": "",
-    "orientador_id": "hellen",
-    "tipo": "Mestrado"
+    "supervisor_id": "hellen",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Esdras Matheus Gomes da Silva",
-    "vinculo_atual": "",
-    "ano_saida": 2018,
+    "name": "Esdras Matheus Gomes da Silva",
+    "current_affiliation": "",
+    "graduation_year": 2018,
     "lattes": "",
-    "orientador_id": "fabio",
-    "tipo": "Mestrado"
+    "supervisor_id": "fabio",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Gabriel Wajnberg",
-    "vinculo_atual": "",
-    "ano_saida": 2013,
+    "name": "Gabriel Wajnberg",
+    "current_affiliation": "",
+    "graduation_year": 2013,
     "lattes": "",
-    "orientador_id": "fabio",
-    "tipo": "Mestrado"
+    "supervisor_id": "fabio",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Natasha Andressa Nogueira Jorge",
-    "vinculo_atual": "",
-    "ano_saida": 2013,
+    "name": "Natasha Andressa Nogueira Jorge",
+    "current_affiliation": "",
+    "graduation_year": 2013,
     "lattes": "",
-    "orientador_id": "fabio",
-    "tipo": "Mestrado"
+    "supervisor_id": "fabio",
+    "degree_type": "Master's"
   },
   {
-    "nome": "Raphael Tavares da Silva",
-    "vinculo_atual": "",
-    "ano_saida": 2012,
+    "name": "Raphael Tavares da Silva",
+    "current_affiliation": "",
+    "graduation_year": 2012,
     "lattes": "",
-    "orientador_id": "fabio",
-    "tipo": "Mestrado"
+    "supervisor_id": "fabio",
+    "degree_type": "Master's"
   }
 ]
