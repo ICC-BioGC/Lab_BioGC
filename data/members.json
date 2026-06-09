@@ -1,132 +1,132 @@
 [
   {
     "id": "joyce",
-    "nome": "Joyce de Souza",
-    "vinculo": "Doutoranda",
+    "name": "Joyce de Souza",
+    "position": "PhD Student",
     "email": "joycedesouzaa@fiocruzbr.onmicrosoft.com",
     "lattes": "http://lattes.cnpq.br/8157340101266671",
-    "foto": "",
-    "orientador_id": "helisson",
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": "helisson",
+    "co_supervisor": ""
   },
   {
     "id": "hector",
-    "nome": "Hector Hugo Furini",
-    "vinculo": "Doutorando",
+    "name": "Hector Hugo Furini",
+    "position": "PhD Student",
     "email": "hector.furini@fiocruz.br",
     "lattes": "http://lattes.cnpq.br/1009443163949645",
-    "foto": "",
-    "orientador_id": "helisson",
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": "helisson",
+    "co_supervisor": ""
   },
   {
     "id": "geiziane",
-    "nome": "Geiziane Aparecida Gonçalves",
-    "vinculo": "Doutoranda",
+    "name": "Geiziane Aparecida Gonçalves",
+    "position": "PhD Student",
     "email": "geizi95@gmail.com",
     "lattes": "http://lattes.cnpq.br/3091245183662857",
-    "foto": "",
-    "orientador_id": "helisson",
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": "helisson",
+    "co_supervisor": ""
   },
   {
     "id": "isabel",
-    "nome": "Isabel de Farias Ribeiro",
-    "vinculo": "Iniciação científica",
+    "name": "Isabel de Farias Ribeiro",
+    "position": "Undergraduate Research Assistant",
     "email": "isabeldefariasribeiro@gmail.com",
     "lattes": "http://lattes.cnpq.br/5741447374629850",
-    "foto": "",
-    "orientador_id": "helisson",
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": "helisson",
+    "co_supervisor": ""
   },
   {
     "id": "marco",
-    "nome": "Marco Antonio Campanário Sampaio",
-    "vinculo": "Doutorando",
+    "name": "Marco Antonio Campanário Sampaio",
+    "position": "PhD Student",
     "email": "marco.sampaio@aluno.fiocruz.br",
     "lattes": "http://lattes.cnpq.br/3151326822304466",
-    "foto": "",
-    "orientador_id": "fabio",
-    "coorientador": "Hellen Geremias Gatica Santos"
+    "picture": "",
+    "supervisor_id": "fabio",
+    "co_supervisor": "Hellen Geremias Gatica Santos"
   },
   {
     "id": "bruno",
-    "nome": "Bruno Janke do Nascimento",
-    "vinculo": "Doutorando",
+    "name": "Bruno Janke do Nascimento",
+    "position": "PhD Student",
     "email": "bruno.nascimento@fiocruz.br",
     "lattes": "http://lattes.cnpq.br/4253753934855465",
-    "foto": "",
-    "orientador_id": "fabio",
-    "coorientador": "Hellen Geremias Gatica Santos"
+    "picture": "",
+    "supervisor_id": "fabio",
+    "co_supervisor": "Hellen Geremias Gatica Santos"
   },
   {
     "id": "angela",
-    "nome": "Angela Zanin Della Bianca",
-    "vinculo": "Doutoranda",
+    "name": "Angela Zanin Della Bianca",
+    "position": "PhD Student",
     "email": "abianca@fiocruz.br",
     "lattes": "http://lattes.cnpq.br/1040154521644863",
-    "foto": "",
-    "orientador_id": "fabio",
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": "fabio",
+    "co_supervisor": ""
   },
   {
     "id": "beatriz",
-    "nome": "Beatriz Rosa de Azevedo",
-    "vinculo": "Mestranda",
+    "name": "Beatriz Rosa de Azevedo",
+    "position": "Master's Student",
     "email": "brosa@aluno.fiocruz.br",
     "lattes": "http://lattes.cnpq.br/3306490910008197",
-    "foto": "",
-    "orientador_id": "fabio",
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": "fabio",
+    "co_supervisor": ""
   },
   {
     "id": "vinicius",
-    "nome": "Vinícius da Silva Coutinho Parreira",
-    "vinculo": "Mestre (2020)",
+    "name": "Vinícius da Silva Coutinho Parreira",
+    "position": "Master's Degree (2020)",
     "email": "vinicius.parreira@fiocruzbr.onmicrosoft.com",
     "lattes": "http://lattes.cnpq.br/6229213405747479",
-    "foto": "",
-    "orientador_id": null,
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": null,
+    "co_supervisor": ""
   },
   {
     "id": "helena",
-    "nome": "Helena Regina Salomé D'Espindula",
-    "vinculo": "Pós-doutoranda",
+    "name": "Helena Regina Salomé D'Espindula",
+    "position": "Postdoctoral Researcher",
     "email": "helena.despindula@gmail.com",
     "lattes": "http://lattes.cnpq.br/3260753347712464",
-    "foto": "",
-    "orientador_id": "helisson",
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": null,
+    "co_supervisor": ""
   },
   {
     "id": "ana",
-    "nome": "Ana Carolina Huebl Januário",
-    "vinculo": "Iniciação científica",
+    "name": "Ana Carolina Huebl Januário",
+    "position": "Undergraduate Research Assistant",
     "email": "januario.ana@pucpr.edu.br",
     "lattes": "http://lattes.cnpq.br/4005957511686168",
-    "foto": "",
-    "orientador_id": "helisson",
-    "coorientador": "Helena Regina Salomé D'Espindula"
+    "picture": "",
+    "supervisor_id": "helisson",
+    "co_supervisor": ""
   },
   {
     "id": "laissa",
-    "nome": "Laissa Mirella Mendes Mariano de Lara",
-    "vinculo": "Iniciação científica",
+    "name": "Laissa Mirella Mendes Mariano de Lara",
+    "position": "Undergraduate Research Assistant",
     "email": "laissamendes1134@gmail.com",
     "lattes": "http://lattes.cnpq.br/1840635397777234",
-    "foto": "",
-    "orientador_id": "helisson",
-    "coorientador": "Geiziane Aparecida Gonçalves"
+    "picture": "",
+    "supervisor_id": "helisson",
+    "co_supervisor": ""
   },
   {
     "id": "felipe",
-    "nome": "Felipe Lemos Paulino",
-    "vinculo": "Iniciação científica",
+    "name": "Felipe Lemos Paulino",
+    "position": "Undergraduate Research Assistant",
     "email": "estudantil.felipe@gmail.com",
     "lattes": "http://lattes.cnpq.br/1468444770201354",
-    "foto": "",
-    "orientador_id": null,
-    "coorientador": ""
+    "picture": "",
+    "supervisor_id": null,
+    "co_supervisor": ""
   }
 ]
