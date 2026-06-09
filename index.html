@@ -8,6 +8,67 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="component-header"></div>
+    <div id="component-hero"></div>
+    <main>
+        <div id="component-about"></div>
+        <div id="component-research"></div>
+        <div id="component-team"></div>      <!-- será substituído pelo container gerado via JSON? Melhor manter container fixo -->
+        <div id="component-alumni"></div>
+        <div id="component-partners"></div>
+        <div id="component-publications"></div>
+        <div id="component-contact"></div>
+    </main>
+    <div id="component-footer"></div>
+
+    <!-- Container para dados dinâmicos (Team) -->
+    <div id="equipe-container" style="display:none;"></div> <!-- escondido, mas usado pelo JS -->
+
+    <script>
+        // Função para carregar componentes estáticos
+        async function loadComponent(elementId, url) {
+            try {
+                const res = await fetch(url);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                const html = await res.text();
+                document.getElementById(elementId).innerHTML = html;
+            } catch (err) {
+                console.warn(`Error loading ${url}:`, err);
+                document.getElementById(elementId).innerHTML = `<p style="color:red;">Failed to load ${url}</p>`;
+            }
+        }
+
+        // Carregar todos os componentes
+        async function loadAllComponents() {
+            await loadComponent('component-header', 'components/header.html');
+            await loadComponent('component-hero', 'components/hero.html');
+            await loadComponent('component-about', 'components/about.html');
+            await loadComponent('component-research', 'components/research.html');
+            await loadComponent('component-alumni', 'components/alumni.html');
+            await loadComponent('component-partners', 'components/partners.html');
+            await loadComponent('component-publications', 'components/publications.html');
+            await loadComponent('component-contact', 'components/contact.html');
+            await loadComponent('component-footer', 'components/footer.html');
+        }
+
+        loadAllComponents();
+
+        // (Aqui viria todo o JavaScript existente do seu index.html: traduções, renderEquipe, etc.)
+        // Para não perder espaço, mantenha exatamente o mesmo script que já estava funcionando,
+        // apenas removendo a parte que injetava as seções estáticas (About, Research, etc.) 
+        // e garantindo que os containers dinâmicos (equipe-container, egressos-container, etc.) existam.
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioGC – Laboratory of Bioinformatics and Clinical Genomics | Fiocruz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
     <header class="header">
         <div class="container header-flex">
             <div class="logo-area">
