@@ -75,7 +75,7 @@ function setLanguage(lang) {
 }
 
 // ==================== CONTEÚDO DINÂMICO (JSON) ====================
-let orientadoresMap = {};
+let principalInvestigatorsMap = {};
 let allMembersForLinks = [];
 
 async function loadJSON(url) {
@@ -102,35 +102,36 @@ function renderSocialLinks(links) {
     return html;
 }
 
+// Team (Principal Investigators + Members)
 async function renderEquipe() {
     const container = document.getElementById('equipe-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading team...</div>';
-    const orientadores = await loadJSON('data/orientadores.json');
-    const membros = await loadJSON('data/membros.json');
-    if (!orientadores || !membros) {
+    const investigators = await loadJSON('data/principal-investigators.json');
+    const members = await loadJSON('data/members.json');
+    if (!investigators || !members) {
         container.innerHTML = '<p>Error loading team data.</p>';
         return;
     }
-    orientadores.forEach(o => { orientadoresMap[o.id] = o; });
-    allMembersForLinks = membros;
+    investigators.forEach(pi => { principalInvestigatorsMap[pi.id] = pi; });
+    allMembersForLinks = members;
     container.innerHTML = '';
 
-    for (const orientador of orientadores) {
-        const membrosDoGrupo = membros.filter(m => m.orientador_id === orientador.id);
-        const socialOri = renderSocialLinks(orientador);
-        const fotoHtml = orientador.foto ? `<img src="${orientador.foto}" alt="${orientador.nome}" class="membro-foto">` : '';
+    for (const pi of investigators) {
+        const membersOfGroup = members.filter(m => m.supervisor_id === pi.id);
+        const socialPi = renderSocialLinks(pi);
+        const photoHtml = pi.picture ? `<img src="${pi.picture}" alt="${pi.name}" class="membro-foto">` : '';
 
         const extraHtml = `
-            <div class="extra-details" id="extra-${orientador.id}">
-                ${orientador.apresentacao ? `<div class="pesq-apresentacao">${orientador.apresentacao}</div>` : ''}
-                ${orientador.projetos && orientador.projetos.length ? `
+            <div class="extra-details" id="extra-${pi.id}">
+                ${pi.bio ? `<div class="pesq-apresentacao">${pi.bio}</div>` : ''}
+                ${pi.projects && pi.projects.length ? `
                     <div class="projetos-list">
                         <strong>Featured projects:</strong>
-                        ${orientador.projetos.map(p => `
+                        ${pi.projects.map(p => `
                             <div class="projeto-item">
-                                <span class="projeto-titulo">${p.titulo}</span><br>
-                                <span style="font-size:0.75rem;">${p.descricao.substring(0,150)}${p.descricao.length > 150 ? '…' : ''}</span>
+                                <span class="projeto-titulo">${p.title}</span><br>
+                                <span style="font-size:0.75rem;">${p.description.substring(0,150)}${p.description.length > 150 ? '…' : ''}</span>
                             </div>
                         `).join('')}
                     </div>
@@ -138,61 +139,61 @@ async function renderEquipe() {
             </div>
         `;
 
-        const grupoDiv = document.createElement('div');
-        grupoDiv.className = 'grupo-pesquisador';
-        grupoDiv.innerHTML = `
+        const groupDiv = document.createElement('div');
+        groupDiv.className = 'grupo-pesquisador';
+        groupDiv.innerHTML = `
             <div class="pesquisador-header">
                 <div>
-                    ${fotoHtml}
-                    <h3><i class="fas fa-chalkboard-user"></i> ${orientador.nome}</h3>
+                    ${photoHtml}
+                    <h3><i class="fas fa-chalkboard-user"></i> ${pi.name}</h3>
                     <div class="pesq-info">
-                        <span class="pesq-titulo">${orientador.titulo}</span>
-                        <span class="pesq-email"><i class="fas fa-envelope"></i> ${orientador.email}</span>
+                        <span class="pesq-titulo">${pi.title}</span>
+                        <span class="pesq-email"><i class="fas fa-envelope"></i> ${pi.email}</span>
                     </div>
-                    ${socialOri}
-                    <button class="toggle-details" data-target="extra-${orientador.id}">
+                    ${socialPi}
+                    <button class="toggle-details" data-target="extra-${pi.id}">
                         <i class="fas fa-plus-circle"></i> <span class="toggle-text">Show more</span>
                     </button>
                 </div>
                 ${extraHtml}
             </div>
-            <div class="membros-grid" id="grid-${orientador.id}"></div>
+            <div class="membros-grid" id="grid-${pi.id}"></div>
         `;
 
-        const btn = grupoDiv.querySelector('.toggle-details');
-        const extraDiv = grupoDiv.querySelector(`#extra-${orientador.id}`);
+        const btn = groupDiv.querySelector('.toggle-details');
+        const extraDiv = groupDiv.querySelector(`#extra-${pi.id}`);
         btn.addEventListener('click', () => {
             const isVisible = extraDiv.classList.toggle('show');
             btn.querySelector('.toggle-text').innerText = isVisible ? 'Show less' : 'Show more';
             btn.querySelector('i').className = isVisible ? 'fas fa-minus-circle' : 'fas fa-plus-circle';
         });
 
-        const grid = grupoDiv.querySelector(`#grid-${orientador.id}`);
-        if (membrosDoGrupo.length === 0) {
+        const grid = groupDiv.querySelector(`#grid-${pi.id}`);
+        if (membersOfGroup.length === 0) {
             grid.innerHTML = '<p class="instrucao">No students directly linked.</p>';
         } else {
-            membrosDoGrupo.forEach(m => {
-                const socialMembro = renderSocialLinks(m);
-                const coorientadorHtml = m.coorientador ? `<div class="coorientador"><i class="fas fa-user-friends"></i> Co-supervisor: ${m.coorientador}</div>` : '';
-                const fotoMembroHtml = m.foto ? `<img src="${m.foto}" alt="${m.nome}" class="membro-foto">` : '';
+            membersOfGroup.forEach(m => {
+                const socialMember = renderSocialLinks(m);
+                const coSupervisorHtml = m.co_supervisor ? `<div class="coorientador"><i class="fas fa-user-friends"></i> Co-supervisor: ${m.co_supervisor}</div>` : '';
+                const photoMemberHtml = m.picture ? `<img src="${m.picture}" alt="${m.name}" class="membro-foto">` : '';
                 const card = document.createElement('div');
                 card.className = 'membro-card';
                 card.innerHTML = `
-                    ${fotoMembroHtml}
-                    <span class="nome">${m.nome}</span>
-                    <div class="cargo">${m.vinculo}</div>
+                    ${photoMemberHtml}
+                    <span class="nome">${m.name}</span>
+                    <div class="cargo">${m.position}</div>
                     <div class="vinculo"><i class="fas fa-envelope"></i> ${m.email}</div>
-                    ${coorientadorHtml}
-                    ${socialMembro}
+                    ${coSupervisorHtml}
+                    ${socialMember}
                 `;
                 grid.appendChild(card);
             });
         }
-        container.appendChild(grupoDiv);
+        container.appendChild(groupDiv);
     }
 
-    const semOrientador = membros.filter(m => !m.orientador_id);
-    if (semOrientador.length) {
+    const unassigned = members.filter(m => !m.supervisor_id);
+    if (unassigned.length) {
         const title = document.createElement('h3');
         title.innerText = 'Postdocs and other collaborators';
         title.style.margin = '2rem 0 1rem';
@@ -200,17 +201,17 @@ async function renderEquipe() {
         container.appendChild(title);
         const gridOutros = document.createElement('div');
         gridOutros.className = 'membros-grid';
-        semOrientador.forEach(m => {
-            const socialMembro = renderSocialLinks(m);
-            const fotoMembroHtml = m.foto ? `<img src="${m.foto}" alt="${m.nome}" class="membro-foto">` : '';
+        unassigned.forEach(m => {
+            const socialMember = renderSocialLinks(m);
+            const photoMemberHtml = m.picture ? `<img src="${m.picture}" alt="${m.name}" class="membro-foto">` : '';
             const card = document.createElement('div');
             card.className = 'membro-card';
             card.innerHTML = `
-                ${fotoMembroHtml}
-                <span class="nome">${m.nome}</span>
-                <div class="cargo">${m.vinculo}</div>
+                ${photoMemberHtml}
+                <span class="nome">${m.name}</span>
+                <div class="cargo">${m.position}</div>
                 <div class="vinculo"><i class="fas fa-envelope"></i> ${m.email}</div>
-                ${socialMembro}
+                ${socialMember}
             `;
             gridOutros.appendChild(card);
         });
@@ -218,25 +219,26 @@ async function renderEquipe() {
     }
 }
 
+// Alumni
 async function renderEgressos() {
     const container = document.getElementById('egressos-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading alumni...</div>';
-    const egressos = await loadJSON('data/egressos.json');
-    if (!egressos || egressos.length === 0) {
+    const alumni = await loadJSON('data/alumni.json');
+    if (!alumni || alumni.length === 0) {
         container.innerHTML = '<p>No alumni registered.</p>';
         return;
     }
     container.innerHTML = '';
     const grid = document.createElement('div');
     grid.className = 'membros-grid';
-    egressos.forEach(eg => {
+    alumni.forEach(eg => {
         const card = document.createElement('div');
         card.className = 'egresso-card';
         card.innerHTML = `
-            <div class="nome">${eg.nome}</div>
-            <div class="info">${eg.vinculo_atual || ''} ${eg.tipo ? `(${eg.tipo})` : ''}</div>
-            <div class="info">Year: ${eg.ano_saida}</div>
+            <div class="nome">${eg.name}</div>
+            <div class="info">${eg.current_affiliation || ''} ${eg.degree_type ? `(${eg.degree_type})` : ''}</div>
+            <div class="info">Year: ${eg.graduation_year}</div>
             ${eg.lattes ? `<div class="social-links"><a href="${eg.lattes}" target="_blank" title="Lattes"><i class="fab fa-lattes"></i></a></div>` : ''}
         `;
         grid.appendChild(card);
@@ -244,27 +246,28 @@ async function renderEgressos() {
     container.appendChild(grid);
 }
 
+// Partners
 async function renderParceiros() {
     const container = document.getElementById('parceiros-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading partners...</div>';
-    const parceiros = await loadJSON('data/parceiros.json');
-    if (!parceiros || parceiros.length === 0) {
+    const partners = await loadJSON('data/partners.json');
+    if (!partners || partners.length === 0) {
         container.innerHTML = '<p>No partners registered.</p>';
         return;
     }
     container.innerHTML = '';
     const grid = document.createElement('div');
     grid.className = 'parceiro-grid';
-    parceiros.forEach(p => {
-        const logoHtml = p.logo ? `<img src="${p.logo}" alt="${p.nome}" class="parceiro-logo">` : '';
+    partners.forEach(p => {
+        const logoHtml = p.logo ? `<img src="${p.logo}" alt="${p.name}" class="parceiro-logo">` : '';
         const card = document.createElement('div');
         card.className = 'parceiro-card';
         card.innerHTML = `
             ${logoHtml}
-            <span class="nome">${p.nome}</span>
-            <div class="tipo">${p.tipo}</div>
-            <div class="descricao">${p.descricao || ''}</div>
+            <span class="nome">${p.name}</span>
+            <div class="tipo">${p.type}</div>
+            <div class="descricao">${p.description || ''}</div>
             ${p.link ? `<a href="${p.link}" target="_blank" class="pub-link" style="display:inline-block; margin-top:0.5rem;">Visit website <i class="fas fa-external-link-alt"></i></a>` : ''}
         `;
         grid.appendChild(card);
@@ -272,19 +275,20 @@ async function renderParceiros() {
     container.appendChild(grid);
 }
 
+// Gallery
 async function renderGaleria() {
     const container = document.getElementById('galeria-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading gallery...</div>';
-    const galeria = await loadJSON('data/galeria.json');
-    if (!galeria || galeria.length === 0) {
+    const gallery = await loadJSON('data/gallery.json');
+    if (!gallery || gallery.length === 0) {
         container.innerHTML = '<p>No images in gallery.</p>';
         return;
     }
     container.innerHTML = '';
     const grid = document.createElement('div');
     grid.className = 'galeria-grid';
-    galeria.forEach(img => {
+    gallery.forEach(img => {
         const item = document.createElement('div');
         item.className = 'galeria-item';
         item.innerHTML = `<img src="${img.url}" alt="${img.title || 'Gallery image'}">`;
@@ -293,24 +297,25 @@ async function renderGaleria() {
     container.appendChild(grid);
 }
 
+// Opportunities
 async function renderOportunidades() {
     const container = document.getElementById('oportunidades-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading opportunities...</div>';
-    const oportunidades = await loadJSON('data/oportunidades.json');
-    if (!oportunidades || oportunidades.length === 0) {
+    const opportunities = await loadJSON('data/opportunities.json');
+    if (!opportunities || opportunities.length === 0) {
         container.innerHTML = '<p>No opportunities at the moment.</p>';
         return;
     }
     container.innerHTML = '';
     const grid = document.createElement('div');
     grid.className = 'oportunidades-grid';
-    oportunidades.forEach(op => {
+    opportunities.forEach(op => {
         const card = document.createElement('div');
         card.className = 'oportunidade-card';
         card.innerHTML = `
-            <div class="oportunidade-titulo">${op.titulo}</div>
-            <div class="oportunidade-descricao">${op.descricao}</div>
+            <div class="oportunidade-titulo">${op.title}</div>
+            <div class="oportunidade-descricao">${op.description}</div>
             ${op.link ? `<a href="${op.link}" target="_blank" class="oportunidade-link">More info <i class="fas fa-external-link-alt"></i></a>` : ''}
         `;
         grid.appendChild(card);
@@ -318,16 +323,17 @@ async function renderOportunidades() {
     container.appendChild(grid);
 }
 
+// Publications
 async function renderPublicacoes() {
     const container = document.getElementById('publicacoes-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading publications...</div>';
-    const pubs = await loadJSON('data/publicacoes.json');
+    const pubs = await loadJSON('data/publications.json');
     if (!pubs || pubs.length === 0) {
         container.innerHTML = '<p>No publications registered.</p>';
         return;
     }
-    pubs.sort((a,b) => b.ano - a.ano);
+    pubs.sort((a,b) => b.year - a.year);
     container.innerHTML = '';
     const lista = document.createElement('div');
     lista.className = 'publicacoes-lista';
@@ -335,39 +341,39 @@ async function renderPublicacoes() {
         let linkUrl = pub.link || (pub.doi ? `https://doi.org/${pub.doi}` : '');
         let pdfLink = pub.pdf ? `<a href="${pub.pdf}" target="_blank" class="pub-link pdf-link"><i class="fas fa-file-pdf"></i> Download PDF</a>` : '';
         let onlineLink = linkUrl ? `<a href="${linkUrl}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Access online</a>` : '';
-        let autoresHtml = '';
-        if (pub.autores_detalhes && pub.autores_detalhes.length) {
-            const autoresLinks = [];
-            for (const autor of pub.autores_detalhes) {
-                let nomeAutor = autor.nome;
-                let id = autor.id;
-                if (id && orientadoresMap[id]) {
-                    autoresLinks.push(`<a href="#team">${nomeAutor}</a>`);
+        let authorsHtml = '';
+        if (pub.author_details && pub.author_details.length) {
+            const authorLinks = [];
+            for (const author of pub.author_details) {
+                let authorName = author.name;
+                let id = author.id;
+                if (id && principalInvestigatorsMap[id]) {
+                    authorLinks.push(`<a href="#team">${authorName}</a>`);
                 } else {
                     let found = false;
                     for (let m of allMembersForLinks) {
-                        if (m.nome === nomeAutor) {
-                            autoresLinks.push(`<a href="#team">${nomeAutor}</a>`);
+                        if (m.name === authorName) {
+                            authorLinks.push(`<a href="#team">${authorName}</a>`);
                             found = true;
                             break;
                         }
                     }
-                    if (!found) autoresLinks.push(nomeAutor);
+                    if (!found) authorLinks.push(authorName);
                 }
             }
-            autoresHtml = autoresLinks.join('; ');
+            authorsHtml = authorLinks.join('; ');
         } else {
-            autoresHtml = pub.autores || '';
+            authorsHtml = pub.authors || '';
         }
         const pubDiv = document.createElement('div');
         pubDiv.className = 'publicacao';
         pubDiv.innerHTML = `
-            <div class="pub-year">${pub.ano}</div>
+            <div class="pub-year">${pub.year}</div>
             <div class="pub-detalhe">
-                <h4>${pub.titulo}</h4>
-                <p class="pub-autores">${autoresHtml}</p>
-                <p class="pub-periodico"><em>${pub.periodico}</em> ${pub.volume ? `, ${pub.volume}` : ''} ${pub.paginas ? `, ${pub.paginas}` : ''}</p>
-                ${pub.resumo ? `<p class="pub-resumo">${pub.resumo}</p>` : ''}
+                <h4>${pub.title}</h4>
+                <p class="pub-autores">${authorsHtml}</p>
+                <p class="pub-periodico"><em>${pub.journal}</em> ${pub.volume ? `, ${pub.volume}` : ''} ${pub.pages ? `, ${pub.pages}` : ''}</p>
+                ${pub.abstract ? `<p class="pub-resumo">${pub.abstract}</p>` : ''}
                 <div class="pub-actions">${onlineLink}${pdfLink}</div>
             </div>
         `;
