@@ -1,0 +1,42 @@
+{
+  "en": {
+    "title": "BioGC – Laboratory of Bioinformatics and Clinical Genomics | Fiocruz",
+    "description": "Bioinformatics and Clinical Genomics Laboratory (BioGC) at Instituto Carlos Chagas – Fiocruz. Research in genomics, transcriptomics, and bioinformatics applied to health.",
+    "header_title": "Laboratory of Bioinformatics and Clinical Genomics",
+    "header_subtitle": "BioGC – Carlos Chagas Institute",
+    "nav_home": "Home",
+    "nav_research": "Research",
+    "nav_team": "Team",
+    "nav_alumni": "Alumni",
+    "nav_partners": "Partners",
+    "nav_publications": "Publications",
+    "nav_contact": "Contact",
+    "hero_title": "Science and health for life",
+    "hero_text": "Integrating genomics, bioinformatics, and computational intelligence.",
+    "hero_button": "Explore our research lines",
+    "section_about_title": "About BioGC",
+    "section_about_text": "The Laboratory of Bioinformatics and Clinical Genomics (BioGC) is a center of excellence at the Carlos Chagas Institute – Fiocruz Paraná.",
+    "section_about_mission": "Mission: Generate knowledge and innovation in bioinformatics and clinical genomics, contributing to the advancement of science and public health, in line with SUS principles.",
+    "section_research_title": "Research lines"
+  },
+  "pt": {
+    "title": "BioGC – Laboratório de Bioinformática e Genômica Clínica | Fiocruz",
+    "description": "Laboratório de Bioinformática e Genômica Clínica (BioGC) do Instituto Carlos Chagas – Fiocruz. Pesquisa em genômica, transcriptômica e bioinformática aplicada à saúde.",
+    "header_title": "Laboratório de Bioinformática e Genômica Clínica",
+    "header_subtitle": "BioGC – Instituto Carlos Chagas",
+    "nav_home": "Início",
+    "nav_research": "Pesquisa",
+    "nav_team": "Equipe",
+    "nav_alumni": "Egressos",
+    "nav_partners": "Parceiros",
+    "nav_publications": "Publicações",
+    "nav_contact": "Contato",
+    "hero_title": "Ciência e saúde pela vida",
+    "hero_text": "Integrando genômica, bioinformática e inteligência computacional.",
+    "hero_button": "Conheça nossas linhas de pesquisa",
+    "section_about_title": "Sobre o BioGC",
+    "section_about_text": "O Laboratório de Bioinformática e Genômica Clínica (BioGC) é um centro de excelência do Instituto Carlos Chagas – Fiocruz Paraná.",
+    "section_about_mission": "Missão: Gerar conhecimento e inovação em bioinformática e genômica clínica, contribuindo para o avanço da ciência e da saúde pública, em sintonia com os princípios do SUS.",
+    "section_research_title": "Linhas de pesquisa"
+  }
+}
