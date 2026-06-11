@@ -1,13 +1,18 @@
 // ==================== CARREGAMENTO DE COMPONENTES ====================
 async function loadComponent(elementId, url) {
+    const element = document.getElementById(elementId);
+    if (!element) {
+        console.warn(`Element with id "${elementId}" not found. Skipping ${url}`);
+        return;
+    }
     try {
         const res = await fetch(url);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const html = await res.text();
-        document.getElementById(elementId).innerHTML = html;
+        element.innerHTML = html;
     } catch (err) {
         console.warn(`Error loading ${url}:`, err);
-        document.getElementById(elementId).innerHTML = `<p style="color:red;">Failed to load component.</p>`;
+        element.innerHTML = `<p style="color:red;">Failed to load component.</p>`;
     }
 }
 
@@ -16,7 +21,7 @@ async function loadAllComponents() {
         loadComponent('component-header', 'components/header.html'),
         loadComponent('component-hero', 'components/hero.html'),
         loadComponent('component-about', 'components/about.html'),
-        loadComponent('component-research', 'components/research.html'),
+        // loadComponent('component-research', 'components/research.html'), // REMOVIDO – elemento não existe no index.html
         loadComponent('component-team', 'components/team.html'),
         loadComponent('component-alumni', 'components/alumni.html'),
         loadComponent('component-gallery', 'components/gallery.html'),
@@ -62,7 +67,10 @@ function applyTranslations() {
         document.getElementById('about-mission').innerText = parts[0] + ':';
         if (document.getElementById('about-mission-text')) document.getElementById('about-mission-text').innerText = parts[1] || t.section_about_mission;
     }
-    if (document.getElementById('research-title')) document.getElementById('research-title').innerText = t.section_research_title;
+    // A seção research não está sendo carregada, então evitamos erro
+    if (document.getElementById('research-title')) {
+        document.getElementById('research-title').innerText = t.section_research_title;
+    }
 }
 
 function setLanguage(lang) {
