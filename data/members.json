@@ -32,7 +32,7 @@
   {
     "id": "isabel",
     "name": "Isabel de Farias Ribeiro",
-    "position": "Undergraduate Research Assistant",
+    "position": "Master's Student",
     "email": "isabeldefariasribeiro@gmail.com",
     "lattes": "http://lattes.cnpq.br/5741447374629850",
     "picture": "",
@@ -96,13 +96,13 @@
     "email": "helena.despindula@gmail.com",
     "lattes": "http://lattes.cnpq.br/3260753347712464",
     "picture": "",
-    "supervisor_id": null,
+    "supervisor_id": "helisson",
     "co_supervisor": ""
   },
   {
     "id": "ana",
     "name": "Ana Carolina Huebl Januário",
-    "position": "Undergraduate Research Assistant",
+    "position": "Undergraduate",
     "email": "januario.ana@pucpr.edu.br",
     "lattes": "http://lattes.cnpq.br/4005957511686168",
     "picture": "",
@@ -112,7 +112,7 @@
   {
     "id": "laissa",
     "name": "Laissa Mirella Mendes Mariano de Lara",
-    "position": "Undergraduate Research Assistant",
+    "position": "Undergraduate",
     "email": "laissamendes1134@gmail.com",
     "lattes": "http://lattes.cnpq.br/1840635397777234",
     "picture": "",
@@ -122,7 +122,7 @@
   {
     "id": "felipe",
     "name": "Felipe Lemos Paulino",
-    "position": "Undergraduate Research Assistant",
+    "position": "Master's Student",
     "email": "estudantil.felipe@gmail.com",
     "lattes": "http://lattes.cnpq.br/1468444770201354",
     "picture": "",
