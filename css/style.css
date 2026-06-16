@@ -722,3 +722,78 @@ body {
         padding: 0.2rem 0.6rem;
     }
 }
+
+/* ===== Announcements ===== */
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.announcement-card {
+    background: #ffffff;
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-left: 4px solid #003f44;
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.announcement-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.announcement-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.announcement-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #003f44;
+    margin: 0.2rem 0;
+}
+
+.announcement-description {
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    flex: 1;
+}
+
+.announcement-footer {
+    margin-top: 0.3rem;
+}
+
+.announcement-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #003f44;
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.2s;
+}
+
+.announcement-link:hover {
+    border-bottom-color: #003f44;
+}
