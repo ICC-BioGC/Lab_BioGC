@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Postdoctoral Fellowship in Bioinformatics",
+    "description": "We are seeking a highly motivated postdoctoral researcher to work on genomic data analysis. Experience with NGS data and Python/R required.",
+    "link": "https://example.com/edital",
+    "category": "job"
+  },
+  {
+    "title": "PhD Defense – Joyce de Souza",
+    "description": "Joyce de Souza will defend her PhD thesis 'Genomic and transcriptomic analysis of Acinetobacter baumannii resistance' on July 15, 2026 at 2:00 PM, room B101.",
+    "link": "",
+    "category": "defense"
+  },
+  {
+    "title": "Workshop: Introduction to RNA-Seq Analysis",
+    "description": "A 3-day hands-on workshop on RNA-Seq data analysis, from quality control to differential expression, to be held at ICC-Fiocruz on August 10-12, 2026.",
+    "link": "https://example.com/workshop",
+    "category": "event"
+  },
+  {
+    "title": "MSc/PhD Scholarships – 2026 Intake",
+    "description": "Applications are open for the Graduate Program in Biosciences and Biotechnology. Deadline: July 30, 2026. Candidates must have a background in molecular biology or bioinformatics.",
+    "link": "https://posgraduacao.icc.fiocruz.br/edital-2026",
+    "category": "job"
+  }
+]
