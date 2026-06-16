@@ -21,13 +21,11 @@ async function loadAllComponents() {
         loadComponent('component-header', 'components/header.html'),
         loadComponent('component-hero', 'components/hero.html'),
         loadComponent('component-about', 'components/about.html'),
-        // loadComponent('component-research', 'components/research.html'), // REMOVIDO
         loadComponent('component-team', 'components/team.html'),
-        loadComponent('component-alumni', 'components/alumni.html'),
-        loadComponent('component-gallery', 'components/gallery.html'),
-        loadComponent('component-opportunities', 'components/opportunities.html'),
-        loadComponent('component-partners', 'components/partners.html'),
+        loadComponent('component-announcements', 'components/announcements.html'),
         loadComponent('component-publications', 'components/publications.html'),
+        loadComponent('component-partners', 'components/partners.html'),
+        loadComponent('component-alumni', 'components/alumni.html'),
         loadComponent('component-contact', 'components/contact.html'),
         loadComponent('component-footer', 'components/footer.html')
     ]);
@@ -81,7 +79,7 @@ function setLanguage(lang) {
     });
 }
 
-// ==================== CONTEÚDO DINÂMICO (JSON) ====================
+// ==================== CONTEÚDO DINÂMICO ====================
 let principalInvestigatorsMap = {};
 let allMembersForLinks = [];
 
@@ -109,7 +107,7 @@ function renderSocialLinks(links) {
     return html;
 }
 
-// Team (Principal Investigators + Members) - ordena por rank
+// ===== TEAM (agrupado por orientador, ordenado por rank) =====
 async function renderEquipeWithData(investigators, members) {
     const container = document.getElementById('equipe-container');
     if (!container) return;
@@ -123,9 +121,7 @@ async function renderEquipeWithData(investigators, members) {
     container.innerHTML = '';
 
     for (const pi of investigators) {
-        // Filtra membros do orientador
         let membersOfGroup = members.filter(m => m.supervisor_id === pi.id);
-        // Ordena por rank (1 = Postdoc, 2 = PhD, 3 = Master, 4 = Undergraduate, 5 = outros)
         membersOfGroup.sort((a, b) => {
             const rankA = a.rank !== undefined ? a.rank : 5;
             const rankB = b.rank !== undefined ? b.rank : 5;
@@ -208,18 +204,14 @@ async function renderEquipeWithData(investigators, members) {
         container.appendChild(groupDiv);
     }
 
-    // Membros sem orientador - também ordenados por rank
     const unassigned = members.filter(m => !m.supervisor_id);
     if (unassigned.length) {
         unassigned.sort((a, b) => {
             const rankA = a.rank !== undefined ? a.rank : 5;
             const rankB = b.rank !== undefined ? b.rank : 5;
-            if (rankA === rankB) {
-                return a.name.localeCompare(b.name);
-            }
+            if (rankA === rankB) return a.name.localeCompare(b.name);
             return rankA - rankB;
         });
-
         const title = document.createElement('h3');
         title.innerText = 'Postdocs and other collaborators';
         title.style.margin = '2rem 0 1rem';
@@ -245,8 +237,8 @@ async function renderEquipeWithData(investigators, members) {
     }
 }
 
-// Alumni - com dados
-async function renderEgressosWithData(alumni) {
+// ===== ALUMNI (agrupado por orientador, colapsado por padrão) =====
+async function renderEgressosWithData(alumni, investigators) {
     const container = document.getElementById('egressos-container');
     if (!container) return;
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading alumni...</div>';
@@ -254,98 +246,112 @@ async function renderEgressosWithData(alumni) {
         container.innerHTML = '<p>No alumni registered.</p>';
         return;
     }
-    container.innerHTML = '';
-    const grid = document.createElement('div');
-    grid.className = 'membros-grid';
+
+    // Agrupar por orientador
+    const alumniBySupervisor = {};
     alumni.forEach(eg => {
+        const supId = eg.supervisor_id || 'unassigned';
+        if (!alumniBySupervisor[supId]) alumniBySupervisor[supId] = [];
+        alumniBySupervisor[supId].push(eg);
+    });
+
+    container.innerHTML = '';
+    // Ordenar os orientadores pela ordem dos investigators (ou alfabeticamente)
+    const supervisorIds = Object.keys(alumniBySupervisor);
+    // Tentar manter a ordem dos investigators
+    const orderedIds = [];
+    investigators.forEach(pi => {
+        if (alumniBySupervisor[pi.id]) {
+            orderedIds.push(pi.id);
+            delete alumniBySupervisor[pi.id];
+        }
+    });
+    // Os que sobraram (unassigned) vão no final
+    if (alumniBySupervisor['unassigned']) {
+        orderedIds.push('unassigned');
+    }
+
+    for (const supId of orderedIds) {
+        const list = alumniBySupervisor[supId] || [];
+        if (list.length === 0) continue;
+        // Encontrar nome do orientador (se existir)
+        let supervisorName = 'Other supervisors';
+        if (supId !== 'unassigned') {
+            const pi = investigators.find(p => p.id === supId);
+            if (pi) supervisorName = pi.name;
+        }
+        // Criar um grupo para este orientador
+        const groupDiv = document.createElement('div');
+        groupDiv.className = 'grupo-pesquisador'; // reutiliza o estilo
+        groupDiv.style.marginBottom = '1rem';
+        groupDiv.innerHTML = `
+            <div class="pesquisador-header" style="margin-bottom:0.5rem; border-bottom:1px solid #e0e0e0;">
+                <h3 style="font-size:1.2rem; color:#003f44;">${supervisorName}</h3>
+            </div>
+            <div class="membros-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
+                ${list.map(eg => `
+                    <div class="egresso-card" style="margin-bottom:0;">
+                        <div class="nome">${eg.name}</div>
+                        <div class="info">${eg.current_affiliation || ''} ${eg.degree_type ? `(${eg.degree_type})` : ''}</div>
+                        <div class="info">Year: ${eg.graduation_year}</div>
+                        ${eg.lattes ? `<div class="social-links"><a href="${eg.lattes}" target="_blank" title="Lattes"><i class="fab fa-lattes"></i></a></div>` : ''}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        container.appendChild(groupDiv);
+    }
+
+    // Configurar botão de toggle para alumni
+    const alumniContent = document.getElementById('alumni-content');
+    const toggleBtn = document.getElementById('toggle-alumni-btn');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+            const isVisible = alumniContent.style.display !== 'none';
+            alumniContent.style.display = isVisible ? 'none' : 'block';
+            this.querySelector('.toggle-text').innerText = isVisible ? 'Show alumni' : 'Hide alumni';
+            this.querySelector('i').className = isVisible ? 'fas fa-plus-circle' : 'fas fa-minus-circle';
+        });
+    }
+}
+
+// ===== ANNOUNCEMENTS =====
+async function renderAnnouncementsWithData(announcements) {
+    const container = document.getElementById('announcements-container');
+    if (!container) return;
+    container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading announcements...</div>';
+    if (!announcements || announcements.length === 0) {
+        container.innerHTML = '<p>No announcements at the moment.</p>';
+        return;
+    }
+    container.innerHTML = '';
+    const grid = document.createElement('div');
+    grid.className = 'announcements-grid';
+    const categoryMap = {
+        'job': { label: 'Job', icon: 'fas fa-briefcase', color: '#00747a' },
+        'defense': { label: 'Defense', icon: 'fas fa-graduation-cap', color: '#cc3121' },
+        'event': { label: 'Event', icon: 'fas fa-calendar-alt', color: '#ff9c08' },
+        'award': { label: 'Award', icon: 'fas fa-trophy', color: '#f1c40f' },
+        'other': { label: 'Announcement', icon: 'fas fa-bullhorn', color: '#5a6e7c' }
+    };
+    announcements.forEach(item => {
+        const cat = categoryMap[item.category] || categoryMap['other'];
+        const badgeHtml = `<span class="announcement-badge" style="background:${cat.color};"><i class="${cat.icon}"></i> ${cat.label}</span>`;
+        const linkHtml = item.link ? `<a href="${item.link}" target="_blank" class="announcement-link">More info <i class="fas fa-arrow-right"></i></a>` : '';
         const card = document.createElement('div');
-        card.className = 'egresso-card';
+        card.className = 'announcement-card';
         card.innerHTML = `
-            <div class="nome">${eg.name}</div>
-            <div class="info">${eg.current_affiliation || ''} ${eg.degree_type ? `(${eg.degree_type})` : ''}</div>
-            <div class="info">Year: ${eg.graduation_year}</div>
-            ${eg.lattes ? `<div class="social-links"><a href="${eg.lattes}" target="_blank" title="Lattes"><i class="fab fa-lattes"></i></a></div>` : ''}
+            <div class="announcement-header">${badgeHtml}</div>
+            <h3 class="announcement-title">${item.title}</h3>
+            <p class="announcement-description">${item.description}</p>
+            <div class="announcement-footer">${linkHtml}</div>
         `;
         grid.appendChild(card);
     });
     container.appendChild(grid);
 }
 
-// Partners - com dados
-async function renderParceirosWithData(partners) {
-    const container = document.getElementById('parceiros-container');
-    if (!container) return;
-    container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading partners...</div>';
-    if (!partners || partners.length === 0) {
-        container.innerHTML = '<p>No partners registered.</p>';
-        return;
-    }
-    container.innerHTML = '';
-    const grid = document.createElement('div');
-    grid.className = 'parceiro-grid';
-    partners.forEach(p => {
-        const logoHtml = p.logo ? `<img src="${p.logo}" alt="${p.name}" class="parceiro-logo">` : '';
-        const card = document.createElement('div');
-        card.className = 'parceiro-card';
-        card.innerHTML = `
-            ${logoHtml}
-            <span class="nome">${p.name}</span>
-            <div class="tipo">${p.type}</div>
-            <div class="descricao">${p.description || ''}</div>
-            ${p.link ? `<a href="${p.link}" target="_blank" class="pub-link" style="display:inline-block; margin-top:0.5rem;">Visit website <i class="fas fa-external-link-alt"></i></a>` : ''}
-        `;
-        grid.appendChild(card);
-    });
-    container.appendChild(grid);
-}
-
-// Gallery - com dados
-async function renderGaleriaWithData(gallery) {
-    const container = document.getElementById('galeria-container');
-    if (!container) return;
-    container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading gallery...</div>';
-    if (!gallery || gallery.length === 0) {
-        container.innerHTML = '<p>No images in gallery.</p>';
-        return;
-    }
-    container.innerHTML = '';
-    const grid = document.createElement('div');
-    grid.className = 'galeria-grid';
-    gallery.forEach(img => {
-        const item = document.createElement('div');
-        item.className = 'galeria-item';
-        item.innerHTML = `<img src="${img.url}" alt="${img.title || 'Gallery image'}">`;
-        grid.appendChild(item);
-    });
-    container.appendChild(grid);
-}
-
-// Opportunities - com dados
-async function renderOportunidadesWithData(opportunities) {
-    const container = document.getElementById('oportunidades-container');
-    if (!container) return;
-    container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading opportunities...</div>';
-    if (!opportunities || opportunities.length === 0) {
-        container.innerHTML = '<p>No opportunities at the moment.</p>';
-        return;
-    }
-    container.innerHTML = '';
-    const grid = document.createElement('div');
-    grid.className = 'oportunidades-grid';
-    opportunities.forEach(op => {
-        const card = document.createElement('div');
-        card.className = 'oportunidade-card';
-        card.innerHTML = `
-            <div class="oportunidade-titulo">${op.title}</div>
-            <div class="oportunidade-descricao">${op.description}</div>
-            ${op.link ? `<a href="${op.link}" target="_blank" class="oportunidade-link">More info <i class="fas fa-external-link-alt"></i></a>` : ''}
-        `;
-        grid.appendChild(card);
-    });
-    container.appendChild(grid);
-}
-
-// Publications - com dados
+// ===== PUBLICATIONS =====
 async function renderPublicacoesWithData(pubs) {
     const container = document.getElementById('publicacoes-container');
     if (!container) return;
@@ -403,30 +409,80 @@ async function renderPublicacoesWithData(pubs) {
     container.appendChild(lista);
 }
 
+// ===== PARTNERS =====
+async function renderParceirosWithData(partners) {
+    const container = document.getElementById('parceiros-container');
+    if (!container) return;
+    container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading partners...</div>';
+    if (!partners || partners.length === 0) {
+        container.innerHTML = '<p>No partners registered.</p>';
+        return;
+    }
+    container.innerHTML = '';
+    const grid = document.createElement('div');
+    grid.className = 'parceiro-grid';
+    partners.forEach(p => {
+        const logoHtml = p.logo ? `<img src="${p.logo}" alt="${p.name}" class="parceiro-logo">` : '';
+        const card = document.createElement('div');
+        card.className = 'parceiro-card';
+        card.innerHTML = `
+            ${logoHtml}
+            <span class="nome">${p.name}</span>
+            <div class="tipo">${p.type}</div>
+            <div class="descricao">${p.description || ''}</div>
+            ${p.link ? `<a href="${p.link}" target="_blank" class="pub-link" style="display:inline-block; margin-top:0.5rem;">Visit website <i class="fas fa-external-link-alt"></i></a>` : ''}
+        `;
+        grid.appendChild(card);
+    });
+    container.appendChild(grid);
+}
+
+// ===== GALLERY (opcional, mantida) =====
+async function renderGaleriaWithData(gallery) {
+    const container = document.getElementById('galeria-container');
+    if (!container) return;
+    container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading gallery...</div>';
+    if (!gallery || gallery.length === 0) {
+        container.innerHTML = '<p>No images in gallery.</p>';
+        return;
+    }
+    container.innerHTML = '';
+    const grid = document.createElement('div');
+    grid.className = 'galeria-grid';
+    gallery.forEach(img => {
+        const item = document.createElement('div');
+        item.className = 'galeria-item';
+        item.innerHTML = `<img src="${img.url}" alt="${img.title || 'Gallery image'}">`;
+        grid.appendChild(item);
+    });
+    container.appendChild(grid);
+}
+
 // ==================== INICIALIZAÇÃO OTIMIZADA ====================
 let cachedData = {};
 
 async function loadAllData() {
-    const [investigators, members, alumni, partners, gallery, opportunities, publications] = await Promise.all([
+    const [investigators, members, alumni, partners, gallery, announcements, publications] = await Promise.all([
         loadJSON('data/principal-investigators.json'),
         loadJSON('data/members.json'),
         loadJSON('data/alumni.json'),
         loadJSON('data/partners.json'),
         loadJSON('data/gallery.json'),
-        loadJSON('data/opportunities.json'),
+        loadJSON('data/announcements.json'),
         loadJSON('data/publications.json')
     ]);
-    cachedData = { investigators, members, alumni, partners, gallery, opportunities, publications };
+    cachedData = { investigators, members, alumni, partners, gallery, announcements, publications };
 }
 
 async function renderAllDynamicContent() {
     await Promise.all([
         renderEquipeWithData(cachedData.investigators, cachedData.members),
-        renderEgressosWithData(cachedData.alumni),
+        renderAnnouncementsWithData(cachedData.announcements),
+        renderPublicacoesWithData(cachedData.publications),
         renderParceirosWithData(cachedData.partners),
-        renderGaleriaWithData(cachedData.gallery),
-        renderOportunidadesWithData(cachedData.opportunities),
-        renderPublicacoesWithData(cachedData.publications)
+        renderEgressosWithData(cachedData.alumni, cachedData.investigators),
+        // gallery é opcional, se quiser incluir, descomente a linha abaixo:
+        // renderGaleriaWithData(cachedData.gallery)
     ]);
 }
 
