@@ -21,7 +21,7 @@ async function loadAllComponents() {
         loadComponent('component-header', 'components/header.html'),
         loadComponent('component-hero', 'components/hero.html'),
         loadComponent('component-about', 'components/about.html'),
-        // loadComponent('component-research', 'components/research.html'), // REMOVIDO – elemento não existe no index.html
+        // loadComponent('component-research', 'components/research.html'), // REMOVIDO
         loadComponent('component-team', 'components/team.html'),
         loadComponent('component-alumni', 'components/alumni.html'),
         loadComponent('component-gallery', 'components/gallery.html'),
@@ -67,7 +67,6 @@ function applyTranslations() {
         document.getElementById('about-mission').innerText = parts[0] + ':';
         if (document.getElementById('about-mission-text')) document.getElementById('about-mission-text').innerText = parts[1] || t.section_about_mission;
     }
-    // A seção research não está sendo carregada, então evitamos erro
     if (document.getElementById('research-title')) {
         document.getElementById('research-title').innerText = t.section_research_title;
     }
@@ -110,7 +109,7 @@ function renderSocialLinks(links) {
     return html;
 }
 
-// Team (Principal Investigators + Members) - agora recebe os dados como parâmetro
+// Team (Principal Investigators + Members) - ordena por rank
 async function renderEquipeWithData(investigators, members) {
     const container = document.getElementById('equipe-container');
     if (!container) return;
@@ -124,7 +123,18 @@ async function renderEquipeWithData(investigators, members) {
     container.innerHTML = '';
 
     for (const pi of investigators) {
-        const membersOfGroup = members.filter(m => m.supervisor_id === pi.id);
+        // Filtra membros do orientador
+        let membersOfGroup = members.filter(m => m.supervisor_id === pi.id);
+        // Ordena por rank (1 = Postdoc, 2 = PhD, 3 = Master, 4 = Undergraduate, 5 = outros)
+        membersOfGroup.sort((a, b) => {
+            const rankA = a.rank !== undefined ? a.rank : 5;
+            const rankB = b.rank !== undefined ? b.rank : 5;
+            if (rankA === rankB) {
+                return a.name.localeCompare(b.name);
+            }
+            return rankA - rankB;
+        });
+
         const socialPi = renderSocialLinks(pi);
         const photoHtml = pi.picture ? `<img src="${pi.picture}" alt="${pi.name}" class="membro-foto">` : '';
 
@@ -198,8 +208,18 @@ async function renderEquipeWithData(investigators, members) {
         container.appendChild(groupDiv);
     }
 
+    // Membros sem orientador - também ordenados por rank
     const unassigned = members.filter(m => !m.supervisor_id);
     if (unassigned.length) {
+        unassigned.sort((a, b) => {
+            const rankA = a.rank !== undefined ? a.rank : 5;
+            const rankB = b.rank !== undefined ? b.rank : 5;
+            if (rankA === rankB) {
+                return a.name.localeCompare(b.name);
+            }
+            return rankA - rankB;
+        });
+
         const title = document.createElement('h3');
         title.innerText = 'Postdocs and other collaborators';
         title.style.margin = '2rem 0 1rem';
@@ -387,7 +407,6 @@ async function renderPublicacoesWithData(pubs) {
 let cachedData = {};
 
 async function loadAllData() {
-    // Carrega todos os JSONs em paralelo
     const [investigators, members, alumni, partners, gallery, opportunities, publications] = await Promise.all([
         loadJSON('data/principal-investigators.json'),
         loadJSON('data/members.json'),
@@ -401,7 +420,6 @@ async function loadAllData() {
 }
 
 async function renderAllDynamicContent() {
-    // Renderiza todas as seções em paralelo usando os dados cacheados
     await Promise.all([
         renderEquipeWithData(cachedData.investigators, cachedData.members),
         renderEgressosWithData(cachedData.alumni),
@@ -413,27 +431,19 @@ async function renderAllDynamicContent() {
 }
 
 async function init() {
-    // Carrega componentes e dados dinâmicos em paralelo
     await Promise.all([
         loadAllComponents(),
         loadAllData()
     ]);
-    
-    // Aplica traduções (precisa do DOM dos componentes já carregados)
     await loadTranslations();
-    
-    // Configura os botões de idioma
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
     const savedLang = localStorage.getItem('preferredLanguage');
     if (savedLang) setLanguage(savedLang);
-    
-    // Renderiza todo o conteúdo dinâmico (dados já estão em cache)
     await renderAllDynamicContent();
 }
 
-// Iniciar quando o DOM estiver pronto
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
