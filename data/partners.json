@@ -19,5 +19,19 @@
     "link": "https://www.ibmp.org.br",
     "description": "Joint projects in molecular diagnostics.",
     "logo": ""
+  },
+  {
+    "name": "Marcelo Pillonetto – LACEN-PR",
+    "type": "Collaborator",
+    "link": "",
+    "description": "Collaboration on antimicrobial resistance surveillance and genomic epidemiology of Acinetobacter baumannii.",
+    "logo": ""
+  },
+  {
+    "name": "Liga Acadêmica de Bioinformática – UFPR",
+    "type": "Academic League",
+    "link": "",
+    "description": "Partnership in educational activities, workshops, and bioinformatics outreach events.",
+    "logo": ""
   }
 ]
