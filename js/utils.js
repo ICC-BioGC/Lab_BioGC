@@ -1,3 +1,4 @@
+// js/utils.js
 export function renderSocialLinks(links) {
     let html = '<div class="social-links">';
     if (links.lattes) html += `<a href="${links.lattes}" target="_blank" title="Lattes"><i class="fab fa-lattes"></i></a>`;
