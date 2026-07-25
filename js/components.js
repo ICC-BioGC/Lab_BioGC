@@ -1,4 +1,32 @@
 // js/components.js
+export async function loadAllComponents() {
+    const components = [
+        { id: 'component-header', path: 'components/header.html' },
+        { id: 'component-about', path: 'components/about.html' },
+        { id: 'component-footer', path: 'components/footer.html' }
+        // Hero removido
+    ];
+
+    const loadComponent = async (id, path) => {
+        const container = document.getElementById(id);
+        if (!container) {
+            console.warn(`Container #${id} não encontrado.`);
+            return;
+        }
+        try {
+            const response = await fetch(path);
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            const html = await response.text();
+            container.innerHTML = html;
+            console.log(`✅ ${id} carregado`);
+        } catch (error) {
+            console.error(`❌ Erro ao carregar ${id}:`, error);
+            container.innerHTML = `<p style="color:red;">Erro ao carregar ${id}</p>`;
+        }
+    };
+
+    await Promise.all(components.map(c => loadComponent(c.id, c.path)));
+}// js/components.js
 async function loadComponent(elementId, url) {
     const element = document.getElementById(elementId);
     if (!element) {
