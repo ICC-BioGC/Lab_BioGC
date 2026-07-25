@@ -6,7 +6,7 @@ export function renderEquipeWithData(investigators, members) {
         return;
     }
 
-    // Remove a classe .loading para evitar o itálico
+    // Remove a classe .loading
     container.classList.remove('loading');
     container.innerHTML = '';
 
@@ -15,25 +15,20 @@ export function renderEquipeWithData(investigators, members) {
         return;
     }
 
-    // Renderiza cada pesquisador
     investigators.forEach(pi => {
         const grupoDiv = document.createElement('div');
         grupoDiv.className = 'grupo-pesquisador';
 
-        // Cabeçalho do pesquisador
         const header = document.createElement('div');
         header.className = 'pesquisador-header';
         header.innerHTML = `<h3>${pi.name}</h3>`;
         grupoDiv.appendChild(header);
 
-        // Grid de membros
         const grid = document.createElement('div');
         grid.className = 'membros-grid';
         grid.id = `grid-${pi.id}`;
 
-        // Filtra membros deste orientador
         const membros = members ? members.filter(m => m.supervisor_id === pi.id) : [];
-        
         if (membros.length === 0) {
             grid.innerHTML = '<p style="color:#888;font-style:normal;">Nenhum membro vinculado.</p>';
         } else {
