@@ -16,11 +16,11 @@ async function init() {
     try {
         console.log('🚀 Inicializando BioGC...');
 
-        // 1. Carrega os componentes HTML
+        // 1. Carrega os componentes HTML estáticos (header, about, contact, footer)
         await loadAllComponents();
-        console.log('✅ Componentes carregados');
+        console.log('✅ Componentes estáticos carregados');
 
-        // 2. Carrega os dados em paralelo
+        // 2. Carrega todos os dados JSON em paralelo
         const [investigators, members, alumni, partners, gallery, opportunities, publications] = await Promise.all([
             loadJSON('data/principal-investigators.json'),
             loadJSON('data/members.json'),
@@ -42,17 +42,17 @@ async function init() {
         const loading = document.getElementById('loading-message');
         if (loading) loading.remove();
 
-        // 5. Renderiza as seções
+        // 5. Renderiza as seções dinâmicas
         renderEquipeWithData(investigators, members);
-        renderPublicacoesWithData(publications);
+        renderPublicacoesWithData(publications, investigators, members); // ← 3 argumentos
         renderParceirosWithData(partners);
         renderGaleriaWithData(gallery);
         renderAnnouncementsWithData(opportunities);
-        
+
         // 6. Alumni (função local)
         renderEgressosWithData(alumni, investigators);
 
-        // 7. Configura seletor de idioma
+        // 7. Configura o seletor de idioma
         setupLanguageSwitcher();
 
         console.log('🎉 BioGC inicializado com sucesso!');
@@ -93,8 +93,9 @@ function setupLanguageSwitcher() {
         localStorage.setItem('preferredLanguage', lang);
         setLanguage(lang);
         console.log(`🌐 Idioma alterado para: ${lang}`);
-        // Recarrega apenas os textos (opcional)
-        // applyTranslations(lang);
+        // Recarrega os textos dinâmicos se necessário (opcional)
+        // Aplicar traduções novamente
+        // import('./translations.js').then(({ applyTranslations }) => applyTranslations(lang));
     });
 }
 
@@ -164,6 +165,21 @@ async function renderEgressosWithData(alumni, investigators) {
             </div>
         `;
         container.appendChild(groupDiv);
+    }
+
+    // Configura o toggle (se existir)
+    const toggleBtn = document.getElementById('toggle-alumni-btn');
+    const alumniContent = document.getElementById('alumni-content');
+    if (toggleBtn && alumniContent) {
+        alumniContent.style.display = 'none';
+        toggleBtn.addEventListener('click', function() {
+            const isVisible = alumniContent.style.display !== 'none';
+            alumniContent.style.display = isVisible ? 'none' : 'block';
+            this.querySelector('.toggle-text').innerText = isVisible ? 'Show alumni' : 'Hide alumni';
+            this.querySelector('i').className = isVisible ? 'fas fa-plus-circle' : 'fas fa-minus-circle';
+        });
+        toggleBtn.querySelector('.toggle-text').innerText = 'Show alumni';
+        toggleBtn.querySelector('i').className = 'fas fa-plus-circle';
     }
 }
 
