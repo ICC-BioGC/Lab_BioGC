@@ -1,50 +1,60 @@
 // js/publications.js
-import { getPrincipalInvestigatorsMap, getAllMembersForLinks } from './team.js';
 
-export async function renderPublicacoesWithData(pubs) {
+export async function renderPublicacoesWithData(pubs, investigators, members) {
     const container = document.getElementById('publicacoes-container');
-    if (!container) return;
+    if (!container) {
+        console.warn('Container #publicacoes-container não encontrado.');
+        return;
+    }
     container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading publications...</div>';
     if (!pubs || pubs.length === 0) {
         container.innerHTML = '<p>No publications registered.</p>';
         return;
     }
-    pubs.sort((a,b) => b.year - a.year);
+
+    // Ordena do mais recente para o mais antigo
+    pubs.sort((a, b) => b.year - a.year);
     container.innerHTML = '';
     const lista = document.createElement('div');
     lista.className = 'publicacoes-lista';
-    
-    const principalInvestigatorsMap = getPrincipalInvestigatorsMap();
-    const allMembersForLinks = getAllMembersForLinks();
+
+    // Criar mapas para buscar pesquisadores e membros pelo ID/nome
+    const piMap = {};
+    if (investigators) {
+        investigators.forEach(pi => { piMap[pi.id] = pi; });
+    }
+    const memberMap = {};
+    if (members) {
+        members.forEach(m => { memberMap[m.name] = m; });
+    }
 
     for (const pub of pubs) {
         let linkUrl = pub.link || (pub.doi ? `https://doi.org/${pub.doi}` : '');
         let pdfLink = pub.pdf ? `<a href="${pub.pdf}" target="_blank" class="pub-link pdf-link"><i class="fas fa-file-pdf"></i> Download PDF</a>` : '';
         let onlineLink = linkUrl ? `<a href="${linkUrl}" target="_blank" class="pub-link"><i class="fas fa-external-link-alt"></i> Access online</a>` : '';
+
         let authorsHtml = '';
         if (pub.author_details && pub.author_details.length) {
             const authorLinks = [];
             for (const author of pub.author_details) {
                 let authorName = author.name;
                 let id = author.id;
-                if (id && principalInvestigatorsMap[id]) {
+                // Se tiver ID e existir no mapa de PI, cria link
+                if (id && piMap[id]) {
+                    authorLinks.push(`<a href="#team">${authorName}</a>`);
+                } else if (memberMap[authorName]) {
+                    // Se o nome existir no mapa de membros, cria link
                     authorLinks.push(`<a href="#team">${authorName}</a>`);
                 } else {
-                    let found = false;
-                    for (let m of allMembersForLinks) {
-                        if (m.name === authorName) {
-                            authorLinks.push(`<a href="#team">${authorName}</a>`);
-                            found = true;
-                            break;
-                        }
-                    }
-                    if (!found) authorLinks.push(authorName);
+                    // Caso contrário, exibe apenas o nome
+                    authorLinks.push(authorName);
                 }
             }
             authorsHtml = authorLinks.join('; ');
         } else {
             authorsHtml = pub.authors || '';
         }
+
         const pubDiv = document.createElement('div');
         pubDiv.className = 'publicacao';
         pubDiv.innerHTML = `
