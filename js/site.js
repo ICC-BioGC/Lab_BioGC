@@ -1,12 +1,12 @@
-// ===== IMPORTAÇÕES CORRETAS (usando os nomes reais dos seus módulos) =====
+// ===== IMPORTAÇÕES =====
 import { loadAllComponents } from './components.js';
 import { loadJSON } from './dataLoader.js';
-import { renderEquipeWithData } from './team.js';  // ← apenas o que existe
+import { renderEquipeWithData } from './team.js';
 import { renderPublicacoesWithData } from './publications.js';
 import { renderParceirosWithData } from './partners.js';
 import { renderGaleriaWithData } from './gallery.js';
 import { renderAnnouncementsWithData } from './announcements.js';
-import { loadTranslations, applyTranslations, setLanguage } from './translations.js';
+import { loadTranslations, setLanguage } from './translations.js';
 
 // ===== VARIÁVEIS GLOBAIS =====
 let cachedData = {};
@@ -20,7 +20,7 @@ async function init() {
         await loadAllComponents();
         console.log('✅ Componentes carregados');
 
-        // 2. Carrega todos os dados JSON em paralelo
+        // 2. Carrega os dados em paralelo
         const [investigators, members, alumni, partners, gallery, opportunities, publications] = await Promise.all([
             loadJSON('data/principal-investigators.json'),
             loadJSON('data/members.json'),
@@ -32,9 +32,9 @@ async function init() {
         ]);
 
         cachedData = { investigators, members, alumni, partners, gallery, opportunities, publications };
-        console.log('✅ Dados carregados');
+        console.log('✅ Dados carregados', cachedData);
 
-        // 3. Carrega as traduções
+        // 3. Carrega as traduções (se existir)
         await loadTranslations();
         console.log('✅ Traduções carregadas');
 
@@ -42,23 +42,23 @@ async function init() {
         const loading = document.getElementById('loading-message');
         if (loading) loading.remove();
 
-        // 5. Renderiza as seções (usando os nomes corretos das funções)
+        // 5. Renderiza as seções
         renderEquipeWithData(investigators, members);
         renderPublicacoesWithData(publications);
         renderParceirosWithData(partners);
         renderGaleriaWithData(gallery);
         renderAnnouncementsWithData(opportunities);
         
-        // Alumni (função que está neste mesmo arquivo)
+        // 6. Alumni (função local)
         renderEgressosWithData(alumni, investigators);
 
-        // 6. Configura o seletor de idioma
+        // 7. Configura seletor de idioma
         setupLanguageSwitcher();
 
         console.log('🎉 BioGC inicializado com sucesso!');
     } catch (error) {
         console.error('❌ Erro na inicialização:', error);
-        showErrorMessage('Falha ao carregar o site. Tente recarregar a página.');
+        showErrorMessage('Falha ao carregar o site. Verifique o console para mais detalhes.');
     }
 }
 
@@ -84,18 +84,21 @@ function setupLanguageSwitcher() {
     const switcher = document.getElementById('language-switcher');
     if (!switcher) return;
 
-    // Carrega a preferência salva
     const savedLang = localStorage.getItem('preferredLanguage') || 'en';
     switcher.value = savedLang;
     setLanguage(savedLang);
 
     switcher.addEventListener('change', function() {
-        setLanguage(this.value);
-        console.log(`🌐 Idioma alterado para: ${this.value}`);
+        const lang = this.value;
+        localStorage.setItem('preferredLanguage', lang);
+        setLanguage(lang);
+        console.log(`🌐 Idioma alterado para: ${lang}`);
+        // Recarrega apenas os textos (opcional)
+        // applyTranslations(lang);
     });
 }
 
-// ===== ALUMNI (agrupado por orientador, colapsado por padrão) =====
+// ===== ALUMNI (agrupado por orientador) =====
 async function renderEgressosWithData(alumni, investigators) {
     const container = document.getElementById('egressos-container');
     if (!container) {
@@ -116,7 +119,7 @@ async function renderEgressosWithData(alumni, investigators) {
         alumniBySupervisor[supId].push(eg);
     });
 
-    // Ordena os grupos pelos investigadores
+    // Ordena grupos pelos investigadores
     const orderedIds = [];
     if (investigators) {
         investigators.forEach(pi => {
@@ -161,21 +164,6 @@ async function renderEgressosWithData(alumni, investigators) {
             </div>
         `;
         container.appendChild(groupDiv);
-    }
-
-    // Configura o toggle (se existir)
-    const toggleBtn = document.getElementById('toggle-alumni-btn');
-    const alumniContent = document.getElementById('alumni-content');
-    if (toggleBtn && alumniContent) {
-        alumniContent.style.display = 'none';
-        toggleBtn.addEventListener('click', function() {
-            const isVisible = alumniContent.style.display !== 'none';
-            alumniContent.style.display = isVisible ? 'none' : 'block';
-            this.querySelector('.toggle-text').innerText = isVisible ? 'Show alumni' : 'Hide alumni';
-            this.querySelector('i').className = isVisible ? 'fas fa-plus-circle' : 'fas fa-minus-circle';
-        });
-        toggleBtn.querySelector('.toggle-text').innerText = 'Show alumni';
-        toggleBtn.querySelector('i').className = 'fas fa-plus-circle';
     }
 }
 
