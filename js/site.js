@@ -1,7 +1,7 @@
 // ===== IMPORTAÇÕES CORRETAS (usando os nomes reais dos seus módulos) =====
 import { loadAllComponents } from './components.js';
 import { loadJSON } from './dataLoader.js';
-import { renderEquipeWithData, getPrincipalInvestigatorsMap, getAllMembersForLinks } from './team.js';
+import { renderEquipeWithData } from './team.js';  // ← apenas o que existe
 import { renderPublicacoesWithData } from './publications.js';
 import { renderParceirosWithData } from './partners.js';
 import { renderGaleriaWithData } from './gallery.js';
