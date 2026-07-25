@@ -19,7 +19,6 @@ async function loadComponent(elementId, url) {
 export async function loadAllComponents() {
     await Promise.all([
         loadComponent('component-header', 'components/header.html'),
-        loadComponent('component-hero', 'components/hero.html'),
         loadComponent('component-about', 'components/about.html'),
         loadComponent('component-team', 'components/team.html'),
         loadComponent('component-announcements', 'components/announcements.html'),
