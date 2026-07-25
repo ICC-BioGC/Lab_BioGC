@@ -1,61 +1,59 @@
-// ===== IMPORTAÇÕES DOS MÓDULOS =====
+// ===== IMPORTAÇÕES CORRETAS (usando os nomes reais dos seus módulos) =====
 import { loadAllComponents } from './components.js';
 import { loadJSON } from './dataLoader.js';
-import { renderTeam, renderPrincipalInvestigators } from './team.js';
-import { renderPublications } from './publications.js';
-import { renderPartners } from './partners.js';
-import { renderGallery } from './gallery.js';
-import { renderOpportunities } from './announcements.js';
-import { applyTranslations, getCurrentLanguage, setLanguage } from './translations.js';
+import { renderEquipeWithData, getPrincipalInvestigatorsMap, getAllMembersForLinks } from './team.js';
+import { renderPublicacoesWithData } from './publications.js';
+import { renderParceirosWithData } from './partners.js';
+import { renderGaleriaWithData } from './gallery.js';
+import { renderAnnouncementsWithData } from './announcements.js';
+import { loadTranslations, applyTranslations, setLanguage } from './translations.js';
 
-// ===== VARIÁVEIS GLOBAIS (cache) =====
+// ===== VARIÁVEIS GLOBAIS =====
 let cachedData = {};
 
-// ===== FUNÇÃO PRINCIPAL DE INICIALIZAÇÃO =====
+// ===== FUNÇÃO PRINCIPAL =====
 async function init() {
     try {
         console.log('🚀 Inicializando BioGC...');
 
-        // 1. Carrega todos os componentes HTML (paralelo)
+        // 1. Carrega os componentes HTML
         await loadAllComponents();
         console.log('✅ Componentes carregados');
 
-        // 2. Carrega todos os dados JSON (paralelo)
-        const [investigators, members, alumni, partners, gallery, opportunities, publications, translations] = await Promise.all([
+        // 2. Carrega todos os dados JSON em paralelo
+        const [investigators, members, alumni, partners, gallery, opportunities, publications] = await Promise.all([
             loadJSON('data/principal-investigators.json'),
             loadJSON('data/members.json'),
             loadJSON('data/alumni.json'),
             loadJSON('data/partners.json'),
             loadJSON('data/gallery.json'),
             loadJSON('data/opportunities.json'),
-            loadJSON('data/publications.json'),
-            loadJSON('data/translations.json')
+            loadJSON('data/publications.json')
         ]);
 
-        // Guarda em cache
-        cachedData = { investigators, members, alumni, partners, gallery, opportunities, publications, translations };
-        console.log('✅ Dados carregados', cachedData);
+        cachedData = { investigators, members, alumni, partners, gallery, opportunities, publications };
+        console.log('✅ Dados carregados');
 
-        // 3. Aplica traduções iniciais
-        if (translations) {
-            applyTranslations(translations, 'en');
-        }
+        // 3. Carrega as traduções
+        await loadTranslations();
+        console.log('✅ Traduções carregadas');
 
-        // 4. Renderiza as seções dinâmicas (paralelo)
-        await Promise.all([
-            renderPrincipalInvestigators(investigators),
-            renderTeam(members, investigators),
-            renderPublications(publications, investigators, members),
-            renderPartners(partners),
-            renderGallery(gallery),
-            renderOpportunities(opportunities),
-            // Alumni usa função do próprio site.js (não exportada)
-            renderEgressosWithData(alumni, investigators)
-        ]);
-        console.log('✅ Seções renderizadas');
+        // 4. Remove a mensagem de loading
+        const loading = document.getElementById('loading-message');
+        if (loading) loading.remove();
 
-        // 5. Configura o seletor de idioma
-        setupLanguageSwitcher(translations);
+        // 5. Renderiza as seções (usando os nomes corretos das funções)
+        renderEquipeWithData(investigators, members);
+        renderPublicacoesWithData(publications);
+        renderParceirosWithData(partners);
+        renderGaleriaWithData(gallery);
+        renderAnnouncementsWithData(opportunities);
+        
+        // Alumni (função que está neste mesmo arquivo)
+        renderEgressosWithData(alumni, investigators);
+
+        // 6. Configura o seletor de idioma
+        setupLanguageSwitcher();
 
         console.log('🎉 BioGC inicializado com sucesso!');
     } catch (error) {
@@ -66,9 +64,9 @@ async function init() {
 
 // ===== FUNÇÃO PARA EXIBIR MENSAGEM DE ERRO =====
 function showErrorMessage(message) {
-    const main = document.querySelector('main');
-    if (main) {
-        main.innerHTML = `
+    const loading = document.getElementById('loading-message');
+    if (loading) {
+        loading.innerHTML = `
             <div style="text-align:center;padding:4rem 2rem;color:#cc3121;">
                 <i class="fas fa-exclamation-triangle" style="font-size:3rem;margin-bottom:1rem;"></i>
                 <h2>Ops! Algo deu errado.</h2>
@@ -82,39 +80,35 @@ function showErrorMessage(message) {
 }
 
 // ===== CONFIGURADOR DE IDIOMA =====
-function setupLanguageSwitcher(translations) {
+function setupLanguageSwitcher() {
     const switcher = document.getElementById('language-switcher');
-    if (!switcher || !translations) return;
+    if (!switcher) return;
 
-    const currentLang = getCurrentLanguage();
-    switcher.value = currentLang;
+    // Carrega a preferência salva
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    switcher.value = savedLang;
+    setLanguage(savedLang);
 
     switcher.addEventListener('change', function() {
-        const lang = this.value;
-        setLanguage(lang);
-        applyTranslations(translations, lang);
-        // Recarrega os componentes que têm texto traduzível
-        // (opcional: recarregar apenas os textos, não a página toda)
-        console.log(`🌐 Idioma alterado para: ${lang}`);
+        setLanguage(this.value);
+        console.log(`🌐 Idioma alterado para: ${this.value}`);
     });
 }
 
 // ===== ALUMNI (agrupado por orientador, colapsado por padrão) =====
-// (mantenha a função que você já tinha, mas com pequenas melhorias)
 async function renderEgressosWithData(alumni, investigators) {
     const container = document.getElementById('egressos-container');
     if (!container) {
-        console.warn('Container #egressos-container not found.');
+        console.warn('Container #egressos-container não encontrado.');
         return;
     }
 
-    // Se não houver dados, exibe mensagem
     if (!alumni || alumni.length === 0) {
         container.innerHTML = '<p>No alumni registered.</p>';
         return;
     }
 
-    // --- Agrupa os egressos por orientador ---
+    // Agrupa por orientador
     const alumniBySupervisor = {};
     alumni.forEach(eg => {
         const supId = eg.supervisor_id || 'unassigned';
@@ -122,7 +116,7 @@ async function renderEgressosWithData(alumni, investigators) {
         alumniBySupervisor[supId].push(eg);
     });
 
-    // --- Constrói a lista de IDs dos orientadores na ordem correta ---
+    // Ordena os grupos pelos investigadores
     const orderedIds = [];
     if (investigators) {
         investigators.forEach(pi => {
@@ -136,7 +130,7 @@ async function renderEgressosWithData(alumni, investigators) {
         orderedIds.push('unassigned');
     }
 
-    // --- Renderiza os grupos ---
+    // Renderiza
     container.innerHTML = '';
     for (const supId of orderedIds) {
         const list = alumniBySupervisor[supId] || [];
@@ -152,12 +146,12 @@ async function renderEgressosWithData(alumni, investigators) {
         groupDiv.className = 'grupo-pesquisador';
         groupDiv.style.marginBottom = '1.5rem';
         groupDiv.innerHTML = `
-            <div class="pesquisador-header" style="margin-bottom:0.5rem;border-bottom:2px solid #003f44;padding-bottom:0.3rem;">
+            <div style="margin-bottom:0.5rem;border-bottom:2px solid #003f44;padding-bottom:0.3rem;">
                 <h3 style="font-size:1.2rem;color:#003f44;">${supervisorName}</h3>
             </div>
-            <div class="membros-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;">
                 ${list.map(eg => `
-                    <div class="egresso-card" style="background:#f8fafc;padding:0.75rem;border-radius:6px;border-left:3px solid #00747a;">
+                    <div style="background:#f8fafc;padding:0.75rem;border-radius:6px;border-left:3px solid #00747a;">
                         <div style="font-weight:600;">${eg.name}</div>
                         <div style="font-size:0.9rem;color:#555;">${eg.current_affiliation || ''} ${eg.degree_type ? `(${eg.degree_type})` : ''}</div>
                         <div style="font-size:0.85rem;color:#777;">Year: ${eg.graduation_year || '—'}</div>
@@ -169,7 +163,7 @@ async function renderEgressosWithData(alumni, investigators) {
         container.appendChild(groupDiv);
     }
 
-    // --- Configura o botão de toggle (se existir) ---
+    // Configura o toggle (se existir)
     const toggleBtn = document.getElementById('toggle-alumni-btn');
     const alumniContent = document.getElementById('alumni-content');
     if (toggleBtn && alumniContent) {
@@ -185,13 +179,9 @@ async function renderEgressosWithData(alumni, investigators) {
     }
 }
 
-// ===== INICIA O SITE QUANDO O DOM ESTIVER PRONTO =====
+// ===== INICIA O SITE =====
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
 } else {
-    // DOM já carregado
     init();
 }
-
-// ===== EXPORTA FUNÇÕES PARA USO EM OUTROS MÓDULOS (opcional) =====
-export { renderEgressosWithData, cachedData };
