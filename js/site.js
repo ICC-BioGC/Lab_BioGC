@@ -42,17 +42,33 @@ async function init() {
         const loading = document.getElementById('loading-message');
         if (loading) loading.remove();
 
-        // 5. Renderiza as seções dinâmicas
+        // 5. Adiciona a classe 'section' a todos os containers principais
+        const sectionIds = [
+            'component-about',
+            'component-team',
+            'component-announcements',
+            'component-publications',
+            'component-partners',
+            'component-gallery',
+            'component-alumni',
+            'component-contact'
+        ];
+        sectionIds.forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.classList.add('section');
+        });
+
+        // 6. Renderiza as seções dinâmicas
         renderEquipeWithData(investigators, members);
-        renderPublicacoesWithData(publications, investigators, members); // ← 3 argumentos
+        renderPublicacoesWithData(publications, investigators, members);
         renderParceirosWithData(partners);
         renderGaleriaWithData(gallery);
         renderAnnouncementsWithData(opportunities);
 
-        // 6. Alumni (função local)
+        // 7. Alumni (função local)
         renderEgressosWithData(alumni, investigators);
 
-        // 7. Configura o seletor de idioma
+        // 8. Configura o seletor de idioma
         setupLanguageSwitcher();
 
         console.log('🎉 BioGC inicializado com sucesso!');
@@ -94,7 +110,6 @@ function setupLanguageSwitcher() {
         setLanguage(lang);
         console.log(`🌐 Idioma alterado para: ${lang}`);
         // Recarrega os textos dinâmicos se necessário (opcional)
-        // Aplicar traduções novamente
         // import('./translations.js').then(({ applyTranslations }) => applyTranslations(lang));
     });
 }
