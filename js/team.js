@@ -15,12 +15,19 @@ export function renderEquipeWithData(investigators, members) {
         return;
     }
 
+    // === TÍTULO DA SEÇÃO ===
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.className = 'section-title';
+    sectionTitle.textContent = 'Team';
+    container.appendChild(sectionTitle);
+
     investigators.forEach(pi => {
         const grupoDiv = document.createElement('div');
         grupoDiv.className = 'grupo-pesquisador';
 
         const header = document.createElement('div');
         header.className = 'pesquisador-header';
+        // Usando <h3> em vez de Markdown
         header.innerHTML = `<h3>${pi.name}</h3>`;
         grupoDiv.appendChild(header);
 
