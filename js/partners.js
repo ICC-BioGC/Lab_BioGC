@@ -1,27 +1,38 @@
 // js/partners.js
-export async function renderParceirosWithData(partners) {
+export function renderParceirosWithData(partners) {
     const container = document.getElementById('parceiros-container');
-    if (!container) return;
-    container.innerHTML = '<div class="loading"><i class="fas fa-spinner fa-pulse"></i> Loading partners...</div>';
+    if (!container) {
+        console.warn('Container #parceiros-container não encontrado.');
+        return;
+    }
+
+    container.innerHTML = '';
+
     if (!partners || partners.length === 0) {
         container.innerHTML = '<p>No partners registered.</p>';
         return;
     }
-    container.innerHTML = '';
+
+    // === TÍTULO DA SEÇÃO ===
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.className = 'section-title';
+    sectionTitle.textContent = 'Collaborators & Partners';
+    container.appendChild(sectionTitle);
+
     const grid = document.createElement('div');
-    grid.className = 'parceiro-grid';
+    grid.className = 'parceiros-grid';
+
     partners.forEach(p => {
-        const logoHtml = p.logo ? `<img src="${p.logo}" alt="${p.name}" class="parceiro-logo">` : '';
         const card = document.createElement('div');
         card.className = 'parceiro-card';
         card.innerHTML = `
-            ${logoHtml}
+            ${p.logo ? `<img src="${p.logo}" alt="${p.name}" class="parceiro-logo" />` : ''}
             <span class="nome">${p.name}</span>
-            <div class="tipo">${p.type}</div>
-            <div class="descricao">${p.description || ''}</div>
-            ${p.link ? `<a href="${p.link}" target="_blank" class="pub-link" style="display:inline-block; margin-top:0.5rem;">Visit website <i class="fas fa-external-link-alt"></i></a>` : ''}
+            ${p.description ? `<p class="descricao">${p.description}</p>` : ''}
+            ${p.link ? `<a href="${p.link}" target="_blank" class="parceiro-link">Visit website</a>` : ''}
         `;
         grid.appendChild(card);
     });
+
     container.appendChild(grid);
 }
