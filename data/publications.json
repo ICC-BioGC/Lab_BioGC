@@ -15,13 +15,44 @@
       { "name": "D'ESPINDULA, HELENA REGINA SALOMÉ", "type": "member", "id": "helena" },
       { "name": "RIBEIRO, ISABEL DE FARIAS", "type": "member", "id": "isabel" },
       { "name": "GONÇALVES, GEIZIANE APARECIDA", "type": "member", "id": "geiziane" },
+      { "name": "PILLONETTO, MARCELO", "type": "member", "id": "marcelo" },
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genetic Variants Affect Distinct Metabolic Pathways in Pediatric Multisystem Inflammatory Syndrome and Severe COVID-19",
+    "authors": "URBANSKI, ALYSSON HENRIQUE; FREITAS, FLÁVIA CRISTINA DE PAULA; GOMES, TIAGO MINUZZI FREIRE DA FONTOURA; SCHEMBERGER, MICHELLE ORANE; REIS, BÁRBARA CARVALHO SANTOS DOS; CARVALHO, FLAVIA AMÊNDOLA ANÍSIO DE; FACCION, ROBERTA SOARES; MACHADO, LUCAS DE ALMEIDA; SANTOS, DEBORAH ANTUNES DOS; CUNHA, DANIELA PRADO; SALÚ, MARGARIDA DOS SANTOS; MOORE, DANIELLA CAMPELO BATALHA COX; PRESIBELLA, MAYRA MARINHO; NOGUCHI, JULIANA FONTES; BORGES, HENRIQUE LIRA; TOMIURA, LAIS KIMIE; SILVA DE CASTRO, LUIZA; SANTOS, LETÍCIA GRAZIELA COSTA; SILVA, ESDRAS MATHEUS GOMES DA; FAORO, HELISSON; et al.",
+    "journal": "Journal of Medical Virology",
+    "year": 2025,
+    "volume": "97",
+    "pages": "1-18",
+    "doi": "10.1002/jmv.70556",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "In vitro susceptibility to fosfomycin in clinical and environmental extended-spectrum beta-lactamase producing and/or ciprofloxacin-non-susceptible Escherichia coli isolates",
+    "authors": "RIBEIRO, VICTORIA STADLER TASCA; BAIL, LARISSA; ITO, CARMEN ANTONIA SANCHES; ANDRADE, ANA PAULA DE; AREND, LAVINIA NERY VILLA STANGLER; SUSS, PAULA HANSEN; NOGUEIRA, KEITE DA SILVA; WALFLOR, HANIEL SIQUEIRA MORTAGUA; FAORO, HELISSON; KUCZERA, LIA CAROLINA SOARES DE MEDEIROS; VICENZI, FERNANDO JOSÉ; TUON, FELIPE FRANCISCO",
+    "journal": "REVISTA DO INSTITUTO DE MEDICINA TROPICAL DE SÃO PAULO",
+    "year": 2024,
+    "volume": "66",
+    "pages": "1-9",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
       { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
     ]
   },
   {
     "title": "Potential involvement of beta-lactamase homologous proteins in resistance to beta-lactam antibiotics in gram-negative bacteria of the ESKAPEE group",
     "authors": "DE SOUZA, JOYCE; VIEIRA, ALEXANDRE ZANATTA; DOS SANTOS, HELLEN GEREMIAS; FAORO, HELISSON",
-    "journal": "BMC Genomics",
+    "journal": "BMC GENOMICS",
     "year": 2024,
     "volume": "25",
     "pages": "508",
@@ -31,71 +62,2420 @@
     "pdf": "",
     "author_details": [
       { "name": "DE SOUZA, JOYCE", "type": "member", "id": "joyce" },
+      { "name": "VIEIRA, ALEXANDRE ZANATTA", "type": "member", "id": "alexandre" },
       { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" },
       { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
     ]
   },
   {
-    "title": "Genetic Variants Affect Distinct Metabolic Pathways in Pediatric Multisystem Inflammatory Syndrome and Severe COVID-19",
-    "authors": "URBANSKI, A. H.; FREITAS, F. C. P.; GOMES, T. M. F. F.; SCHEMBERGER, M. O.; REIS, B. C. S.; CARVALHO, F. A. A.; FACCION, R. S.; MACHADO, L. A.; SANTOS, D. A.; CUNHA, D. P.; SALÚ, M. S.; MOORE, D. C. B. C.; PRESIBELLA, M. M.; NOGUCHI, J. F.; BORGES, H. L.; TOMIURA, L. K.; CASTRO, L. S.; SANTOS, L. G. C.; SILVA, E. M. G.; SANTOS, H. G.; et al.",
-    "journal": "Journal of Medical Virology",
-    "year": 2025,
-    "volume": "97",
-    "pages": "e70556",
-    "doi": "10.1002/jmv.70556",
+    "title": "Modulation of Klebsiella pneumoniae Outer Membrane Vesicle Protein Cargo under Antibiotic Treatment",
+    "authors": "LUCENA, ALINE CASTRO RODRIGUES; FERRARINI, MARIANA GALVÃO; DE OLIVEIRA, WILLIAN KLASSEN; MARCON, BRUNA HILZENDEGER; MORELLO, LUIS GUSTAVO; ALVES, LYSANGELA RONALTE; FAORO, HELISSON",
+    "journal": "Biomedicines",
+    "year": 2023,
+    "volume": "11",
+    "pages": "1515",
+    "doi": "",
     "link": "",
     "abstract": "",
     "pdf": "",
     "author_details": [
-      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
     ]
   },
   {
-    "title": "Machine learning to predict 30-day quality-adjusted survival in critically ill patients with cancer",
-    "authors": "SANTOS, H. G.; ZAMPIERI, F. G.; NORMILIO-SILVA, K.; SILVA, G. T.; LIMA, A. C. P.; CAVALCANTI, A. B.; CHIAVEGATTO FILHO, A. D. P.",
-    "journal": "Journal of Critical Care",
-    "year": 2020,
-    "volume": "55",
-    "pages": "73-78",
-    "doi": "10.1016/j.jcrc.2019.10.001",
+    "title": "TgKDAC4: A Unique Deacetylase of Toxoplasma's Apicoplast",
+    "authors": "FRAGOSO, MARIANA SAYURI ISHIKAWA; DE SIQUEIRA, CAROLINE MORAES; VITORINO, FRANCISCA NATHÁLIA LUNA; VIEIRA, ALEXANDRE ZANATTA; MARTINS-DUARTE, ÉRICA SANTOS; FAORO, HELISSON; DA CUNHA, JÚLIA PINHEIRO CHAGAS; ÁVILA, ANDRÉA RODRIGUES; NARDELLI, SHEILA CRISTINA",
+    "journal": "Microorganisms",
+    "year": 2023,
+    "volume": "11",
+    "pages": "1558",
+    "doi": "",
     "link": "",
     "abstract": "",
     "pdf": "",
     "author_details": [
-      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
     ]
   },
   {
-    "title": "Proteogenomics Reveals Orthologous Alternatively Spliced Proteoforms in the Same Human and Mouse Brain Regions with Differential Abundance in an Alzheimer's Disease Mouse Model",
-    "authors": "SILVA, E. M. G.; SANTOS, L. G. C.; OLIVEIRA, F. S.; FREITAS, F. C. P.; PARREIRA, V. S. C.; SANTOS, H. G.; TAVARES, R.; CARVALHO, P. C.; NEVES-FERREIRA, A. G. C.; HAIBARA, A. S.; DE ARAUJO-SOUZA, P. S.; DIAS, A. A. M.; PASSETTI, F.",
-    "journal": "Cells",
+    "title": "Rare genetic variants involved in multisystem inflammatory syndrome in children: a multicenter Brazilian cohort study",
+    "authors": "REIS, B. C. S.; FACCION, R. S.; CARVALHO, F. A. A.; MOORE, D. C. B. C.; ZUMA, M. C. C.; FILGUEIRAS, I. S.; FONSECA, D. L. M.; CABRAL-MARQUES, O.; BONOMO, A. C.; SAVINO, W.; FREITAS, F. C. P.; FAORO, H.; PASSETTI, F.; ROBAINA, J. R.; OLIVEIRA, F. R. C.; BELLINAT, A. P. N.; ZEITEL, R. S.; SALU, M. S.; OLIVEIRA, M. B. G.; et al.",
+    "journal": "Frontiers in Cellular and Infection Microbiology",
+    "year": 2023,
+    "volume": "13",
+    "pages": "1182257",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Multiple introductions and country-wide spread of DENV-2 genotype II (Cosmopolitan) in Brazil",
+    "authors": "GRÄF, TIAGO; FERREIRA, CAROLINE DO NASCIMENTO; DE LIMA, GUSTAVO BARBOSA; DE LIMA, RAUL EMÍDIO; MACHADO, LAIS CESCHINI; CAMPOS, TULIO DE LIMA; SCHEMBERGER, MICHELLE ORANE; FAORO, HELISSON; PAIVA, MARCELO HENRIQUE SANTOS; BEZERRA, MATHEUS FILGUEIRA; NASCIMENTO, VALDINETE; SOUZA, VICTOR; NASCIMENTO, FERNANDA; MEJÍA, MATILDE; SILVA, DEJANANE; DE OLIVEIRA, YASMIN SILVA; GONÇALVES, LUCIANA; RAMOS, TATYANA COSTA AMORIM; DE CASTRO, DANIEL BARROS; ARCANJO, ANA RUTH; et al.",
+    "journal": "Virus Evolution",
+    "year": 2023,
+    "volume": "9",
+    "pages": "1-9",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Phylogenetic-based inference reveals distinct transmission dynamics of SARS-CoV-2 lineages Gamma and P.2 in Brazil",
+    "authors": "GRÄF, TIAGO; BELLO, GONZALO; NAVECA, FELIPE GOMES; GOMES, MARCELO; OIKAWA CARDOSO, VANESSA LEIKO; FREITAS DA SILVA, ALEXANDRE; DEZORDI, FILIPE ZIMMER; DOS SANTOS, MIRLEIDE CORDEIRO; DE OLIVEIRA SANTOS, KATIA CORREA; ROCHA BATISTA, ÉRIKA LOPES; MAGALHÃES, ALESSANDRO LEONARDO ÁLVARES; VINHAL, FERNANDO; MIYAJIMA, FÁBIO; FAORO, HELISSON; KHOURI, RICARDO; WALLAU, GABRIEL LUZ; DELATORRE, EDSON; SIQUEIRA, MARILDA MENDONÇA; RESENDE, PAOLA CRISTINA",
+    "journal": "Iscience",
+    "year": 2022,
+    "volume": "25",
+    "pages": "104156",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Resensitization of Fosfomycin-Resistant Escherichia coli Using the CRISPR System",
+    "authors": "WALFLOR, HANIEL SIQUEIRA MORTAGUA; LUCENA, ALINE RODRIGUES CASTRO; TUON, FELIPE FRANCISCO; MEDEIROS, LIA CAROLINA SOARES; FAORO, HELISSON",
+    "journal": "INTERNATIONAL JOURNAL OF MOLECULAR SCIENCES",
+    "year": 2022,
+    "volume": "23",
+    "pages": "9175",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Lower airway microbiota and decreasing lung function in young Brazilian cystic fibrosis patients with pulmonary Staphylococcus and Pseudomonas infection",
+    "authors": "KUSSEK, PAULO; MESA, DANY; VASCONCELOS, THAÍS MUNIZ; RODRIGUES, LUIZA SOUZA; KRUL, DAMARIS; IBANEZ, HUMBERTO; FAORO, HELISSON; PALMEIRO, JUSSARA KASUKO; DALLA COSTA, LIBERA MARIA",
+    "journal": "PLoS One",
+    "year": 2022,
+    "volume": "17",
+    "pages": "e0273453",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Emergence and Spread of the SARS-CoV-2 Variant of Concern Delta across Different Brazilian Regions",
+    "authors": "ARANTES, IGHOR; GOMES NAVECA, FELIPE; GRÄF, TIAGO; MIYAJIMA, FÁBIO; FAORO, HELISSON; LUZ WALLAU, GABRIEL; DELATORRE, EDSON; REIS APPOLINARIO, LUCIANA; CAVALCANTE PEREIRA, ELISA; VENAS, TAINÁ MOREIRA MARTINS; SAMPAIO ROCHA, ALICE; SERRANO LOPES, RENATA; MENDONÇA SIQUEIRA, MARILDA; BELLO, GONZALO; CRISTINA RESENDE, PAOLA; ARAÚJO, CARLOS LEONARDO; AKESENEN, CLEBER FURTADO; DIAS, FERNANDO BRAGA STEHLING; DUARTE, IGOR OLIVEIRA; BEZERRA, JAMILLE MENDES; et al.",
+    "journal": "MICROBIOLOGY SPECTRUM",
+    "year": 2022,
+    "volume": "10",
+    "pages": "e0264121",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Role of Efflux Pumps on Antimicrobial Resistance in Pseudomonas aeruginosa",
+    "authors": "LORUSSO, ANDRE BITTENCOURT; CARRARA, JOÃO ANTÔNIO; BARROSO, CAROLINA DEUTTNER NEUMANN; TUON, FELIPE FRANCISCO; FAORO, HELISSON",
+    "journal": "INTERNATIONAL JOURNAL OF MOLECULAR SCIENCES",
+    "year": 2022,
+    "volume": "23",
+    "pages": "15779",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Comparative Genomics Provides Insights into the Taxonomy of Azoarcus and Reveals Separate Origins of Nif Genes in the Proposed Azoarcus and Aromatoleum Genera",
+    "authors": "RAITTZ, ROBERTO TADEU; REGINATTO DE PIERRI, CAMILLA; MALUK, MARTA; BUENO BATISTA, MARCELO; CARMONA, MANUEL; JUNGHARE, MADAN; FAORO, HELISSON; CRUZ, LEONARDO M.; BATTISTONI, FEDERICO; SOUZA, EMANUEL DE; PEDROSA, FÁBIO DE OLIVEIRA; CHEN, WEN-MING; POOLE, PHILIP S.; DIXON, RAY A.; JAMES, EUAN K.",
+    "journal": "Genes",
+    "year": 2021,
+    "volume": "12",
+    "pages": "71",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Origin and evolution of nonulosonic acid synthases and their relationship with bacterial pathogenicity revealed by a large-scale phylogenetic analysis",
+    "authors": "VIEIRA, A. Z.; RAITTZ, R. T.; FAORO, H.",
+    "journal": "Microbial Genomics",
+    "year": 2021,
+    "volume": "7",
+    "pages": "1-14",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "VIEIRA, A. Z.", "type": "member", "id": "alexandre" },
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Re-emergence of Gamma-like-II and emergence of Gamma-S:E661D SARS-CoV-2 lineages in the south of Brazil after the 2021 outbreak",
+    "authors": "OLIVEIRA, MAURO M.; SCHEMBERGER, MICHELLE O.; SUZUKAWA, ANDREIA A.; RIEDIGER, IRINA N.; DO CARMO DEBUR, MARIA; BECKER, GUILHERME; RESENDE, PAOLA CRISTINA; GRÄF, TIAGO; BALSANELLI, EDUARDO; DE BAURA, VALTER ANTÔNIO; DE SOUZA, EMANUEL M.; PEDROSA, FÁBIO O.; ALVES, LYSANGELA R.; BLANES, LUCAS; NARDELLI, SHEILA CRISTINA; AGUIAR, ALESSANDRA M.; ALBRECHT, LETUSA; ZANETTE, DALILA; ÁVILA, ANDRÉA R.; FAORO, H.; et al.",
+    "journal": "Virology Journal",
+    "year": 2021,
+    "volume": "18",
+    "pages": "222",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "High Genomic Identity between Clinical and Environmental Strains of Herbaspirillum frisingense Suggests Pre-Adaptation to Different Hosts and Intrinsic Resistance to Multiple Drugs",
+    "authors": "OLIVEIRA, WILLIAN KLASSEN; ÁVILA, HUGO LEONARDO; TADRA, MICHELLE ZIBETI; CARDOSO, RODRIGO LUIZ; FADEL-PICHET, CYNTIA MARIA TELES; DE SOUZA, EMANUEL MALTEMPI; DE OLIVEIRA PEDROSA, FÁBIO; FAORO, HELISSON",
+    "journal": "ANTIBIOTICS-BASEL",
     "year": 2021,
     "volume": "10",
-    "pages": "1583",
-    "doi": "10.3390/cells10071583",
+    "pages": "1409",
+    "doi": "",
     "link": "",
-    "abstract": "Identification of orthologous proteoforms in human and murine brains in an Alzheimer's model.",
+    "abstract": "",
     "pdf": "",
     "author_details": [
-      { "name": "PARREIRA, V. S. C.", "type": "member", "id": "vinicius" },
-      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" },
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Molecular relationships of Campomanesia xanthocarpa within Myrtaceae based on the complete plastome sequence and on the plastid ycf2 gene",
+    "authors": "MACHADO, LILIAN DE OLIVEIRA; VIEIRA, LEILA DO NASCIMENTO; STEFENON, VALDIR MARCOS; FAORO, HELISSON; PEDROSA, FÁBIO DE OLIVEIRA; GUERRA, MIGUEL PEDRO; NODARI, RUBENS ONOFRE",
+    "journal": "GENETICS AND MOLECULAR BIOLOGY (ONLINE VERSION)",
+    "year": 2020,
+    "volume": "43",
+    "pages": "e20180377",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Metagenomic analysis of the bacterial microbiota associated with cultured oysters (Crassostrea sp.) in estuarine environments",
+    "authors": "HORODESKY, ALINE; CASTILHO-WESTPHAL, GISELA G.; PONT, GIORGI DAL; FAORO, HELISSON; BALSANELLI, EDUARDO; TADRA-SFEIR, MICHELLE Z.; COZER, NATHIELI; PIE, MARCIO ROBERTO; OSTRENSKY, ANTONIO",
+    "journal": "ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS (ONLINE)",
+    "year": 2020,
+    "volume": "92",
+    "pages": "1-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Resistome analysis of bloodstream infection bacterial genomes reveals a specific set of proteins involved in antibiotic resistance and drug efflux",
+    "authors": "OLIVEIRA, WILLIAN K; FERRARINI, MARIANA; MORELLO, LUIS G; FAORO, HELISSON",
+    "journal": "NAR Genomics and Bioinformatics",
+    "year": 2020,
+    "volume": "2",
+    "pages": "1-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Cross-Kingdom Extracellular Vesicles EV-RNA Communication as a Mechanism for Host-Pathogen Interaction",
+    "authors": "MUNHOZ DA ROCHA, ISADORA FILIPAKI; AMATUZZI, RAFAELA FERREIRA; LUCENA, ALINE CASTRO RODRIGUES; FAORO, HELISSON; ALVES, LYSANGELA RONALTE",
+    "journal": "Frontiers in Cellular and Infection Microbiology",
+    "year": 2020,
+    "volume": "10",
+    "pages": "1-10",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Identification of insect-specific flaviviruses in areas of Brazil and Paraguay experiencing endemic arbovirus transmission and the description of a novel flavivirus infecting Sabethes belisarioi",
+    "authors": "GRAVINA, HUMBERTO DORIGUÊTTO; SUZUKAWA, ANDREIA AKEMI; ZANLUCA, CAMILA; CARDOZO SEGOVIA, FATIMA MARÍA; TSCHÁ, MARCEL KRUCHELSKI; MARTINS DA SILVA, ALLAN; FAORO, HELISSON; DA SILVA RIBEIRO, RICARDO; MENDOZA TORRES, LAURA PATRICIA; ROJAS, ALEJANDRA; FERRERIRA, LUIS; COSTA RIBEIRO, MAGDA CLARA VIEIRA DA; DELFRARO, ADRIANA; DUARTE DOS SANTOS, CLAUDIA NUNES",
+    "journal": "VIROLOGY",
+    "year": 2019,
+    "volume": "527",
+    "pages": "98-106",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Distinct grazing pressure loads generate different impacts on bacterial community in a long-term experiment in Pampa biome",
+    "authors": "BENEDUZI, ANELISE; DOS ANJOS BORGES, LUIZ GUSTAVO; ALVARENGA, SAMUEL MAZZINGHY; FAORO, HELISSON; DE SOUZA, EMANUEL MALTEMPI; VARGAS, LUCIANO KAYSER; PASSAGLIA, LUCIANE MARIA PEREIRA",
+    "journal": "APPLIED SOIL ECOLOGY",
+    "year": 2019,
+    "volume": "137",
+    "pages": "167-177",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome analysis of entomopathogenic Bacillus sp. ABP14 isolated from a lignocellulosic compost",
+    "authors": "ANDREAZZA, ANA PAULA; CARDOSO, RODRIGO L A; COCCO, JESSICA; GUIZELINI, DIEVAL; FAORO, HELISSON; TADRA-SFEIR, MICHELLE; BALSANELLI, EDUARDO; CRUZ, LEONARDO M; FADEL-PICHETH, CYNTIA M T; DONATTI, LUCÉLIA; SOUZA, EMANUEL M; FOERSTER, LUÍS A; PEDROSA, FABIO O; CHUBATSU, LEDA S",
+    "journal": "Genome Biology and Evolution",
+    "year": 2019,
+    "volume": "",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Identification of a novel alphavirus related to the encephalitis complexes circulating in southern Brazil",
+    "authors": "TSCHÁ, MARCEL KRUCHELSKI; SUZUKAWA, ANDREIA AKEMI; GRÄF, TIAGO; PIANCINI, LAERCIO DANTE STEIN; DA SILVA, ALLAN MARTINS; FAORO, HELISSON; RIEDIGER, IRINA NASTASSJA; MEDEIROS, LIA CAROLINA; WOWK, PRYSCILLA FANINI; ZANLUCA, CAMILA; DUARTE DOS SANTOS, CLAUDIA NUNES",
+    "journal": "Emerging Microbes & Infections",
+    "year": 2019,
+    "volume": "8",
+    "pages": "920-933",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Modulation of defence and iron homeostasis genes in rice roots by the diazotrophic endophyte Herbaspirillum seropedicae",
+    "authors": "BRUSAMARELLO-SANTOS, LIZIANE CRISTINA CAMPOS; ALBERTON, DAYANE; VALDAMERI, GLAUCIO; CAMILIOS-NETO, DOUMIT; COVRE, RAFAEL; LOPES, KATIA DE PAIVA; ZIBETTI TADRA-SFEIR, MICHELLE; FAORO, HELISSON; ADELE MONTEIRO, ROSE; BARBOSA-SILVA, ADRIANO; JOHN BROUGHTON, WILLIAM; OLIVEIRA PEDROSA, FABIO; WASSEM, ROSELI; SOUZA, EMANUEL MALTEMPI DE",
+    "journal": "Scientific Reports",
+    "year": 2019,
+    "volume": "9",
+    "pages": "10573",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Comparison of the RNA Content of Extracellular Vesicles Derived from Paracoccidioides brasiliensis and Paracoccidioides lutzii",
+    "authors": "PERES DA SILVA, ROBERTA; LONGO, LARISSA G. V.; CUNHA, JULIA P. C. DA; SOBREIRA, TIAGO J. P.; RODRIGUES, MARCIO L.; FAORO, HELISSON; GOLDENBERG, SAMUEL; ALVES, LYSANGELA R.; PUCCIA, ROSANA",
+    "journal": "Cells",
+    "year": 2019,
+    "volume": "8",
+    "pages": "765",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome comparison between clinical and environmental strains of Herbaspirillum seropedicae reveals a potential new emerging bacterium adapted to human hosts",
+    "authors": "FAORO, HELISSON; OLIVEIRA, WILLIAN K.; WEISS, VINICIUS A.; TADRA-SFEIR, MICHELLE Z.; CARDOSO, RODRIGO L.; BALSANELLI, EDUARDO; BRUSAMARELLO-SANTOS, LIZIANE C. C.; CAMILIOS-NETO, DOUMIT; CRUZ, LEONARDO M.; RAITTZ, ROBERTO T.; MARQUES, ANA C. Q.; LIPUMA, JOHN; FADEL-PICHETH, CYNTIA M. T.; SOUZA, EMANUEL M.; PEDROSA, FABIO O.",
+    "journal": "BMC GENOMICS",
+    "year": 2019,
+    "volume": "20",
+    "pages": "1-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" },
+      { "name": "OLIVEIRA, WILLIAN K.", "type": "member", "id": "willian" },
+      { "name": "WEISS, VINICIUS A.", "type": "member", "id": "vinicius" },
+      { "name": "TADRA-SFEIR, MICHELLE Z.", "type": "member", "id": "michelle" },
+      { "name": "CARDOSO, RODRIGO L.", "type": "member", "id": "rodrigo" },
+      { "name": "BALSANELLI, EDUARDO", "type": "member", "id": "eduardo" },
+      { "name": "BRUSAMARELLO-SANTOS, LIZIANE C. C.", "type": "member", "id": "liziane" },
+      { "name": "CAMILIOS-NETO, DOUMIT", "type": "member", "id": "doumit" },
+      { "name": "CRUZ, LEONARDO M.", "type": "member", "id": "leonardo" },
+      { "name": "RAITTZ, ROBERTO T.", "type": "member", "id": "roberto" },
+      { "name": "MARQUES, ANA C. Q.", "type": "member", "id": "ana" },
+      { "name": "LIPUMA, JOHN", "type": "member", "id": "john" },
+      { "name": "FADEL-PICHETH, CYNTIA M. T.", "type": "member", "id": "cyntia" },
+      { "name": "SOUZA, EMANUEL M.", "type": "member", "id": "emanuel" },
+      { "name": "PEDROSA, FABIO O.", "type": "member", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Metataxonomic and metagenomic analysis of mangrove microbiomes reveals community patterns driven by salinity and pH gradients in Paranaguá Bay, Brazil",
+    "authors": "CECCON, DENNY MARCEL; FAORO, HELISSON; DA CUNHA LANA, PAULO; DE SOUZA, EMANUEL MALTEMPI; DE OLIVEIRA PEDROSA, FÁBIO",
+    "journal": "SCIENCE OF THE TOTAL ENVIRONMENT",
+    "year": 2019,
+    "volume": "609",
+    "pages": "133609",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genetic and biological characterisation of Zika virus isolates from different Brazilian regions",
+    "authors": "STROTTMANN, DAISY MARIA; ZANLUCA, CAMILA; MOSIMANN, ANA LUIZA PAMPLONA; KOISHI, ANDREA C; AUWERTER, NATHALIA CAVALHEIRO; FAORO, HELISSON; CATANEO, ALLAN HENRIQUE DEPIERI; KUCZERA, DIOGO; WOWK, PRYSCILLA FANINI; BORDIGNON, JULIANO; DUARTE DOS SANTOS, CLAUDIA NUNES",
+    "journal": "Memórias do Instituto Oswaldo Cruz",
+    "year": 2019,
+    "volume": "114",
+    "pages": "e190150",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Metagenomic evaluation of the effects of storage conditions on the bacterial microbiota of oysters Crassostrea gasar (Adanson, 1757)",
+    "authors": "OSTRENSKY, ANTONIO; HORODESKY, ALINE; FAORO, HELISSON; BALSANELLI, EDUARDO; SFEIR, MICHELLE ZIBETTI TADRA; COZER, NATHIELI; PIE, MARCIO ROBERTO; DAL PONT, GIORGI; CASTILHO-WESTPHAL, GISELA GERALDINE",
+    "journal": "JOURNAL OF APPLIED MICROBIOLOGY",
+    "year": 2018,
+    "volume": "1",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "A broad pH range and processive chitinase from a metagenome library",
+    "authors": "THIMOTEO, S.S.; GLOGAUER, A.; FAORO, H.; DE SOUZA, E.M.; HUERGO, L.F.; MOERSCHBACHER, B.M.; PEDROSA, F.O.",
+    "journal": "Brazilian journal of medical and biological research",
+    "year": 2017,
+    "volume": "50",
+    "pages": "e5658",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Development and validation of the first SSR markers for Mimosa scabrella Benth.",
+    "authors": "SAIKI, F.A.; BERNARDI, A.P.; REIS, M.S.; FAORO, H.; SOUZA, E.M.; PEDROSA, F.O.; MANTOVANI, A.; GUIDOLIN, A.F.",
+    "journal": "Genetics and Molecular Research",
+    "year": 2017,
+    "volume": "16",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome Sequence of Type Strain Fonsecaea multimorphosa CBS 980.96 T , a Causal Agent of Feline Cerebral Phaeohyphomycosis",
+    "authors": "LEAO, ANIELE C. RIBAS; WEISS, VINICIUS ALMIR; VICENTE, VANIA APARECIDA; COSTA, FLAVIA; BOMBASSARO, AMANDA; RAITTZ, ROBERTO TADEU; STEFFENS, MARIA BERENICE R.; PEDROSA, FABIO OLIVEIRA; GOMES, RENATA R.; BAURA, VALTER; FAORO, HELISSON; SFEIR, MICHELLE ZIBETTI TADRA; BALSANELLI, EDUARDO; MORENO, LEANDRO F.; NAJAFZADEH, M. JAVAD; DE HOOG, SYBREN; SOUZA, EMANUEL MALTEMPI",
+    "journal": "Genome Announcements",
+    "year": 2017,
+    "volume": "5",
+    "pages": "e01666-16",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "RNA-binding proteins and their role in the regulation of gene expression in Trypanosoma cruzi and Saccharomyces cerevisiae",
+    "authors": "OLIVEIRA, CAMILA; FAORO, HELISSON; ALVES, LYSANGELA RONALTE; GOLDENBERG, SAMUEL",
+    "journal": "GENETICS AND MOLECULAR BIOLOGY (ONLINE VERSION)",
+    "year": 2017,
+    "volume": "40",
+    "pages": "22-30",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Comparative Genomics of Sibling Species of Fonsecaea Associated with Human Chromoblastomycosis",
+    "authors": "VICENTE, VANIA A.; WEISS, VINÍCIUS A.; BOMBASSARO, AMANDA; MORENO, LEANDRO F.; COSTA, FLÁVIA F.; RAITTZ, ROBERTO T.; LEÃO, ANIELE C.; GOMES, RENATA R.; BOCCA, ANAMELIA L.; FORNARI, GHENIFFER; DE CASTRO, RAFFAEL J. A.; SUN, JIUFENG; FAORO, HELISSON; TADRA-SFEIR, MICHELLE Z.; BAURA, VALTER; BALSANELLI, EDUARDO; ALMEIDA, SANDRO R.; DOS SANTOS, SUELEN S.; TEIXEIRA, MARCUS DE MELO; SOARES FELIPE, MARIA S.; et al.",
+    "journal": "Frontiers in Microbiology",
+    "year": 2017,
+    "volume": "8",
+    "pages": "1-20",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Emended description of the genus Phytobacter, its type species Phytobacter diazotrophicus (Zhang 2008) and description of Phytobacter ursingii sp. nov.",
+    "authors": "PILLONETTO, MARCELO; AREND, LAVINIA N.; FAORO, HELISSON; D'ESPINDULA, HELENA R. S.; BLOM, JOCHEN; SMITS, THEO H. M.; MIRA, MARCELO T.; REZZONICO, FABIO",
+    "journal": "INTERNATIONAL JOURNAL OF SYSTEMATIC AND EVOLUTIONARY MICROBIOLOGY (ONLINE)",
+    "year": 2017,
+    "volume": "68",
+    "pages": "176-184",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "RNA-seq transcriptional profiling of Herbaspirillum seropedicae colonizing wheat (Triticum aestivum) roots",
+    "authors": "PANKIEVICZ, V. C. S.; CAMILIOS-NETO, D.; BONATO, P.; BALSANELLI, E.; TADRA-SFEIR, M. Z.; FAORO, H.; CHUBATSU, L. S.; DONATTI, L.; WAJNBERG, G.; PASSETTI, F.; MONTEIRO, R. A.; PEDROSA, F. O.; SOUZA, E. M.",
+    "journal": "PLANT MOLECULAR BIOLOGY",
+    "year": 2016,
+    "volume": "1",
+    "pages": "1-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "The plastome sequence of the endemic Amazonian conifer, Retrophyllum piresii (Silba) C.N.Page, reveals different recombination events and plastome isoforms",
+    "authors": "DO NASCIMENTO VIEIRA, LEILA; ROGALSKI, MARCELO; FAORO, HELISSON; PACHECO DE FREITAS FRAGA, HUGO; GOULART DOS ANJOS, KARINA; ASSINE PICCHI, GISELE FERNANDA; ONOFRE NODARI, RUBENS; DE OLIVEIRA PEDROSA, FÁBIO; MALTEMPI DE SOUZA, EMANUEL; PEDRO GUERRA, MIGUEL",
+    "journal": "Tree Genetics & Genomes (Print)",
+    "year": 2016,
+    "volume": "12",
+    "pages": "1-11",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "The oil-contaminated soil diazotroph Azoarcus olearius DQS-4T is genetically and phenotypically similar to the model grass endophyte Azoarcus sp. BH72",
+    "authors": "FAORO, H.; MENEGAZZO, R. R.; BATTISTONI, F.; GYANESHWAR, P.; AMARAL, F. P.; TAULE, C.; RAUSCH, S.; GALVAO, P. G.; SANTOS, C. L.; MITRA, S.; HEIJO, G.; SHEU, S.; CHEN, W.; MAREQUE, C.; BALDANI, J. I.; MALUK, M.; GUIMARAES, A. P.; STACEY, G.; SOUZA, E. M.; PEDROSA, F.O.; et al.",
+    "journal": "Environmental Microbiology Reports",
+    "year": 2016,
+    "volume": "1",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Phylogenetic inference and SSR characterization of tropical woody bamboos tribe Bambuseae (Poaceae: Bambusoideae) based on complete plastid genome sequences",
+    "authors": "VIEIRA, LEILA DO NASCIMENTO; DOS ANJOS, KARINA GOULART; FAORO, HELISSON; FRAGA, HUGO PACHECO DE FREITAS; GRECO, THIAGO MACHADO; PEDROSA, FÁBIO DE OLIVEIRA; DE SOUZA, EMANUEL MALTEMPI; ROGALSKI, MARCELO; DE SOUZA, ROBSON FRANCISCO; GUERRA, MIGUEL PEDRO",
+    "journal": "Current Genetics",
+    "year": 2016,
+    "volume": "62",
+    "pages": "443-453",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome of Rhizobium sp. UR51a, Isolated from Rice Cropped in Southern Brazilian Fields",
+    "authors": "DE SOUZA, ROCHELI; SANT'ANNA, FERNANDO HAYASHI; AMBROSINI, ADRIANA; TADRA-SFEIR, MICHELE; FAORO, HELISSON; PEDROSA, FABIO OLIVEIRA; SOUZA, EMANUEL MALTEMPI; PASSAGLIA, LUCIANE M. P.",
+    "journal": "Genome Announcements",
+    "year": 2015,
+    "volume": "3",
+    "pages": "e00249-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome of Pseudomonas sp. FeS53a, a Putative Plant Growth-Promoting Bacterium Associated with Rice Grown in Iron-Stressed Soils",
+    "authors": "DE SOUZA, ROCHELI; SANT'ANNA, FERNANDO HAYASHI; AMBROSINI, ADRIANA; TADRA-SFEIR, MICHELE; FAORO, HELISSON; PEDROSA, FABIO OLIVEIRA; SOUZA, EMANUEL MALTEMPI; PASSAGLIA, LUCIANE M. P.",
+    "journal": "Genome Announcements",
+    "year": 2015,
+    "volume": "3",
+    "pages": "e00248-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Whole-Genome Shotgun Sequence of the Keratinolytic Bacterium Lysobacter sp. A03, Isolated from the Antarctic Environment",
+    "authors": "PEREIRA, JAMILE QUEIROZ; AMBROSINI, ADRIANA; SANT'ANNA, FERNANDO HAYASHI; TADRA-SFEIR, MICHELE; FAORO, HELISSON; PEDROSA, FÁBIO OLIVEIRA; SOUZA, EMANUEL MALTEMPI; BRANDELLI, ADRIANO; PASSAGLIA, LUCIANE M. P.",
+    "journal": "Genome Announcements",
+    "year": 2015,
+    "volume": "3",
+    "pages": "e00246-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome Sequence of Bacillus mycoides B38V, a Growth-Promoting Bacterium of Sunflower",
+    "authors": "AMBROSINI, ADRIANA; SANT'ANNA, FERNANDO HAYASHI; DE SOUZA, ROCHELI; TADRA-SFEIR, MICHELE; FAORO, HELISSON; ALVARENGA, SAMUEL M.; PEDROSA, FABIO OLIVEIRA; SOUZA, EMANUEL MALTEMPI; PASSAGLIA, LUCIANE M. P.",
+    "journal": "Genome Announcements",
+    "year": 2015,
+    "volume": "3",
+    "pages": "e00245-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Molecular adaptations of during colonization of the maize rhizosphere",
+    "authors": "BALSANELLI, EDUARDO; TADRA-SFEIR, MICHELLE Z.; FAORO, HELISSON; PANKIEVICZ, VÂNIA C.S.; DE BAURA, VALTER A.; PEDROSA, FÁBIO O.; DE SOUZA, EMANUEL M.; DIXON, RAY; MONTEIRO, ROSE A.",
+    "journal": "Environmental Microbiology (Print)",
+    "year": 2015,
+    "volume": "n/a",
+    "pages": "n/a-n/a",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome wide transcriptional profiling of Herbaspirillum seropedicae SmR1 grown in the presence of naringenin",
+    "authors": "TADRA-SFEIR, MICHELE; FAORO, H.; CAMILIOS-NETO, D.; BRUSAMARELLO, L. C. C.; BALSANELLI, E.; WEISS, V. A.; BAURA, V. A.; WASSEM, R.; CRUZ, L. M.; PEDROSA, F. O.; SOUZA, E. M.; MONTEIRO, R. A.",
+    "journal": "Frontiers in Microbiology (Online)",
+    "year": 2015,
+    "volume": "6",
+    "pages": "491",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Draft Genome Sequence of Aeromonas caviae 8LM, Isolated from Stool Culture of a Child with Diarrhea",
+    "authors": "MORIEL, BÁRBARA; CRUZ, LEONARDO M.; DALLAGASSA, CIBELLE B.; FAORO, HELISSON; DE SOUZA, EMANUEL M.; PEDROSA, FÁBIO O.; REGO, FABIANE G. M.; PICHETH, GERALDO; FADEL-PICHETH, CYNTIA M. T.",
+    "journal": "Genome Announcements",
+    "year": 2015,
+    "volume": "3",
+    "pages": "e00524-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Complete Genome Sequence of Herbaspirillum hiltneri N3 (DSM 17495), Isolated from Surface-Sterilized Wheat Roots",
+    "authors": "GUIZELINI, DIEVAL; SAIZAKI, PAULA M.; COIMBRA, NILSON A. R.; WEISS, VINICIUS A.; FAORO, HELISSON; SFEIR, MICHELLE Z. T.; BAURA, VALTER A.; MONTEIRO, ROSE A.; CHUBATSU, LEDA S.; SOUZA, EMANUEL M.; CRUZ, LEONARDO M.; PEDROSA, FABIO O.; RAITTZ, ROBERTO T.; MARCHAUKOSKI, JERONIZA N.; STEFFENS, MARIA B. R.",
+    "journal": "Genome Announcements",
+    "year": 2015,
+    "volume": "3",
+    "pages": "e01288-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "An Improved Protocol for Intact Chloroplasts and cpDNA Isolation in Conifers",
+    "authors": "VIEIRA, LEILA DO NASCIMENTO; FAORO, HELISSON; FRAGA, HUGO PACHECO DE FREITAS; ROGALSKI, MARCELO; DE SOUZA, EMANUEL MALTEMPI; DE OLIVEIRA PEDROSA, FÁBIO; NODARI, RUBENS ONOFRE; GUERRA, MIGUEL PEDRO",
+    "journal": "Plos One",
+    "year": 2014,
+    "volume": "9",
+    "pages": "e84792",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "The Complete Chloroplast Genome Sequence of Podocarpus lambertii: Genome Structure, Evolutionary Aspects, Gene Content and SSR Detection",
+    "authors": "VIEIRA, LEILA DO NASCIMENTO; FAORO, HELISSON; ROGALSKI, MARCELO; FRAGA, HUGO PACHECO DE FREITAS; CARDOSO, RODRIGO LUIS ALVES; DE SOUZA, EMANUEL MALTEMPI; DE OLIVEIRA PEDROSA, FÁBIO; NODARI, RUBENS ONOFRE; GUERRA, MIGUEL PEDRO",
+    "journal": "Plos One",
+    "year": 2014,
+    "volume": "9",
+    "pages": "e90618",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Dual RNA-seq transcriptional analysis of wheat roots colonized by Azospirillum brasilense reveals up-regulation of nutrient acquisition and cell cycle genes",
+    "authors": "CAMILIOS-NETO, D.; BONATO, P.; WASSEM, R.; TADRA-SFEIR, M. Z.; BRUSAMARELLO, L. C. C.; VALDAMERI, G.; DONATTI, L.; FAORO, H.; WEISS, V. A.; CHUBATSU, L. S.; PEDROSA, FABIO O; SOUZA, E.M.",
+    "journal": "BMC Genomics",
+    "year": 2014,
+    "volume": "15",
+    "pages": "378",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "FGAP: an automated gap closing tool",
+    "authors": "PIRO, VITOR C; FAORO, HELISSON; WEISS, VINICIUS A; STEFFENS, MARIA BR; PEDROSA, FABIO O; SOUZA, EMANUEL M; RAITTZ, ROBERTO T",
+    "journal": "BMC RESEARCH NOTES",
+    "year": 2014,
+    "volume": "7",
+    "pages": "371",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Draft Genome Sequence of Herbaspirillum huttiense subsp. putei IAM 15032, a Strain Isolated from Well Water",
+    "authors": "DE SOUZA, V.; PIRO, V. C.; FAORO, H.; TADRA-SFEIR, M. Z.; CHICORA, V. K.; GUIZELINI, D.; WEISS, V.; VIALLE, R. A.; MONTEIRO, R. A.; STEFFENS, M. B. R.; MARCHAUKOSKI, J. N.; PEDROSA, F. O.; CRUZ, L. M.; CHUBATSU, L. S.; RAITTZ, R. T.",
+    "journal": "Genome Announcements",
+    "year": 2013,
+    "volume": "1",
+    "pages": "e00252-12-e00252-12",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "The Herbaspirillum seropedicae SmR1 Fnr orthologs controls the cytochrome composition of the electron transport chain",
+    "authors": "BATISTA, MARCELO B.; SFEIR, MICHELLE Z. T.; FAORO, HELISSON; WASSEM, ROSELI; STEFFENS, MARIA B. R.; PEDROSA, FÁBIO O.; SOUZA, EMANUEL M.; DIXON, RAY; MONTEIRO, ROSE A.",
+    "journal": "SCI REP-UK",
+    "year": 2013,
+    "volume": "3",
+    "pages": "1-11",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Culture-independent analysis of endophytic bacterial communities associated with Brazilian sugarcane",
+    "authors": "MAGNANI, G.S.; CRUZ, L.M.; WEBER, H.; BESPALHOK, J.C.; DAROS, E.; BAURA, V.; YATES, M.G.; MONTEIRO, R.A.; FAORO, H.; PEDROSA, F.O.; SOUZA, E.M.",
+    "journal": "Genetics and Molecular Research",
+    "year": 2013,
+    "volume": "12",
+    "pages": "4549-4558",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genomic comparison of the endophyte Herbaspirillum seropedicaeSmR1 and the phytopathogen Herbaspirillum rubrisubalbicansM1 by suppressive subtractive hybridization and partial genome sequencing",
+    "authors": "MONTEIRO, ROSE A.; BALSANELLI, EDUARDO; TULESKI, THALITA; FAORO, HELISON; CRUZ, LEONARDO M.; WASSEM, ROSELI; BAURA, VALTER A.; TADRA-SFEIR, MICHELLE Z.; WEISS, VINÃ­CIUS; DAROCHA, WANDERSON D.; MULLER-SANTOS, MARCELO; CHUBATSU, LEDA S.; HUERGO, LUCIANO F.; PEDROSA, FÃ¡BIO O.; SOUZA, EMANUEL M.",
+    "journal": "FEMS Microbiology, Ecology (Print)",
+    "year": 2012,
+    "volume": "80",
+    "pages": "441-451",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Characterization of a new Acidobacteria-derived moderately thermostable lipase from a Brazilian Atlantic Forest soil metagenome",
+    "authors": "FAORO, HELISSON; GLOGAUER, ARNALDO; COUTO, GUSTAVO HENRIQUE; SOUZA, EMANUEL MALTEMPI; RIGO, LIU UN; CRUZ, LEONARDO MAGALHÃES; MONTEIRO, ROSE ADELE; OLIVEIRA PEDROSA, FÁBIO",
+    "journal": "FEMS Microbiology, Ecology (Print)",
+    "year": 2012,
+    "volume": "n/a",
+    "pages": "n/a-n/a",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "The type III secretion system is necessary for the development of a pathogenic and endophytic interaction between Herbaspirillum rubrisubalbicans and Poaceae",
+    "authors": "SCHMIDT, MARIA A; BALSANELLI, EDUARDO; FAORO, HELISSON; CRUZ, LEONARDO M; DE BAURA, VALTER A; WASSEM, ROSELI; WEISS, VINICIUS; YATES, MARSHALL G; MADEIRA, HUMBERTO M F; PEREIRA-FERRARI, LILIAN; FUNGARO, MARIA H P; DE PAULA, FRANCINE M; PEREIRA, LUIZ F P; VIEIRA, LUIZ G E; OLIVARES, F¿BIO L; PEDROSA, F¿BIO O; DE SOUZA, EMANUEL M; MONTEIRO, ROSE A",
+    "journal": "BMC Microbiology (Online)",
+    "year": 2012,
+    "volume": "12",
+    "pages": "98",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Draft Genome Sequence of Herbaspirillum lusitanum P6-12, an Endophyte Isolated from Root Nodules of Phaseolus vulgaris",
+    "authors": "WEISS, V. A.; FAORO, H.; TADRA-SFEIR, M. Z.; RAITTZ, R. T.; DE SOUZA, E. M.; MONTEIRO, R. A.; CARDOSO, R. L. A.; WASSEM, R.; CHUBATSU, L. S.; HUERGO, L. F.; MULLER-SANTOS, M.; STEFFENS, M. B. R.; RIGO, L. U.; PEDROSA, F. D. O.; CRUZ, L. M.",
+    "journal": "Journal of Bacteriology (Print)",
+    "year": 2012,
+    "volume": "194",
+    "pages": "4136-4137",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Naringenin Regulates Expression of Genes Involved in Cell Wall Synthesis in Herbaspirillum seropedicae",
+    "authors": "TADRA-SFEIR, M. Z.; SOUZA, E. M.; FAORO, H.; MULLER-SANTOS, M.; BAURA, V. A.; TULESKI, T. R.; RIGO, L. U.; YATES, M. G.; WASSEM, R.; PEDROSA, F. O.; MONTEIRO, R. A.",
+    "journal": "Applied and Environmental Microbiology (Print)",
+    "year": 2011,
+    "volume": "77",
+    "pages": "2180-2183",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome of Herbaspirillum seropedicae Strain SmR1, a Specialized Diazotrophic Endophyte of Tropical Grasses",
+    "authors": "PEDROSA, FÁBIO O.; MONTEIRO, ROSE ADELE; WASSEM, ROSELI; CRUZ, LEONARDO M.; AYUB, RICARDO A.; COLAUTO, NELSON B.; FERNANDEZ, MARIA APARECIDA; FUNGARO, MARIA HELENA P.; GRISARD, EDMUNDO C.; HUNGRIA, MARIANGELA; MADEIRA, HUMBERTO M. F.; NODARI, RUBENS O.; OSAKU, CLARICE A.; PETZL-ERLER, MARIA LUIZA; TERENZI, HERNÁN; VIEIRA, LUIZ G. E.; STEFFENS, MARIA BERENICE R.; WEISS, VINICIUS A.; PEREIRA, LUIZ F. P.; FAORO, H.; et al.",
+    "journal": "PLOS Genetics",
+    "year": 2011,
+    "volume": "7",
+    "pages": "e1002064",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Verrucomicrobia in Brazilian Atlantic Forest Soil",
+    "authors": "THOMPSON, C. C.; DA FONSECA, E. L.; VICENTE, A. C. P.; DE OLIVEIRA PEDROSA, F.; MALTEMPI DE SOUZA, E.; FAORO, H.",
+    "journal": "Applied and Environmental Microbiology (Print)",
+    "year": 2011,
+    "volume": "77",
+    "pages": "3903-3904",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Identification and characterization of a new true lipase isolated through metagenomic approach",
+    "authors": "GLOGAUER, ARNALDO; MARTINI, VIVIANE P; FAORO, HELISSON; COUTO, GUSTAVO H; MULLER-SANTOS, MARCELO; MONTEIRO, ROSE A; MITCHELL, DAVID A; DE SOUZA, EMANUEL M; PEDROSA, FABIO O; KRIEGER, NADIA",
+    "journal": "Microbial Cell Factories",
+    "year": 2011,
+    "volume": "10",
+    "pages": "54",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Identification of a new lipase family in the Brazilian Atlantic Forest soil metagenome",
+    "authors": "FAORO, HELISSON; GLOGAUER, ARNALDO; SOUZA, EMANUEL M.; RIGO, LIU U.; CRUZ, LEONARDO M.; MONTEIRO, ROSE A.; PEDROSA, FÁBIO O.",
+    "journal": "Environmental Microbiology Reports",
+    "year": 2011,
+    "volume": "3",
+    "pages": "750-755",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Genome Sequence of the Diazotrophic Gram-Positive Rhizobacterium Paenibacillus riograndensis SBR5T",
+    "authors": "BENEDUZI, A.; CAMPOS, S.; AMBROSINI, A.; DE SOUZA, R.; GRANADA, C.; COSTA, P.; ARRUDA, L.; MOREIRA, F.; VARGAS, L. K.; WEISS, V.; TIEPPO, E.; FAORO, H.; DE SOUZA, E. M.; PEDROSA, F. O.; PASSAGLIA, L. M. P.",
+    "journal": "Journal of Bacteriology (Print)",
+    "year": 2011,
+    "volume": "193",
+    "pages": "6391-6392",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Diversity of 16S rRNA genes from bacteria of sugarcane rhizosphere soil",
+    "authors": "PISA, G.; MAGNANI, G.S.; WEBER, H.; SOUZA, E.M.; FAORO, H.; MONTEIRO, R.A.; DAROS, E.; BAURA, V.; BESPALHOK, J.P.; PEDROSA, F.O.; CRUZ, L.M.",
+    "journal": "Brazilian Journal of Medical and Biological Research (Impresso)",
+    "year": 2011,
+    "volume": "44",
+    "pages": "1215-1221",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Isolation of a novel lipase from a metagenomic library derived from mangrove sediment from the south Brazilian coast",
+    "authors": "COUTO, G. H.; GLOGAUER, A.; FAORO, H.; CHUBATSU, L. S.; SOUZA, E. M.; PEDROSA, F.O.",
+    "journal": "Genetics and Molecular Research",
+    "year": 2010,
+    "volume": "9",
+    "pages": "514-523",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Influence of Soil Characteristics on the Diversity of Bacteria in the Southern Brazilian Atlantic Forest",
+    "authors": "FAORO, H.; ALVES, A. C.; SOUZA, E. M.; RIGO, L. U.; CRUZ, L. M.; AL-JANABI, S. M.; MONTEIRO, R. A.; BAURA, V. A.; PEDROSA, F. O.",
+    "journal": "Applied and Environmental Microbiology (Print)",
+    "year": 2010,
+    "volume": "76",
+    "pages": "4744-4749",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+
+  {
+    "title": "Targeted modulation of reveals its translational potential in cervical adenocarcinoma",
+    "authors": "CINTRA, RICARDO CESAR; HSU HELMICH, LUCCA PAOLO; DE BASTOS, DANIEL RODRIGUES; SICHERO, LAURA; DE ARAUJO-SOUZA, PATRÍCIA SAVIO; PASSETTI, FABIO; VILLA, LUISA LINA",
+    "journal": "Molecular Oncology",
+    "year": 2026,
+    "volume": "1",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "CINTRA, RICARDO CESAR", "type": "member", "id": "ricardo" },
+      { "name": "HSU HELMICH, LUCCA PAOLO", "type": "member", "id": "lucca" },
+      { "name": "DE BASTOS, DANIEL RODRIGUES", "type": "member", "id": "daniel" },
+      { "name": "SICHERO, LAURA", "type": "member", "id": "laura" },
+      { "name": "DE ARAUJO-SOUZA, PATRÍCIA SAVIO", "type": "member", "id": "patricia" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" },
+      { "name": "VILLA, LUISA LINA", "type": "member", "id": "luisa" }
+    ]
+  },
+  {
+    "title": "Complementary Strategies to Identify Differentially Expressed Genes in the Choroid Plexus of Patients with Progressive Multiple Sclerosis",
+    "authors": "RODRIGUES, ALINE BEATRIZ MELLO; PASSETTI, FABIO; GUIMARÃES, ANA CAROLINA RAMOS",
+    "journal": "Neuroinformatics",
+    "year": 2025,
+    "volume": "23",
+    "pages": "10",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "RODRIGUES, ALINE BEATRIZ MELLO", "type": "member", "id": "aline" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" },
+      { "name": "GUIMARÃES, ANA CAROLINA RAMOS", "type": "member", "id": "ana_carolina" }
+    ]
+  },
+  {
+    "title": "Genetic Variants Affect Distinct Metabolic Pathways in Pediatric Multisystem Inflammatory Syndrome and Severe COVID-19",
+    "authors": "URBANSKI, ALYSSON HENRIQUE; FREITAS, FLÁVIA CRISTINA DE PAULA; GOMES, TIAGO MINUZZI FREIRE DA FONTOURA; SCHEMBERGER, MICHELLE ORANE; REIS, BÁRBARA CARVALHO SANTOS DOS; CARVALHO, FLAVIA AMÊNDOLA ANÍSIO DE; FACCION, ROBERTA SOARES; MACHADO, LUCAS DE ALMEIDA; SANTOS, DEBORAH ANTUNES DOS; CUNHA, DANIELA PRADO; SALÚ, MARGARIDA DOS SANTOS; MOORE, DANIELLA CAMPELO BATALHA COX; PRESIBELLA, MAYRA MARINHO; NOGUCHI, JULIANA FONTES; BORGES, HENRIQUE LIRA; TOMIURA, LAIS KIMIE; SILVA DE CASTRO, LUIZA; SANTOS, LETÍCIA GRAZIELA COSTA; SILVA, ESDRAS MATHEUS GOMES DA; PASSETTI, F.; et al.",
+    "journal": "JOURNAL OF MEDICAL VIROLOGY",
+    "year": 2025,
+    "volume": "97",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
       { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
     ]
   },
   {
-    "title": "Selecting Genetic Variants and Interactions Associated with Amyotrophic Lateral Sclerosis: A Group LASSO Approach",
-    "authors": "FERONATO, S. G.; SILVA, M. L. M.; IZBICKI, R.; FARIAS, T. D. J.; SHIGUNOV, P.; DALLAGIOVANNA, B.; PASSETTI, F.; DOS SANTOS, H. G.",
-    "journal": "Journal of Personalized Medicine",
-    "year": 2022,
-    "volume": "12",
-    "pages": "1330",
-    "doi": "10.3390/jpm12081330",
+    "title": "SpliceProt 2.0: A Sequence Repository of Human, Mouse, and Rat Proteoforms",
+    "authors": "SANTOS, LETÍCIA GRAZIELA COSTA; PARREIRA, VINÍCIUS DA SILVA COUTINHO; DA SILVA, ESDRAS MATHEUS GOMES; SANTOS, MARLON DIAS MARIANO; FERNANDES, ALEXANDER DA FRANCA; NEVES-FERREIRA, ANA GISELE DA COSTA; CARVALHO, PAULO COSTA; FREITAS, FLÁVIA CRISTINA DE PAULA; PASSETTI, FABIO",
+    "journal": "INTERNATIONAL JOURNAL OF MOLECULAR SCIENCES",
+    "year": 2024,
+    "volume": "25",
+    "pages": "1183",
+    "doi": "",
     "link": "",
     "abstract": "",
     "pdf": "",
     "author_details": [
-      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" },
-      { "name": "DOS SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+      { "name": "SANTOS, LETÍCIA GRAZIELA COSTA", "type": "member", "id": "leticia" },
+      { "name": "PARREIRA, VINÍCIUS DA SILVA COUTINHO", "type": "member", "id": "vinicius" },
+      { "name": "DA SILVA, ESDRAS MATHEUS GOMES", "type": "member", "id": "esdras" },
+      { "name": "SANTOS, MARLON DIAS MARIANO", "type": "member", "id": "marlon" },
+      { "name": "FERNANDES, ALEXANDER DA FRANCA", "type": "member", "id": "alexander" },
+      { "name": "NEVES-FERREIRA, ANA GISELE DA COSTA", "type": "member", "id": "ana_gisele" },
+      { "name": "CARVALHO, PAULO COSTA", "type": "member", "id": "paulo" },
+      { "name": "FREITAS, FLÁVIA CRISTINA DE PAULA", "type": "member", "id": "flavia" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Proteomic Analysis of a Rat Streptozotocin Model Shows Dysregulated Biological Pathways Implicated in Alzheimer's Disease",
+    "authors": "DA SILVA, ESDRAS MATHEUS GOMES; FISCHER, JULIANA S. G.; SOUZA, ISADORA DE LOURDES SIGNORINI; ANDRADE, AMANDA CAROLINE CAMILLO; SOUZA, LEONARDO DE CASTRO E; ANDRADE, MARCOS KAOANN DE; CARVALHO, PAULO C.; SOUZA, RICARDO LEHTONEN RODRIGUES; VITAL, MARIA APARECIDA BARBATO FRAZAO; PASSETTI, FABIO",
+    "journal": "INTERNATIONAL JOURNAL OF MOLECULAR SCIENCES",
+    "year": 2024,
+    "volume": "25",
+    "pages": "2772",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DA SILVA, ESDRAS MATHEUS GOMES", "type": "member", "id": "esdras" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Rare genetic variants involved in multisystem inflammatory syndrome in children: a multicenter Brazilian cohort study",
+    "authors": "REIS, BÁRBARA CARVALHO SANTOS DOS; SOARES FACCION, ROBERTA; DE CARVALHO, FLAVIA AMENDOLA ANISIO; MOORE, DANIELLA CAMPELO BATALHA COX; ZUMA, MARIA CELIA CHAVES; PLAÇA, DESIRÉE RODRIGUES; SALERNO FILGUEIRAS, IGOR; LEANDRO MATHIAS FONSECA, DENNYSON; CABRAL-MARQUES, OTAVIO; BONOMO, ADRIANA CESAR; SAVINO, WILSON; FREITAS, FLÁVIA CRISTINA DE PAULA; FAORO, HELISSON; PASSETTI, FABIO; ROBAINA, JAQUELINE RODRIGUES; DE OLIVEIRA, FELIPE REZENDE CAINO; NOVAES BELLINAT, ANA PAULA; ZEITEL, RAQUEL DE SEIXAS; SALÚ, MARGARIDA DOS SANTOS; DE OLIVEIRA, MARIANA BARROS GENUÍNO; et al.",
+    "journal": "Frontiers in Cellular and Infection Microbiology",
+    "year": 2023,
+    "volume": "13",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Next Generation of Ovarian Cancer Detection Using Aptamers",
+    "authors": "ABREU, RAYANE DA SILVA; ANTUNES, DEBORAH; MOREIRA, ALINE DOS SANTOS; PASSETTI, FABIO; MENDONÇA, JULIA BADARÓ; DE ARAÚJO, NATÁSSIA SILVA; SASSARO, TAYANNE FELIPPE; ALBERTO, ANAEL VIANA PINTO; CARROSSINI, NINA; FERNANDES, PRISCILA VALVERDE; COSTA, MAYLA ABRAHIM; GUIMARÃES, ANA CAROLINA RAMOS; DEGRAVE, WIM MAURITS SYLVAIN; WAGHABI, MARIANA CALDAS",
+    "journal": "INTERNATIONAL JOURNAL OF MOLECULAR SCIENCES",
+    "year": 2023,
+    "volume": "24",
+    "pages": "6315",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Selecting Genetic Variants and Interactions Associated with Amyotrophic Lateral Sclerosis: A Group LASSO Approach",
+    "authors": "FERONATO, SOFIA GALVÃO; SILVA, MARIA LUIZA MATOS; IZBICKI, RAFAEL; FARIAS, TICIANA D. J.; SHIGUNOV, PATRÍCIA; DALLAGIOVANNA, BRUNO; PASSETTI, FABIO; DOS SANTOS, HELLEN GEREMIAS",
+    "journal": "Journal Of Personalized Medicine",
+    "year": 2022,
+    "volume": "12",
+    "pages": "1330",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" },
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Identification of Novel Genes and Proteoforms in Angiostrongylus costaricensis through a Proteogenomic Approach",
+    "authors": "DA SILVA, ESDRAS MATHEUS GOMES; REBELLO, KARINA MASTROPASQUA; CHOI, YOUNG-JUN; GREGORIO, VITOR; PASCHOAL, ALEXANDRE ROSSI; MITREVA, MAKEDONKA; MCKERROW, JAMES H.; NEVES-FERREIRA, ANA GISELE DA COSTA; PASSETTI, FABIO",
+    "journal": "PATHOGENS",
+    "year": 2022,
+    "volume": "11",
+    "pages": "1273",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DA SILVA, ESDRAS MATHEUS GOMES", "type": "member", "id": "esdras" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Dysregulation of Transcription Factor Networks Unveils Different Pathways in Human Papillomavirus 16-Positive Squamous Cell Carcinoma and Adenocarcinoma of the Uterine Cervix",
+    "authors": "BISPO, S.; FARIAS, T. D. J.; DE ARAUJO-SOUZA, PATRICIA SAVIO; CINTRA, R.; SANTOS, H. G.; JORGE, NATASHA A. N.; CASTRO, M. A.; WAJNBERG, GABRIEL; SCHERER, NICOLE DE MIRANDA; GENTA, M. L.; CARVALHO, J. P.; VILLA, L. L.; SICHERO, L.; PASSETTI, F.",
+    "journal": "FRONTIERS IN ONCOLOGY",
+    "year": 2021,
+    "volume": "11",
+    "pages": "626187",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "ExVe: The knowledge base of orthologous proteins identified in fungal extracellular vesicles",
+    "authors": "PARREIRA, VINÍCIUS DA SILVA COUTINHO; SANTOS, LETÍCIA GRAZIELA COSTA; RODRIGUES, MARCIO L.; PASSETTI, FABIO",
+    "journal": "COMPUTATIONAL AND STRUCTURAL BIOTECHNOLOGY JOURNAL",
+    "year": 2021,
+    "volume": "19",
+    "pages": "2286-2296",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PARREIRA, VINÍCIUS DA SILVA COUTINHO", "type": "member", "id": "vinicius" },
+      { "name": "SANTOS, LETÍCIA GRAZIELA COSTA", "type": "member", "id": "leticia" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Proteogenomics Reveals Orthologous Alternatively Spliced Proteoforms in the Same Human and Mouse Brain Regions with Differential Abundance in an Alzheimer's Disease Mouse Model",
+    "authors": "SILVA, ESDRAS MATHEUS GOMES DA; SANTOS, LETÍCIA GRAZIELA COSTA; OLIVEIRA, FLÁVIA SANTIAGO DE; FREITAS, FLÁVIA CRISTINA DE PAULA; PARREIRA, VINÍCIUS DA SILVA COUTINHO; SANTOS, HELLEN GEREMIAS DOS; TAVARES, RAPHAEL; CARVALHO, PAULO COSTA; NEVES-FERREIRA, ANA GISELE DA COSTA; HAIBARA, ANDREA SIQUEIRA; DE ARAUJO-SOUZA, PATRÍCIA SAVIO; DIAS, ADRIANA ABALEN MARTINS; PASSETTI, FABIO",
+    "journal": "Cells",
+    "year": 2021,
+    "volume": "10",
+    "pages": "1583",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Re-emergence of Gamma-like-II and emergence of Gamma-S:E661D SARS-CoV-2 lineages in the south of Brazil after the 2021 outbreak",
+    "authors": "OLIVEIRA, MAURO M.; SCHEMBERGER, MICHELLE O.; SUZUKAWA, ANDREIA A.; RIEDIGER, IRINA N.; DO CARMO DEBUR, MARIA; BECKER, GUILHERME; RESENDE, PAOLA CRISTINA; GRÄF, TIAGO; BALSANELLI, EDUARDO; DE BAURA, VALTER ANTÔNIO; DE SOUZA, EMANUEL M.; PEDROSA, FÁBIO O.; ALVES, LYSANGELA R.; BLANES, LUCAS; NARDELLI, SHEILA CRISTINA; AGUIAR, ALESSANDRA M.; ALBRECHT, LETUSA; ZANETTE, DALILA; ÁVILA, ANDRÉA R.; PASSETTI, F.; et al.",
+    "journal": "Virology Journal",
+    "year": 2021,
+    "volume": "18",
+    "pages": "222",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Downregulation of IGF2 expression in third trimester placental tissues from Zika virus infected women in Brazil",
+    "authors": "SUZUKAWA, ANDRÉIA A.; ZANLUCA, CAMILA; JORGE, NATASHA A.N.; DE NORONHA, LUCIA; KOISHI, ANDREA C.; DE PAULA, CAROLINE B.V.; REBUTINI, PATRÍCIA Z.; NAGASHIMA, SEIGO; HANSEL-FROSE, ARUANA F.F.; PARREIRA, VINÍCIUS S.C.; BORDIGNON, JULIANO; MACDONALD, MARGARET R.; RICE, CHARLES M.; PASSETTI, FABIO; DUARTE DOS SANTOS, CLAUDIA NUNES",
+    "journal": "JOURNAL OF INFECTION",
+    "year": 2020,
+    "volume": "81",
+    "pages": "766-775",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PARREIRA, VINÍCIUS S.C.", "type": "member", "id": "vinicius" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Cell type specific novel lncRNAs and circRNAs in the BLUEPRINT haematopoietic transcriptomes atlas.",
+    "authors": "GRASSI, LUIGI; IZUOGU, OSAGIE G.; JORGE, NATASHA A.N.; SEYRES, DENIS; BUSTAMANTE, MARIONA; BURDEN, FRANCES; FARROW, SAMANTHA; FARAHI, NEDA; MARTIN, FERGAL J.; FRANKISH, ADAM; MUDGE, JONATHAN M.; KOSTADIMA, MYRTO; PETERSEN, ROMINA; LAMBOURNE, JOHN J.; ROWLSTON, SOPHIA; MARTIN-RENDON, ENCA; CLARKE, LAURA; DOWNES, KATE; ESTIVILL, XAVIER; PASSETTI, F.; et al.",
+    "journal": "HAEMATOLOGICA",
+    "year": 2020,
+    "volume": "106",
+    "pages": "haematol.2019.",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Unraveling RNA dynamical behavior of TPP riboswitches: a comparison between Escherichia coli and Arabidopsis thaliana",
+    "authors": "ANTUNES, DEBORAH; JORGE, NATASHA ANDRESSA NOGUEIRA; GARCIA DE SOUZA COSTA, MAURICIO; PASSETTI, FABIO; CAFFARENA, ERNESTO RAUL",
+    "journal": "Scientific Reports",
+    "year": 2019,
+    "volume": "9",
+    "pages": "4197",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "CD9 predicts ETV6-RUNX1 in childhood B-cell precursor acute lymphoblastic leukemia",
+    "authors": "BLUNCK, CAROLINE B.; TERRA-GRANADO, EUGÊNIA; NORONHA, ELDA P.; WAJNBERG, GABRIEL; PASSETTI, FÁBIO; POMBO-DE-OLIVEIRA, MARIA S.; EMERENCIANO, MARIANA",
+    "journal": "Hematology, Transfusion and Cell Therapy",
+    "year": 2019,
+    "volume": "41",
+    "pages": "205-211",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FÁBIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "cDNA microarray analysis of human keratinocytes cells of patients submitted to chemoradiotherapy and oral photobiomodulation therapy: pilot study",
+    "authors": "ANTUNES, HELITON S.; WAJNBERG, GABRIEL; PINHO, MARCOS B.; JORGE, NATASHA ANDRESSA NOGUEIRA; DE MORAES, JOYCE LUANA MELO; STEFANOFF, CLAUDIO GUSTAVO; HERCHENHORN, DANIEL; ARAÚJO, CARLOS M. M.; VIÉGAS, CELIA MARIA PAIS; RAMPINI, MARIANA P.; DIAS, FERNANDO L.; DE ARAUJO-SOUZA, PATRICIA SAVIO; PASSETTI, FABIO; FERREIRA, CARLOS G.",
+    "journal": "LASERS IN MEDICAL SCIENCE",
+    "year": 2018,
+    "volume": "33",
+    "pages": "11-18",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Using RNA Sequence and Structure for the Prediction of Riboswitch Aptamer: A Comprehensive Review of Available Software and Tools",
+    "authors": "ANTUNES, DEBORAH; JORGE, NATASHA A. N.; CAFFARENA, ERNESTO R.; PASSETTI, FABIO",
+    "journal": "Frontiers in Genetics",
+    "year": 2018,
+    "volume": "8",
+    "pages": "231",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "The Challenge to Search for New Nervous System Disease Biomarker Candidates: the Opportunity to Use the Proteogenomics Approach",
+    "authors": "NERY, THAIS GUIMARÃES MARTINS; SILVA, ESDRAS MATHEUS; TAVARES, RAPHAEL; PASSETTI, FABIO",
+    "journal": "JOURNAL OF MOLECULAR NEUROSCIENCE",
+    "year": 2018,
+    "volume": "67",
+    "pages": "150-164",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Unveiling alterative splice diversity from human oligodendrocyte proteome data",
+    "authors": "TAVARES, RAPHAEL; WAJNBERG, GABRIEL; SCHERER, NICOLE DE MIRANDA; PAULETTI, BIANCA ALVES; CASSOLI, JULIANA S.; FERREIRA, CARLOS GIL; PAES LEME, ADRIANA FRANCO; DE ARAUJO-SOUZA, PATRICIA SAVIO; MARTINS-DE-SOUZA, DANIEL; PASSETTI, FABIO",
+    "journal": "Journal of Proteomics",
+    "year": 2017,
+    "volume": "151",
+    "pages": "293-301",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "TAVARES, RAPHAEL", "type": "member", "id": "raphael" },
+      { "name": "WAJNBERG, GABRIEL", "type": "member", "id": "gabriel" },
+      { "name": "SCHERER, NICOLE DE MIRANDA", "type": "member", "id": "nicole" },
+      { "name": "PAULETTI, BIANCA ALVES", "type": "member", "id": "bianca" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "snoRNA and piRNA expression levels modified by tobacco use in women with lung adenocarcinoma",
+    "authors": "JORGE, NATASHA ANDRESSA NOGUEIRA; WAJNBERG, GABRIEL; FERREIRA, C. G.; CARVALHO, B.; PASSETTI, F.",
+    "journal": "PLoS One",
+    "year": 2017,
+    "volume": "12",
+    "pages": "e0183410",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Using high-throughput sequencing transcriptome data for INDEL detection: challenges for cancer drug discovery",
+    "authors": "WAJNBERG, GABRIEL; PASSETTI, FABIO",
+    "journal": "Expert Opinion on Drug Discovery (Print)",
+    "year": 2016,
+    "volume": "",
+    "pages": "257-268",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "RNA-seq transcriptional profiling of Herbaspirillum seropedicae colonizing wheat (Triticum aestivum) roots",
+    "authors": "PANKIEVICZ, V. C. S.; CAMILIOS-NETO, D.; BONATO, P.; BALSANELLI, E.; TADRA-SFEIR, M. Z.; FAORO, H.; CHUBATSU, L. S.; DONATTI, L.; WAJNBERG, G.; PASSETTI, F.; MONTEIRO, R. A.; PEDROSA, F. O.; SOUZA, E. M.",
+    "journal": "Plant Molecular Biology",
+    "year": 2016,
+    "volume": "90",
+    "pages": "589-603",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "FAORO, H.", "type": "principal_investigator", "id": "helisson" },
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Synchronous down-modulation of miR-17 family members is an early causative event in the retinal angiogenic switch",
+    "authors": "NUNES, DIANA N.; DIAS-NETO, EMMANUEL; CARDÓ-VILA, MARINA; EDWARDS, JULIANNA K.; DOBROFF, ANDREY S.; GIORDANO, RICARDO J.; MANDELIN, JAMI; BRENTANI, HELENA P.; HASSELGREN, CATRIN; YAO, VIRGINIA J.; MARCHIÒ, SERENA; PEREIRA, CARLOS A. B.; PASSETTI, FABIO; CALIN, GEORGE A.; SIDMAN, RICHARD L.; ARAP, WADIH; PASQUALINI, RENATA",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America (Online)",
+    "year": 2015,
+    "volume": "",
+    "pages": "201500008-3775",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Splice variants in the proteome: a promising and challenging field to targeted drug discovery",
+    "authors": "TAVARES, RAPHAEL; SCHERER, NICOLE M.; FERREIRA, CARLOS G.; COSTA, FABRICIO F.; PASSETTI, FABIO",
+    "journal": "DRUG DISCOVERY TODAY",
+    "year": 2015,
+    "volume": "20",
+    "pages": "353-360",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "TAVARES, RAPHAEL", "type": "member", "id": "raphael" },
+      { "name": "SCHERER, NICOLE M.", "type": "member", "id": "nicole" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Combined Analysis of SNP Array Data Identifies Novel CNV Candidates and Pathways in Ependymoma and Mesothelioma",
+    "authors": "WAJNBERG, G.; CARVALHO, B.; FERREIRA, CARLOS G.; PASSETTI, FABIO",
+    "journal": "Biomed Research International",
+    "year": 2015,
+    "volume": "2015",
+    "pages": "1-10",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "SpliceProt: A protein sequence repository of predicted human splice variants",
+    "authors": "TAVARES, RAPHAEL; DE MIRANDA SCHERER, NICOLE; PAULETTI, BIANCA ALVES; ARAÚJO, ELÓI; FOLADOR, EDSON LUIZ; ESPINDOLA, GABRIEL; FERREIRA, CARLOS GIL; PAES LEME, ADRIANA FRANCO; DE OLIVEIRA, PAULO SERGIO LOPES; PASSETTI, FABIO",
+    "journal": "PROTEOMICS",
+    "year": 2014,
+    "volume": "14",
+    "pages": "181-185",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "TAVARES, RAPHAEL", "type": "member", "id": "raphael" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Prevalence of human papillomavirus infection and phylogenetic analysis of HPV-16 E6 variants among infected women from Northern Brazil",
+    "authors": "TAMEGAO-LOPES, B. P.; SOUSA-JUNIOR, E. C.; PASSETTI, FABIO; FERREIRA, CARLOS G.; MELLO, W. A.; SILVESTRE, R. V. D.",
+    "journal": "Infectious Agents and Cancer",
+    "year": 2014,
+    "volume": "9",
+    "pages": "25",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Identical sequence patterns in the ends of exons and introns of human protein-coding genes",
+    "authors": "TAVARES, RAPHAEL; RENAUD, GABRIEL; OLIVEIRA, PAULO SERGIO LOPES; FERREIRA, CARLOS G.; DIAS-NETO, EMMANUEL; PASSETTI, FABIO",
+    "journal": "Computational Biology and Chemistry (Print)",
+    "year": 2012,
+    "volume": "36",
+    "pages": "55-61",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "TAVARES, RAPHAEL", "type": "member", "id": "raphael" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Bioinformatics of Cancer ncRNA in High Throughput Sequencing: Present State and Challenges",
+    "authors": "JORGE, N. A. N.; FERREIRA, CARLOS G.; PASSETTI, F.",
+    "journal": "Frontiers in Genetics",
+    "year": 2012,
+    "volume": "3",
+    "pages": "287",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Challenges in the use of NG2 antigen as a marker to predict MLL rearrangements in multi-center studies",
+    "authors": "EMERENCIANO, MARIANA; RENAUD, GABRIEL; SANT'ANA, MARIANA; BARBIERI, CAROLINE; PASSETTI, FABIO; POMBO-DE-OLIVEIRA, MARIA S.",
+    "journal": "Leukemia Research",
+    "year": 2011,
+    "volume": "35",
+    "pages": "1001-1007",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Segtor: Rapid Annotation of Genomic Coordinates and Single Nucleotide Variations Using Segment Trees",
+    "authors": "RENAUD, GABRIEL; NEVES, PEDRO; FOLADOR, EDSON LUIZ; FERREIRA, CARLOS GIL; PASSETTI, FABIO",
+    "journal": "Plos One",
+    "year": 2011,
+    "volume": "6",
+    "pages": "e26715",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Expression Profile of Rat Hippocampal Neurons Treated with the Neuroprotective Compound 2,4-Dinitrophenol: Up-Regulation of cAMP Signaling Genes",
+    "authors": "SEBOLLELA, ADRIANO; FREITAS-CORRÊA, LÉO; OLIVEIRA, FÁBIO F.; MENDES, CAMILA T.; WASILEWSKA-SAMPAIO, ANA PAULA; CAMACHO-PEREIRA, JULIANA; GALINA, ANTONIO; BRENTANI, HELENA; PASSETTI, FABIO; FELICE, FERNANDA G.; DIAS-NETO, EMMANUEL; FERREIRA, SÉRGIO T.",
+    "journal": "Neurotoxicity Research",
+    "year": 2010,
+    "volume": "18",
+    "pages": "112-123",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "The impact of microRNAs and alternative splicing in pharmacogenomics",
+    "authors": "PASSETTI, F.; FERREIRA, C G; COSTA, F F",
+    "journal": "Pharmacogenomics Journal (Print)",
+    "year": 2009,
+    "volume": "9",
+    "pages": "1-13",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Neurofibromatosis-Noonan syndrome: Molecular evidence of the concurrence of both disorders in a patient",
+    "authors": "BERTOLA, DEBORA R.; PEREIRA, ALEXANDRE C.; PASSETTI, FÁBIO; DE OLIVEIRA, PAULO S.L.; MESSIAEN, LUDWINE; GELB, BRUCE D.; KIM, CHONG A.; KRIEGER, JOSÉ EDUARDO",
+    "journal": "American Journal of Medical Genetics. Part A",
+    "year": 2005,
+    "volume": "136A",
+    "pages": "242-245",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FÁBIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Scanning electron microscopy of the Pars Stridens of Gryllus: taxonomic importance",
+    "authors": "JUNIOR, JP; ZEFA, E; DAVID, JAO; PASSETTI, F.; FONTANETTI, C.S.",
+    "journal": "Naturalia (São José do Rio Preto)",
+    "year": 2005,
+    "volume": "28-30",
+    "pages": "49-52",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "The generation and utilization of a cancer-oriented representation of the human transcriptome by using expressed sequence tags",
+    "authors": "BRENTANI, H.; CABALLERO, O. L.; CAMARGO, A. A.; SILVA, A. M.; SILVA, JR., W. A.; DIAS NETO, E.; GRIVET, M.; GRUBER, A.; GUIMARAES, P. E. M.; PASSETTI, F.; et al.",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "year": 2003,
+    "volume": "100",
+    "pages": "13418-13423",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "ORESTES are enriched in rare exon usage variants affecting the encoded proteins",
+    "authors": "SAKABE, N. J.; DE SOUZA, J.E.; GALANTE, P. A. F.; OLIVEIRA, P.S.L.; PASSETTI, F.; BRENTANI, H.; OSORIO, E. C.; ZAIATS, A. C.; LEERKES, M.R.; KITAJIMA, J.P.; BRENTANI, R. R.; STRAUSBERG, R. L.; SIMPSON, A.; SOUZA, S. J.",
+    "journal": "Comptes Rendus. Biologies",
+    "year": 2003,
+    "volume": "326",
+    "pages": "979-985",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "ExInt: an Exon Intron Database.",
+    "authors": "SAKHARKAR, M.; PASSETTI, F.; DE SOUZA, J.E.; LONG, M.; SOUZA, S. J.",
+    "journal": "Nucleic Acids Research",
+    "year": 2002,
+    "volume": "30",
+    "pages": "191-194",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Morphological characterization and comparative analysis of the proventriculus from three species of Endecous Saussure, 1878 (Orthoptera:Gryllidae:Phalangopsinae)",
+    "authors": "FONTANETTI, C.S.; ZEFA, E; PASSETTI, F.; MESA, A.",
+    "journal": "Entomotropica",
+    "year": 2002,
+    "volume": "17",
+    "pages": "15-23",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, F.", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+
+  {
+    "title": "Genomic epidemiology of dengue virus serotype 3 lineage 3III_B.3.2 in Brazil: insights into its spread and dengue severity amid co-circulation of multiple dengue serotypes",
+    "authors": "FERREIRA, CAROLINE DO NASCIMENTO; ROYER, CARLA ADRIANE; CONFORTIN, CAMILA; MARQUES, NELSON FERNANDO QUALLIO; PRESIBELLA, MAYRA MARINHO; FREUND, ALINE ANDRADE; CAMPOS, KAROLINE RODRIGUES; SACCHI, CLAUDIO TAVARES; ABBUD, ADRIANO; DE LIMA, GUSTAVO BARBOSA; DE MORAIS, CLARICE NEUENSCHWANDER LINS; DA SILVA, VERONICA GOMES; E SILVA, KEILLA MARIA PAZ; DA COSTA, MAYARA MATIAS DE OLIVEIRA MARQUES; GONÇALVES, SABRINA; ARAÚJO, SOFIA ISABEL RÓTULO; ROVARIS, DARCITA BUERGER; DELATORRE, EDSON; RIBEIRO-RODRIGUES, RODRIGO; SANTOS, H. G.; et al.",
+    "journal": "Lancet Regional Health-Americas",
+    "year": 2026,
+    "volume": "61",
+    "pages": "101521",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Fungal Extracellular Vesicles are Recoverable Across Variable Ultracentrifugation Speeds but Display Species-specific Profiles of Sedimentation",
+    "authors": "JOZEFOWICZ, LUISA J.; BEZERRA, BÁRBARA T.; VERES, EVA; SZILOVICS, ZÓRA; SOUZA, CÁSSIA M.; CAMILLO-ANDRADE, AMANDA C.; SANTOS, HELLEN G. G.; CARVALHO, PAULO C.; SANTOS, MARLON D. M.; REIS, FLAVIA C. G.; GACSER, ATTILA; RODRIGUES, MARCIO L.",
+    "journal": "JOURNAL OF MEMBRANE BIOLOGY",
+    "year": 2026,
+    "volume": "259",
+    "pages": "1-17",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN G. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "A Decrease of Antibodies Against SARS-CoV-2 Antigens Does Not Reflect a Decrease of Neutralization Rate: A Prospective Study to Evaluate Kinetic and Dynamic Humoral Immune Response After Vaccination During Pregnancy",
+    "authors": "COELHO, GABRIELA MATTOSO; GEREMIAS DOS SANTOS, HELLEN; CATANEO, ALLAN HENRIQUE DEPIERI; ZANCANARO, YARA; LUNARDELLI, GABRIELA; CESCA, TACIANE ELISABETE; MAKIYAMA, JAQUELINE; FRANCISCO, JEAN ALEXANDRE FURTADO CORREA; SKARE, THELMA; TUON, FELIPE FRANCISCO; ZANLUCA, CAMILA; TELLES, JOÃO PAULO; DUARTE DOS SANTOS, CLAUDIA NUNES",
+    "journal": "AMERICAN JOURNAL OF REPRODUCTIVE IMMUNOLOGY",
+    "year": 2025,
+    "volume": "93",
+    "pages": "e70053",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "GEREMIAS DOS SANTOS, HELLEN", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "A general analysis of the impact of international collaboration on the citation indices of scientific publications from 60 institutions across five continents",
+    "authors": "DUARTE, IRAINE; SANTOS, HELLEN G.G.; RODRIGUES, MARCIO L.",
+    "journal": "ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS",
+    "year": 2025,
+    "volume": "97",
+    "pages": "1/e20241035-16",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN G.G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Pathogenic diversity of Cryptococcus in Galleria mellonella extends beyond classical virulence factors",
+    "authors": "SENA, BIANCA A.G.; SANTOS, MARLON D.M.; SOUZA, CASSIA M.; CAMILLO-ANDRADE, AMANDA C.; DE OLIVEIRA, HAROLDO C.; DOS REIS, FLAVIA C.G.; CASTELLI, RAFAEL F.; KUCZERA, DIOGO; ANTONIOLLI, HENRIQUE R.M.; SANTOS, HELLEN G.G.; STAATS, CHARLEY C.; SASSAKI, GUILHERME L.; CARVALHO, PAULO C.; RODRIGUES, MARCIO L.",
+    "journal": "Cell Surface",
+    "year": 2025,
+    "volume": "14",
+    "pages": "100153",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN G.G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Stockholm Paradigm in the Study of Influenza H1N1 Viruses: A New Approach to the Study of Zoonotic Risk Coupling Multiple Correspondence Analysis and Multi-Locus Phylogenies",
+    "authors": "GALVÃO FERONATO, SOFIA; BAGGIO, RAFAEL ANTUNES; SANTOS, HELLEN GEREMIAS GATICA; FERREIRA SILVEIRA, GUILHERME",
+    "journal": "Viruses-Basel",
+    "year": 2025,
+    "volume": "17",
+    "pages": "1350",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS GATICA", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Assessment of the Demand Control Support Questionnaire's dimensional structure",
+    "authors": "BIROLIM, MARCELA MARIA; DE ANDRADE, SELMA MAFFEI; MESAS, ARTHUR EUMANN; GEREMIAS DOS SANTOS, HELLEN; RAGASSI URBANO, MARIANA; RODRIGUES, RENNE; NOGUEIRA SOARES, KELLY CRISTINA; MARQUES HÖKERBERG, YARA HAHR",
+    "journal": "SUMA PSICOLOGICA",
+    "year": 2025,
+    "volume": "32",
+    "pages": "118-128",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "GEREMIAS DOS SANTOS, HELLEN", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Genetic Variants Affect Distinct Metabolic Pathways in Pediatric Multisystem Inflammatory Syndrome and Severe COVID-19",
+    "authors": "URBANSKI, ALYSSON HENRIQUE; FREITAS, FLÁVIA CRISTINA DE PAULA; GOMES, TIAGO MINUZZI FREIRE DA FONTOURA; SCHEMBERGER, MICHELLE ORANE; REIS, BÁRBARA CARVALHO SANTOS DOS; CARVALHO, FLAVIA AMÊNDOLA ANÍSIO DE; FACCION, ROBERTA SOARES; MACHADO, LUCAS DE ALMEIDA; SANTOS, DEBORAH ANTUNES DOS; CUNHA, DANIELA PRADO; SALÚ, MARGARIDA DOS SANTOS; MOORE, DANIELLA CAMPELO BATALHA COX; PRESIBELLA, MAYRA MARINHO; NOGUCHI, JULIANA FONTES; BORGES, HENRIQUE LIRA; TOMIURA, LAIS KIMIE; SILVA DE CASTRO, LUIZA; SANTOS, LETÍCIA GRAZIELA COSTA; SILVA, ESDRAS MATHEUS GOMES DA; SANTOS, H. G.; et al.",
+    "journal": "JOURNAL OF MEDICAL VIROLOGY",
+    "year": 2025,
+    "volume": "97",
+    "pages": "e70556-e70574",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Alternative polyadenylation and dynamic 3- UTR length is associated with polysome recruitment throughout the cardiomyogenic differentiation of hESCs",
+    "authors": "HANSEL-FROSE, ARUANA F. F.; ALLMER, JENS; FRIEDRICHS, MARCEL; DOS SANTOS, HELLEN GEREMIAS; DALLAGIOVANNA, BRUNO; SPANGENBERG, LUCÍA",
+    "journal": "FRONTIERS IN MOLECULAR BIOSCIENCES",
+    "year": 2024,
+    "volume": "11",
+    "pages": "1-17",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Diagnosis of fasciolosis antibodies in Brazilian cattle through ELISA employing both native and recombinant antigens",
+    "authors": "DRESCHER, GUILHERME; DOS SANTOS, HELLEN GEREMIAS; PINTO, MARIANE MARQUES DA GUARDA; MORELLO, LUIS GUSTAVO; FIGUEIREDO, FABIANO BORGES",
+    "journal": "MICROBIOLOGY SPECTRUM",
+    "year": 2024,
+    "volume": "12",
+    "pages": "1-14",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Does machine learning have a high performance to predict obesity among adults and older adults? A systematic review and meta-analysis",
+    "authors": "DELPINO, FELIPE MENDES; COSTA, ÂNDRIA KROLOW; DO NASCIMENTO, MURILO CÉSAR; MOURA, HERIEDERSON SÁVIO DIAS; DOS SANTOS, HELLEN GEREMIAS; WICHMANN, ROBERTA MOREIRA; CHIAVEGATTO FILHO, ALEXANDRE DIAS PORTO; ARCÊNCIO, RICARDO ALEXANDRE; NUNES, BRUNO PEREIRA",
+    "journal": "NUTRITION METABOLISM AND CARDIOVASCULAR DISEASES",
+    "year": 2024,
+    "volume": "34",
+    "pages": "1-40",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Potential involvement of beta-lactamase homologous proteins in resistance to beta-lactam antibiotics in gram-negative bacteria of the ESKAPEE group",
+    "authors": "DE SOUZA, JOYCE; VIEIRA, ALEXANDRE ZANATTA; DOS SANTOS, HELLEN GEREMIAS; FAORO, HELISSON",
+    "journal": "BMC GENOMICS",
+    "year": 2024,
+    "volume": "25",
+    "pages": "1-15",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DE SOUZA, JOYCE", "type": "member", "id": "joyce" },
+      { "name": "VIEIRA, ALEXANDRE ZANATTA", "type": "member", "id": "alexandre" },
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" },
+      { "name": "FAORO, HELISSON", "type": "principal_investigator", "id": "helisson" }
+    ]
+  },
+  {
+    "title": "Asessment of immune responses to a Comirnaty® booster following CoronaVac® vaccination in healthcare workers",
+    "authors": "BOCHNIA-BUENO, L.; COELHO, G. M.; CATANEO, A. H. D.; ZANLUCA, C.; FERREIRA, L. H.; CAVALCANTI, L. P. G.; CLEMENTINO, M. A. F.; YAOCHITE, J. N. U.; SANTOS, H. G.; NOGUEIRA, M. B.; SANTOS, C. N. D.; RABONI, S. M.",
+    "journal": "MEMORIAS DO INSTITUTO OSWALDO CRUZ",
+    "year": 2024,
+    "volume": "119",
+    "pages": "e230239-e230248",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Predictive modeling of gestational weight gain: a machine learning multiclass classification study",
+    "authors": "VICTOR, AUDÊNCIO; GEREMIAS DOS SANTOS, HELLEN; SILVA, GABRIEL FERREIRA SANTOS; BARCELLOS FILHO, FABIANO; DE FÁTIMA COBRE, ALEXANDRE; LUZIA, LIANIA A.; RONDÓ, PATRÍCIA H.C.; CHIAVEGATTO FILHO, ALEXANDRE DIAS PORTO",
+    "journal": "BMC Pregnancy and Childbirth",
+    "year": 2024,
+    "volume": "24",
+    "pages": "1-11",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "GEREMIAS DOS SANTOS, HELLEN", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Expansion of Oropouche virus in non-endemic Brazilian regions: analysis of genomic characterisation and ecological drivers",
+    "authors": "GRÄF, TIAGO; DELATORRE, EDSON; DO NASCIMENTO FERREIRA, CAROLINE; ROSSI, AGATA; SANTOS, HELLEN GEREMIAS GATICA; PIZZATO, BIANCA RIBEIRO; NASCIMENTO, VALDINETE; SOUZA, VICTOR; DE LIMA, GUSTAVO BARBOSA; DEZORDI, FILIPE ZIMMER; DA SILVA, ALEXANDRE FREITAS; DE MORAIS, CLARICE NEUENSCHWANDER LINS; ARANTES, IGHOR; MACHADO, MARIZA HOFFMANN; ROVARIS, DARCITA BUERGER; PRESIBELLA, MAYRA MARINHO; MARQUES, NELSON FERNANDO QUALLIO; POUZATO, EMANUELLE GEMIN; STADINICKI, JUCELIA; RIBEIRO-RODRIGUES, RODRIGO; et al.",
+    "journal": "LANCET INFECTIOUS DISEASES",
+    "year": 2024,
+    "volume": "",
+    "pages": "1-11",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS GATICA", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Acesso a serviços de atenção hospitalar no período neonatal: análise de redes de deslocamento entre municípios do Estado do Paraná",
+    "authors": "SILVEIRA, D. M.; SANTOS, H. G.",
+    "journal": "Cadernos de Saude Publica",
+    "year": 2023,
+    "volume": "39",
+    "pages": "e00244422",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Poisson Regression for the Incidence Risk of Lung, Bronchus, and Trachea Cancer among Women and Men in the Five Brazilian Regions",
+    "authors": "GONZATTO JUNIOR, O. A.; SANTOS, H. G.; HENRIQUES, M. J.; GUEDES, T. A.; JANEIRO, V.",
+    "journal": "Revista de la Faculdad de Ingeniería Universidad de Atacama",
+    "year": 2023,
+    "volume": "37",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Selecting Genetic Variants and Interactions Associated with Amyotrophic Lateral Sclerosis: A Group LASSO Approach",
+    "authors": "FERONATO, SOFIA GALVÃO; SILVA, MARIA LUIZA MATOS; IZBICKI, RAFAEL; FARIAS, TICIANA D. J.; SHIGUNOV, PATRÍCIA; DALLAGIOVANNA, BRUNO; PASSETTI, FABIO; DOS SANTOS, HELLEN GEREMIAS",
+    "journal": "Journal Of Personalized Medicine",
+    "year": 2022,
+    "volume": "12",
+    "pages": "1330",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" },
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Clusters of Pregnant Women with Severe Acute Respiratory Syndrome Due to COVID-19: An Unsupervised Learning Approach",
+    "authors": "CARNEIRO, ISADORA CELINE RODRIGUES; FERONATO, SOFIA GALVÃO; SILVEIRA, GUILHERME FERREIRA; CHIAVEGATTO FILHO, ALEXANDRE DIAS PORTO; SANTOS, HELLEN GEREMIAS DOS",
+    "journal": "International Journal of Environmental Research and Public Health",
+    "year": 2022,
+    "volume": "19",
+    "pages": "13522",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Data Leakage in Health Outcomes Prediction With Machine Learning. Comment on 'Prediction of Incident Hypertension Within the Next Year: Prospective Study Using Statewide Electronic Health Records and Machine Learning'",
+    "authors": "CHIAVEGATTO FILHO, ALEXANDRE; BATISTA, ANDRÉ FILIPE DE MORAES; DOS SANTOS, HELLEN GEREMIAS",
+    "journal": "JOURNAL OF MEDICAL INTERNET RESEARCH",
+    "year": 2021,
+    "volume": "23",
+    "pages": "e10969",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Cause-specific mortality prediction in older residents of São Paulo, Brazil: a machine learning approach",
+    "authors": "NASCIMENTO, C. F.; SANTOS, H. G.; DE MORAES BATISTA, ANDRÉ FILIPE; ROMAN LAY, ALEJANDRA ANDREA; DUARTE, YEDA APARECIDA OLIVEIRA; CHIAVEGATTO FILHO, ALEXANDRE DIAS PORTO",
+    "journal": "Age and Ageing",
+    "year": 2021,
+    "volume": "",
+    "pages": "1-7",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Dysregulation of Transcription Factor Networks Unveils Different Pathways in Human Papillomavirus 16-Positive Squamous Cell Carcinoma and Adenocarcinoma of the Uterine Cervix",
+    "authors": "BISPO, SALOE; FARIAS, TICIANA D. J.; DE ARAUJO-SOUZA, PATRICIA SAVIO; CINTRA, RICARDO; SANTOS, HELLEN GEREMIAS DOS; JORGE, NATASHA ANDRESSA NOGUEIRA; CASTRO, MAURO ANTÔNIO ALVES; WAJNBERG, GABRIEL; SCHERER, NICOLE DE MIRANDA; GENTA, MARIA LUIZA NOGUEIRA DIAS; CARVALHO, JESUS PAULA; VILLA, LUISA LINA; SICHERO, LAURA; PASSETTI, FABIO",
+    "journal": "FRONTIERS IN ONCOLOGY",
+    "year": 2021,
+    "volume": "11",
+    "pages": "626187-626187",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Proteogenomics Reveals Orthologous Alternatively Spliced Proteoforms in the Same Human and Mouse Brain Regions with Differential Abundance in an Alzheimer's Disease Mouse Model",
+    "authors": "SILVA, ESDRAS MATHEUS GOMES DA; SANTOS, LETÍCIA GRAZIELA COSTA; OLIVEIRA, FLÁVIA SANTIAGO DE; FREITAS, FLÁVIA CRISTINA DE PAULA; PARREIRA, VINÍCIUS DA SILVA COUTINHO; SANTOS, HELLEN GEREMIAS DOS; TAVARES, RAPHAEL; CARVALHO, PAULO COSTA; NEVES-FERREIRA, ANA GISELE DA COSTA; HAIBARA, ANDREA SIQUEIRA; DE ARAUJO-SOUZA, PATRÍCIA SAVIO; DIAS, ADRIANA ABALEN MARTINS; PASSETTI, FABIO",
+    "journal": "Cells",
+    "year": 2021,
+    "volume": "10",
+    "pages": "1583",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" },
+      { "name": "PASSETTI, FABIO", "type": "principal_investigator", "id": "fabio" }
+    ]
+  },
+  {
+    "title": "Re-emergence of Gamma-like-II and emergence of Gamma-S:E661D SARS-CoV-2 lineages in the south of Brazil after the 2021 outbreak",
+    "authors": "OLIVEIRA, MAURO M.; SCHEMBERGER, MICHELLE O.; SUZUKAWA, ANDREIA A.; RIEDIGER, IRINA N.; DO CARMO DEBUR, MARIA; BECKER, GUILHERME; RESENDE, PAOLA CRISTINA; GRÄF, TIAGO; BALSANELLI, EDUARDO; DE BAURA, VALTER ANTÔNIO; DE SOUZA, EMANUEL M.; PEDROSA, FÁBIO O.; ALVES, LYSANGELA R.; BLANES, LUCAS; NARDELLI, SHEILA CRISTINA; AGUIAR, ALESSANDRA M.; ALBRECHT, LETUSA; ZANETTE, DALILA; ÁVILA, ANDRÉA R.; SANTOS, H. G.; et al.",
+    "journal": "Virology Journal",
+    "year": 2021,
+    "volume": "18",
+    "pages": "222",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Antigenicity and adhesiveness of a Plasmodium vivax VIR-E protein from Brazilian isolates",
+    "authors": "SCHAPPO, ANA PAULA; BITTENCOURT, NAJARA C; BERTOLLA, LETICIA P; FORCELLINI, SOFIA; DA SILVA, ANA BEATRIZ IUNG ENEMBRECK; DOS SANTOS, HELLEN GEREMIAS; GERVÁSIO, JOÃO HENRIQUE; LACERDA, MARCUS VG; LOPES, STEFANIE CP; COSTA, FABIO TM; ALBRECHT, LETUSA",
+    "journal": "Memórias do Instituto Oswaldo Cruz",
+    "year": 2021,
+    "volume": "116",
+    "pages": "e210227-e210235",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Blurred lines: racial misclassification in death certificates in Brazil",
+    "authors": "SANTOS, H. G.; NASCIMENTO, C. F.; DE OLIVEIRA DUARTE, YEDA APARECIDA; KAWACHI, ICHIRO; CHIAVEGATTO FILHO, ALEXANDRE DIAS PORTO",
+    "journal": "INTERNATIONAL JOURNAL OF PUBLIC HEALTH (ONLINE)",
+    "year": 2020,
+    "volume": "65",
+    "pages": "29-36",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Assessing the impact of a doctor in remote areas of Brazil",
+    "authors": "DOS SANTOS, JOANA RAQUEL RAPOSO; DOS SANTOS, HELLEN GEREMIAS; DIAS, CARLOS MANUEL MATIAS; FILHO, ALEXANDRE DIAS PORTO CHIAVEGATTO",
+    "journal": "INTERNATIONAL JOURNAL OF PUBLIC HEALTH (ONLINE)",
+    "year": 2020,
+    "volume": "65",
+    "pages": "267-272",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Machine learning to predict 30-day quality-adjusted survival in critically ill patients with cancer",
+    "authors": "SANTOS, HELLEN GEREMIAS DOS; ZAMPIERI, FERNANDO GODINHO; NORMILIO-SILVA, KARINA; SILVA, GISELA TUNES DA; LIMA, ANTONIO CARLOS PEDROSO DE; CAVALCANTI, ALEXANDRE BIASI; CHIAVEGATTO FILHO, ALEXANDRE DIAS PORTO",
+    "journal": "JOURNAL OF CRITICAL CARE",
+    "year": 2020,
+    "volume": "55",
+    "pages": "73-78",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Plasmodium vivax AMA1: Implications of distinct haplotypes for immune response",
+    "authors": "BITTENCOURT, NAJARA CARNEIRO; SILVA, ANA BEATRIZ IUNG ENEMBRECK DA; VIRGILI, NATÁLIA SILVEIRA; SCHAPPO, ANA PAULA; GERVÁSIO, JOÃO HENRIQUE D. B.; PIMENTA, TAMIRYS S.; KUJBIDA JUNIOR, MARIO A.; VENTURA, ANA MARIA R. S.; LIBONATI, ROSANA M. F.; SILVA-FILHO, JOÃO LUIZ; DOS SANTOS, HELLEN GEREMIAS; LOPES, STEFANIE C. P.; LACERDA, MARCUS V. G.; MACHADO, RICARDO L. D.; COSTA, FABIO T. M.; ALBRECHT, LETUSA",
+    "journal": "PLoS Neglected Tropical Diseases",
+    "year": 2020,
+    "volume": "14",
+    "pages": "e0008471",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Rosettes integrity protects Plasmodium vivax of being phagocytized",
+    "authors": "ALBRECHT, LETUSA; LOPES, STEFANIE C. P.; DA SILVA, ANA BEATRIZ IUNG ENEMBRECK; BARBOSA, VANESSA; ALMEIDA, RODRIGO P.; SIQUEIRA, ANDRÉ M.; LEITE, JULIANA ALMEIDA; BITTENCOURT, NAJARA C.; DOS SANTOS, HELLEN GEREMIAS; BOURGARD, CATARINA; GARCIA, LUIZ FERNANDO CARDOSO; KAYANO, ANA CAROLINA A. V.; SOARES, IRENE S.; RUSSELL, BRUCE; RÉNIA, LAURENT; LACERDA, MARCUS V. G.; COSTA, FABIO T. M.",
+    "journal": "Scientific Reports",
+    "year": 2020,
+    "volume": "10",
+    "pages": "16706-16717",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Poor Relationships and Physical Violence at School Are Associated With More Forms of Psychological Violence Among Brazilian Teachers: A Cross-Sectional Study",
+    "authors": "MELANDA, FRANCINE NESELLO; SANTOS, H. G.; URBANO, MARIANA RAGASSI; DE CARVALHO, WLADITHE ORGAN; GONZÁLEZ, ALBERTO DURÁN; MESAS, ARTHUR EUMANN; ANDRADE, S. M.",
+    "journal": "JOURNAL OF INTERPERSONAL VIOLENCE",
+    "year": 2020,
+    "volume": "35",
+    "pages": "1294-1310",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Prospective association between burnout and road traffic accidents in teachers",
+    "authors": "SALVAGIONI, DENISE ALBIERI JODAS; MESAS, ARTHUR EUMANN; MELANDA, FRANCINE NESELLO; SANTOS, HELLEN GEREMIAS; GONZÁLEZ, ALBERTO DURÁN; GIROTTO, EDMARLON; ANDRADE, SELMA MAFFEI",
+    "journal": "STRESS AND HEALTH",
+    "year": 2020,
+    "volume": "36",
+    "pages": "629-638",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Trabalho de alta exigência entre professores: associações com fatores ocupacionais conforme o apoio social",
+    "authors": "BIROLIM, M.M.; MESAS, A.E.; GONZÁLEZ, ALBERTO DURÁN; SANTOS, H. G.; HADDAD, M. C. F. L.; ANDRADE, S. M.",
+    "journal": "Ciência & Saúde Coletiva",
+    "year": 2019,
+    "volume": "24",
+    "pages": "1255-1264",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Fatores associados ao nascimento pré-termo: da regressão logística à modelagem com equações estruturais",
+    "authors": "OLIVEIRA, A. A.; ALENCAR, G. P.; ALMEIDA, M. F.; SILVA, Z. P.; SANTOS, H. G.; SILVA, A. M. R.; ASSUNÇÃO, P. L.",
+    "journal": "CADERNOS DE SAÚDE PÚBLICA",
+    "year": 2019,
+    "volume": "35",
+    "pages": "e00211917",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Machine learning para análises preditivas em saúde: exemplo de aplicação para predizer óbito em idosos de São Paulo, Brasil",
+    "authors": "SANTOS, H. G.; NASCIMENTO, C. F.; IZBICKI, R.; DUARTE, Y. A.; CHIAVEGATTO FILHO, A.D.P.",
+    "journal": "CADERNOS DE SAÚDE PÚBLICA",
+    "year": 2019,
+    "volume": "35",
+    "pages": "e00050818-e00050818",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Using the Maternity Safety Thermometer to estimate harm-free care in Southeast Brazil: A hospital-based cohort",
+    "authors": "SALGADO, HELOISA DE OLIVEIRA; QUEIROZ, MARCEL REIS; DOS SANTOS, HELLEN GEREMIAS; ANDREUCCI, CARLA BETINA; DINIZ, CARMEN SIMONE GRILO",
+    "journal": "BIRTH-ISSUES IN PERINATAL CARE",
+    "year": 2019,
+    "volume": "",
+    "pages": "1-9",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Estudo SABE: Fatores associados ao uso de medicamentos para controle da dor crônica em idosos",
+    "authors": "AUDI, EDUARDO GODOI; DELLAROZA, MARA SOLANGE GOMES; CABRERA, MARCOS APARECIDO SARRIA; DOS SANTOS, HELLEN GEREMIAS; HELEN, CAMILA; SCARAMAL, DAYANE APARECIDA",
+    "journal": "SCIENTIA MEDICA (PORTO ALEGRE. ONLINE)",
+    "year": 2019,
+    "volume": "29",
+    "pages": "34235",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "DOS SANTOS, HELLEN GEREMIAS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Violência física contra professores no espaço escolar: análise por modelos de equações estruturais",
+    "authors": "MELANDA, FRANCINE NESELLO; SANTOS, H. G.; SALVAGIONI, DENISE ALBIERI JODAS; MESAS, ARTHUR EUMANN; GONZÁLEZ, ALBERTO DURÁN; ANDRADE, S. M.",
+    "journal": "CADERNOS DE SAÚDE PÚBLICA",
+    "year": 2018,
+    "volume": "34",
+    "pages": "e00079017",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Overachieving municipalities in public health: A Machine-learning Approach",
+    "authors": "CHIAVEGATTO FILHO, ALEXANDRE DIAS PORTO; SANTOS, H. G.; NASCIMENTO, C. F.; MASSA, KAIO; KAWACHI, ICHIRO",
+    "journal": "EPIDEMIOLOGY",
+    "year": 2018,
+    "volume": "29",
+    "pages": "1",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Fatores preditores de dor em idosos do Município de São Paulo: Estudo SABE 2006 e 2010",
+    "authors": "BETTIOL, C. H. O.; DELLAROZA, M. S. G.; LEBRÃO, M. L.; DUARTE, Y. A.; SANTOS, H. G.",
+    "journal": "Cadernos de Saude Publica",
+    "year": 2017,
+    "volume": "33",
+    "pages": ":e00098416",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Frequency and factors associated with falls in adults aged 55 years or more",
+    "authors": "PRATO, SABRINA CANHADA FERRARI; ANDRADE, S. M.; CABRERA, MARCOS APARECIDO SARRIA; DIP, RENATA MACIULIS; SANTOS, H. G.; DELLAROZA, MARA SOLANGE GOMES; MESAS, ARTHUR EUMANN",
+    "journal": "REVISTA DE SAÚDE PÚBLICA (ONLINE)",
+    "year": 2017,
+    "volume": "51",
+    "pages": "37",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Factores asociados a mala calidad de sueño en población brasilera a partir de los 40 años de edad: Estudio VIGICARDIO",
+    "authors": "MUÑOZ-PAREJA, MARITZA; LOCH, MATHIAS ROBERTO; SANTOS, H. G.; SAKAY BORTOLETTO, MAIRA SAYURI; DURÁN GONZÁLEZ, ALBERTO; ANDRADE, S. M.",
+    "journal": "Gaceta Sanitaria (Barcelona. Ed. impresa)",
+    "year": 2016,
+    "volume": "30",
+    "pages": "444-450",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Diferenças entre sexos nos determinantes da obesidade abdominal em adultos de 40 anos ou mais: estudo de base populacional",
+    "authors": "SIQUEIRA, DANIELE GONZALES BRONZATTI; SOUZA, REGINA KAZUE TANNO DE; MESAS, ARTHUR EUMANN; SANTOS, HELLEN GEREMIAS DOS; BORTOLETTO, MAIRA SAYURI SAKAI",
+    "journal": "Revista de Nutrição",
+    "year": 2015,
+    "volume": "28",
+    "pages": "485-496",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Fatores associados a piores níveis na escala de Burnout em professores da educação básica",
+    "authors": "KOGA, GUSTAVO KENDY CAMARGO; MELANDA, FRANCINE NESELLO; SANTOS, H. G.; SANT'ANNA, FLÁVIA LOPES; GONZÁLEZ, ALBERTO DURÁN; MESAS, A.E.; ANDRADE, SELMA MAFFEI DE",
+    "journal": "Cadernos Saúde Coletiva",
+    "year": 2015,
+    "volume": "23",
+    "pages": "268-275",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Mortes infantis evitáveis por intervenções do Sistema Único de Saúde: comparação de duas coortes de nascimentos",
+    "authors": "SANTOS, H. G.; ANDRADE, S. M.; SILVA, A. M. R.; MATHIAS, T. A. F.; FERRARI, L. L.; MESAS, A.E.",
+    "journal": "Ciencia & Saude Coletiva",
+    "year": 2014,
+    "volume": "19",
+    "pages": "907",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Agreement on underlying causes of infant death between original records and after investigation: analysis of two biennia in the years 2000",
+    "authors": "SANTOS, H. G.; ANDRADE, S. M.; SILVA, A. M. R.; CARVALHO, W.O.; MESAS, A.E.; GONZALEZ, A. D.",
+    "journal": "REVISTA BRASILEIRA DE EPIDEMIOLOGIA (IMPRESSO)",
+    "year": 2014,
+    "volume": "17",
+    "pages": "313-322",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Características da violência escolar no Brasil: revisão sistemática de estudos quantitativos",
+    "authors": "NESELLO, FRANCINE; SANT'ANNA, FLÁVIA LOPES; SANTOS, HELLEN GEREMIAS DOS; ANDRADE, SELMA MAFFEI DE; MESAS, ARTHUR EUMANN; GONZÁLEZ, ALBERTO DURÁN",
+    "journal": "Revista Brasileira de Saúde Materno Infantil",
+    "year": 2014,
+    "volume": "14",
+    "pages": "119-136",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Informações sobre causas externas em internações hospitalares: conhecimento e opiniões de médicos auditores após uma intervenção",
+    "authors": "SANTOS, HELLEN GEREMIAS DOS; ANDRADE, SELMA MAFFEI DE; BIROLIM, MARCELA MARIA",
+    "journal": "ACTA SCIENTIARUM. HEALTH SCIENCES (ONLINE)",
+    "year": 2012,
+    "volume": "34",
+    "pages": "73-78",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, HELLEN GEREMIAS DOS", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Risk factors for infant mortality in a municipality in southern Brazil: a comparison of two cohorts using hierarchical analysis",
+    "authors": "SANTOS, H. G.; ANDRADE, S. M.; SILVA, A. M. R.; CARVALHO, W. O.; MESAS, A. E.",
+    "journal": "Cadernos de Saude Publica",
+    "year": 2012,
+    "volume": "28",
+    "pages": "1915-1926",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Multirresistência bacteriana: a vivência de pacientes internados em hospital-escola do município de Londrina, Paraná",
+    "authors": "SANTOS, H. G.; SANTOS, CHRISTIANE IAMACHITA LIMA DOS; LOPES, DOLORES FERREIRA DE MELO; BELEI, RENATA APARECIDA",
+    "journal": "Ciência, Cuidado e Saúde (Online)",
+    "year": 2010,
+    "volume": "9",
+    "pages": "74-80",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
+    ]
+  },
+  {
+    "title": "Mortalidade infantil no Brasil: uma revisão de literatura antes e após a implantação do Sistema Único de Saúde",
+    "authors": "SANTOS, H. G.; ANDRADE, S. M.; BIROLIM, M.M.; CARVALHO, W.O.; SILVA, A. M. R.",
+    "journal": "Pediatria (São Paulo)",
+    "year": 2010,
+    "volume": "32",
+    "pages": "131-143",
+    "doi": "",
+    "link": "",
+    "abstract": "",
+    "pdf": "",
+    "author_details": [
+      { "name": "SANTOS, H. G.", "type": "principal_investigator", "id": "hellen" }
     ]
   }
 ]
